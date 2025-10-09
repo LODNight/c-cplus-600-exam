@@ -3,11 +3,12 @@
 #include "chuong3.cpp"
 
 int main(){
-    // int n;
-    // printf("Nhập n: ");
-    // scanf("%d",&n);
-    xuatCacKyTuAZ();
-    // printf("Kết quả: %d",result);
+    int n;
+    printf("Nhập n: ");
+    scanf("%d",&n);
+
+    int result = tongSoLeNhoHonN(n);
+    printf("Kết quả: %d",result);
 
     return 0;
 }
