@@ -9,7 +9,10 @@ void ptbac1(double a, double b);
 // Bài 85: Nhập vào tháng của 1 năm. Cho biết tháng thuộc quý mấy trong năm
 int kiemTraQuy(int n);
 // Bài 86: Tính S(n) = 1^3 + 2^3 + … + N^3
+double luyThua(double x, int n);
+int TimSbai86(int n);
 // Bài 87: Tìm số nguyên dương n nhỏ nhất sao cho 1 + 2 + … + n > 10000
+int timSoLonHon1000();
 // Bài 88: Hãy sử dụng vòng lặp for để xuất tất cả các ký tự từ A đến Z
 // Bài 89: Viết chương trình tính tổng các giá trị lẻ nguyên dương nhỏ hơn N
 // Bài 90: Viết chương trình tìm số nguyên dương m lớn nhất sao cho 1 + 2 + … + m < N

@@ -78,6 +78,16 @@ int TimSbai86(int n){
 }
 
 // Bài 87: Tìm số nguyên dương n nhỏ nhất sao cho 1 + 2 + … + n > 10000
+int timSoLonHon1000(){
+    int total = 0;
+    int i = 0;
+    while (total <= 10000){
+        i++;
+        total += i;
+    }
+    return i;
+}
+
 // Bài 88: Hãy sử dụng vòng lặp for để xuất tất cả các ký tự từ A đến Z
 // Bài 89: Viết chương trình tính tổng các giá trị lẻ nguyên dương nhỏ hơn N
 // Bài 90: Viết chương trình tìm số nguyên dương m lớn nhất sao cho 1 + 2 + … + m < N
