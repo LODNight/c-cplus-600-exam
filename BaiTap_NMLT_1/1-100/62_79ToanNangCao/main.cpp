@@ -29,7 +29,7 @@ int main(){
     printf("Nhập n:");
     scanf("%d",&n); 
 
-    double result = timSBai73(x,n); 
-    printf("Kết quả là: %.2lf", result);
+    double result = timSBai74(x,n); 
+    printf("Kết quả là: %lf", result);
 
 }

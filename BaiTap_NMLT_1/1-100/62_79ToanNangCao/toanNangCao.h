@@ -20,3 +20,5 @@ double timSBai71(double x, int n);
 double timSBai72(double x, int n);
 // Bài 73: Tính S(x, n) = -1 + x^2/2! – x^4/4! + … + (-1)^n+1 * x^2n/(2n)!
 double timSBai73(double x, int n);
+// Bài 74: Tính S(x, n) = 1 – x + x^3/3! – x^5/5! + … + (-1)^n+1 * x^2n+1/(2n + 1)!
+double timSBai74(double x, int n);

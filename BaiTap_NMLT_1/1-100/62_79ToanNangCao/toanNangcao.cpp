@@ -279,7 +279,7 @@ double timSBai72(double x, int n){
 // Bài 73: Tính S(x, n) = -1 + x^2/2! – x^4/4! + … + (-1)^n+1 * x^2n/(2n)!
 double timSBai73(double x, int n){
     double total = 0;
-    for(int i=2; i<n; i++){
+    for(int i=1; i<n; i++){
         if(i % 2 == 0) total += (luyThua(x,i+1))/giaiThua(2*i);
         else total += (-luyThua(x,i+1))/giaiThua(2*i);
     }
@@ -287,6 +287,13 @@ double timSBai73(double x, int n){
 }
  
 // Bài 74: Tính S(x, n) = 1 – x + x^3/3! – x^5/5! + … + (-1)^n+1 * x^2n+1/(2n + 1)!
+double timSBai74(double x, int n){
+    double total = 0;
+    for(int i=0; i<=n; i++){
+        total += (luyThua(-1,i+1) * luyThua(x,(2*i)+1))/(giaiThua((2*i)+1));
+    }
+    return (1.0 + total);
+}
 // Bài 75: Kiểm tra số nguyên 4 byte có dạng 2^k hay không
 // Bài 76: Kiểm tra số nguyên 4 byte có dạng 3^k hay không
 
