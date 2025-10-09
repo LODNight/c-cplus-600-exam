@@ -21,6 +21,15 @@ bool kiemTraDau(double a, double b){
 }
 
 // Bài 84: Viết chương trình giải và biện luận phương trình bậc nhất ax + b = 0
+void ptbac1(double a, double b){
+    double result = -b/a;
+    if(a != 0) printf("Pt có nghiệm là: %lf",result); 
+    else{
+        if(b == 0) printf("Phương trình có vô số nghiệm");
+        else printf("Phương trinh vô nghiệm");
+    } 
+}
+
 // Bài 85: Nhập vào tháng của 1 năm. Cho biết tháng thuộc quý mấy trong năm
 // Bài 86: Tính S(n) = 1^3 + 2^3 + … + N^3
 // Bài 87: Tìm số nguyên dương n nhỏ nhất sao cho 1 + 2 + … + n > 10000

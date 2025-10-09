@@ -39,12 +39,8 @@ int timBoiChungNhoNhat(int a, int b){
 int phuongTrinhBac1(int a, int b, float &x1){
     
     if(a == 0){
-        if(b == 0){
-            return 0;
-        }
-        else{
-            return 1;
-        }   
+        if(b == 0) return 0;
+        else return 1;
     } else {
         x1 = 0.1*-b/a;
         return 2;
