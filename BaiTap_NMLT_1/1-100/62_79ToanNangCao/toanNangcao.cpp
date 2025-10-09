@@ -168,9 +168,29 @@ void phuongTrinhBac4TrungPhuong(int a, int b, int c, float& x1, float& x2){
     }
 }
 
+// Tính giai thừa (x!)
+double giaiThua(int m){
+    if(m < 0) return 0;
+    if(m == 1 || m == 0) return 1;
+    double result = 1.0;
+    for(int i=1; i <=m; i++){
+        result *= i;
+    } 
+    return result;
+}
+
+// Lũy thừa(x^n)
+double luyThua(int n, int m){
+    if(m == 0) return 1.0;
+    double result = 1.0;
+    for(int i =0; i < m; i++){
+        result *= n;
+    }
+    return result;
+}
 
 // Bài 67: Tính S(x, n) = x – x^2 + x^3 + … + (-1)^n+1 * x^n
-int timSBai67(int x, int n){
+double timSBai67(double x, int n){
     int total = x;
     int x_pre = x;
     for(int i = 1; i < n; i++){
@@ -186,7 +206,7 @@ int timSBai67(int x, int n){
 }
 
 // Bài 68: Tính S(x, n) = -x^2 + x^4 + … + (-1)^n * x^2n
-int timSBai68(int x, int n){
+double timSBai68(double x, int n){
     int total = -(x*x);
     int x_pre = x*x;
     for(int i = 1; i < n; i++){
@@ -201,7 +221,7 @@ int timSBai68(int x, int n){
 }
 
 // Bài 69: Tính S(x, n) = (-1)^0x – x^3 + x^5 + … + (-1)^n * x^2n+1
-int timSBai69(int x, int n){
+double timSBai69(double x, int n){
     int total = x;
     int x_pre = x;
     for(int i = 0; i < n; i++){
@@ -214,9 +234,10 @@ int timSBai69(int x, int n){
     }
     return total;
 }
+
 // Bài 70: Tính S(n) = 1 – 1/(1 + 2) + 1/(1 + 2 + 3) + … + (-1)^n+1 * 1/(1 + 2 + 3+ … + n)
-float timSBai70(int n){
-    float total = 1;
+double timSBai70(int n){
+    double total = 1;
     int m = 1;
     for(int i=2; i <= n; i++){
         m += i;
@@ -230,42 +251,40 @@ float timSBai70(int n){
 }
 
 // Bài 71: Tính S(x, n) = -x + x^2/(1 + 2) – x^3/(1 + 2 + 3) + … + (-1)^n * x^n/(1 + 2 +… + n)
-float timSBai71(int x, int n){
+double timSBai71(double x, int n){
+    double total = 0;
     int count = 0;
-    float total = 0;
-    int x_pre = x;
     for(int i=1; i<=n; i++){
-        count += i;
+        count += 1;
         if(i % 2 != 0){
-            total += ((-1.0) * x_pre) / count; 
+            total += ((-1.0) * luyThua(x,i)) / count; 
         } else {
-            total += ((1.0) * x_pre) / count; 
+            total += ((1.0) * luyThua(x,i)) / count; 
         }
-        x_pre *= x;
     }
     return total;
     
 }
 
 // Bài 72: Tính S(x, n) = –x + x^2/2! – x^3/3! + … + (-1)^n * x^n/n!
-float timSBai72(int x, int n){
-    float total = 0;
-    int x_pre = 1;
-    int i_pre = 1;
+double timSBai72(double x, int n){
+    double total = 0;
     for(int i=1; i<=n; i++){
-        x_pre *= x;
-        i_pre *= i;
-        if(i % 2 == 0){
-            total += ((1.0) * x_pre) / i_pre; 
-        } else{
-            total += ((-1.0) * x_pre) / i_pre; 
-        }
+        total += (luyThua(-1,i) * luyThua(x,i)) / giaiThua(i); 
     }
     return total;
 }
 
-// Bài 73: Tính S(x, n) = -1 + x^2/2! – x^4/4! + … + (-1)^n+1 * x^2n/(2n)!
 
+// Bài 73: Tính S(x, n) = -1 + x^2/2! – x^4/4! + … + (-1)^n+1 * x^2n/(2n)!
+double timSBai73(double x, int n){
+    double total = 0;
+    for(int i=2; i<n; i++){
+        if(i % 2 == 0) total += (luyThua(x,i+1))/giaiThua(2*i);
+        else total += (-luyThua(x,i+1))/giaiThua(2*i);
+    }
+    return total;
+}
  
 // Bài 74: Tính S(x, n) = 1 – x + x^3/3! – x^5/5! + … + (-1)^n+1 * x^2n+1/(2n + 1)!
 // Bài 75: Kiểm tra số nguyên 4 byte có dạng 2^k hay không

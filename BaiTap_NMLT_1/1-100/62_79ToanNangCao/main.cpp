@@ -22,13 +22,14 @@ int main(){
     //     printf("x1 = %.2f   |  x2 = %.2f", x1,x2);
     // }
 
-    int x,n;
+    double x;
+    int n;
     printf("Nhập x:");
-    scanf("%d",&x);
+    scanf("%lf",&x);
     printf("Nhập n:");
     scanf("%d",&n); 
 
-    float result = timSBai72(x,n); 
-    printf("Kết quả là: %.2f", result);
+    double result = timSBai73(x,n); 
+    printf("Kết quả là: %.2lf", result);
 
 }
