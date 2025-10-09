@@ -7,7 +7,7 @@ int main(){
     printf("Nhập n: ");
     scanf("%d",&n);
 
-    int result = tongSoLeNhoHonN(n);
+    int result = timMLonNhaKhiTongBeHonN(n);
     printf("Kết quả: %d",result);
 
     return 0;

@@ -97,7 +97,7 @@ void xuatCacKyTuAZ(){
 }
 
 // Bài 89: Viết chương trình tính tổng các giá trị lẻ nguyên dương nhỏ hơn N
-int tongSoLeNhoHonN(int n){
+int tongGiaTriSoLeNhoHonN(int n){
     if(n<=0) return 0;
     int total = 0;
     int i = 1;
@@ -108,6 +108,16 @@ int tongSoLeNhoHonN(int n){
     return total;
 }
 // Bài 90: Viết chương trình tìm số nguyên dương m lớn nhất sao cho 1 + 2 + … + m < N
+int timMLonNhaKhiTongBeHonN(int n){
+    if(n<0) return 0;
+    int total = 0;
+    int i=0;
+    while(total<n){
+        i++;
+        total += i;
+    }
+    return i-1;
+}
 // Bài 91: In tất cả các số nguyên dương lẻ nhỏ hơn 100
 // Bài 92: Tìm ước số chung lớn nhất của 2 số nguyên dương
 // Bài 93: Tính tổng các số nguyên tố nhỏ hơn N (N nguyên dương)

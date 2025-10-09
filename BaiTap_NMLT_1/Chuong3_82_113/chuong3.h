@@ -16,8 +16,9 @@ int timSoLonHon1000();
 // Bài 88: Hãy sử dụng vòng lặp for để xuất tất cả các ký tự từ A đến Z
 void xuatCacKyTuAZ();
 // Bài 89: Viết chương trình tính tổng các giá trị lẻ nguyên dương nhỏ hơn N
-int tongSoLeNhoHonN(int n);
+int tongGiaTriSoLeNhoHonN(int n);
 // Bài 90: Viết chương trình tìm số nguyên dương m lớn nhất sao cho 1 + 2 + … + m < N
+int timMLonNhaKhiTongBeHonN(int n);
 // Bài 91: In tất cả các số nguyên dương lẻ nhỏ hơn 100
 // Bài 92: Tìm ước số chung lớn nhất của 2 số nguyên dương
 // Bài 93: Tính tổng các số nguyên tố nhỏ hơn N (N nguyên dương)
