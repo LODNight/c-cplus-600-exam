@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "d:/HCMUS/HK1/Nhap_Mon_Lap_Trinh/BaiTap_ThuatToan/BaiTap_mang1_Chieu",
+      "program": "d:/HCMUS/HK1/Nhap_Mon_Lap_Trinh/BaiTap_ThuatToan/BaiTap_mang1_Chieu/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
