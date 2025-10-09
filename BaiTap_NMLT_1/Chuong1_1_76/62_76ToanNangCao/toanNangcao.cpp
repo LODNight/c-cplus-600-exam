@@ -318,8 +318,4 @@ bool kiemTra3muK(int n){
     return false; 
 }
 
-// Chương 2:
-// Bài 77: Viết chương trình tính tổng của dãy số sau: S(n) = 1 + 2 + 3 + … + n
-// Bài 78: Liệt kê tất cả các ước số của số nguyên dương n
-// Bài 79: Hãy đếm số lượng chữ số của số nguyên dương n
 
