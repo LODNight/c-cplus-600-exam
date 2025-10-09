@@ -294,7 +294,20 @@ double timSBai74(double x, int n){
     }
     return (1.0 + total);
 }
+
 // Bài 75: Kiểm tra số nguyên 4 byte có dạng 2^k hay không
+bool kiemTra2muK(int n){
+    // Sử dụng bit wise
+    // if(n > 0 && (n & (n-1) == 0)) return true;
+
+    if(n <=0) return false;
+    while (n % 2 == 0){
+        n /= 2;
+    }
+    if(n == 1) return true;
+    return false;
+}
+
 // Bài 76: Kiểm tra số nguyên 4 byte có dạng 3^k hay không
 
 

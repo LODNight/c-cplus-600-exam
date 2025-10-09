@@ -22,14 +22,15 @@ int main(){
     //     printf("x1 = %.2f   |  x2 = %.2f", x1,x2);
     // }
 
-    double x;
+    // double x;
+    // printf("Nhập x:");
+    // scanf("%lf",&x);
     int n;
-    printf("Nhập x:");
-    scanf("%lf",&x);
     printf("Nhập n:");
     scanf("%d",&n); 
 
-    double result = timSBai74(x,n); 
-    printf("Kết quả là: %lf", result);
+    // double result = timSBai74(x,n); 
+    // printf("Kết quả là: %lf", result);
+
 
 }

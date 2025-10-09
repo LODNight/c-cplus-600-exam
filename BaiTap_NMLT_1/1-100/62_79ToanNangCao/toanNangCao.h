@@ -22,3 +22,5 @@ double timSBai72(double x, int n);
 double timSBai73(double x, int n);
 // Bài 74: Tính S(x, n) = 1 – x + x^3/3! – x^5/5! + … + (-1)^n+1 * x^2n+1/(2n + 1)!
 double timSBai74(double x, int n);
+// Bài 75: Kiểm tra số nguyên 4 byte có dạng 2^k hay không
+bool kiemTra2muK(int n);
