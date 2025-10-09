@@ -24,3 +24,5 @@ double timSBai73(double x, int n);
 double timSBai74(double x, int n);
 // Bài 75: Kiểm tra số nguyên 4 byte có dạng 2^k hay không
 bool kiemTra2muK(int n);
+// Bài 76: Kiểm tra số nguyên 4 byte có dạng 3^k hay không
+bool kiemTra3muK(int n);

@@ -309,7 +309,14 @@ bool kiemTra2muK(int n){
 }
 
 // Bài 76: Kiểm tra số nguyên 4 byte có dạng 3^k hay không
-
+bool kiemTra3muK(int n){
+    if(n <= 0) return false;
+    while(n % 3 == 0){
+        n /= 3;
+    }
+    if(n ==1) return true;
+    return false; 
+}
 
 // Chương 2:
 // Bài 77: Viết chương trình tính tổng của dãy số sau: S(n) = 1 + 2 + 3 + … + n

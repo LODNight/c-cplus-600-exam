@@ -31,6 +31,7 @@ int main(){
 
     // double result = timSBai74(x,n); 
     // printf("Kết quả là: %lf", result);
-
+    bool result = kiemTra3muK(n);
+    if(result) printf("%d là số mũ của lũy thừa của 3",n); 
 
 }
