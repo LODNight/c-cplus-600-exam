@@ -89,6 +89,13 @@ int timSoLonHon1000(){
 }
 
 // Bài 88: Hãy sử dụng vòng lặp for để xuất tất cả các ký tự từ A đến Z
+void xuatCacKyTuAZ(){
+    char n = 'A';
+    for(int i=0; i<26;i++){
+        printf("%c ",n+i);
+    }
+}
+
 // Bài 89: Viết chương trình tính tổng các giá trị lẻ nguyên dương nhỏ hơn N
 // Bài 90: Viết chương trình tìm số nguyên dương m lớn nhất sao cho 1 + 2 + … + m < N
 // Bài 91: In tất cả các số nguyên dương lẻ nhỏ hơn 100
