@@ -4,12 +4,11 @@
 
 int main(){
     int n;
-    double a = 5;
-    double b = 20.7;
-    // printf("Nhập n: ");
-    // scanf("%d",&n);
+    printf("Nhập n: ");
+    scanf("%d",&n);
     
-    ptbac1(a,b);
+    int result = kiemTraQuy(n);
+    printf("%d là quý %d",n,result);
 
     return 0;
 }

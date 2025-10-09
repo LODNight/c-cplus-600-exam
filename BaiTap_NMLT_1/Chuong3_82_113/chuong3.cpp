@@ -31,6 +31,35 @@ void ptbac1(double a, double b){
 }
 
 // Bài 85: Nhập vào tháng của 1 năm. Cho biết tháng thuộc quý mấy trong năm
+int kiemTraQuy(int n){
+    switch (n)
+    {
+    case 1:
+    case 2:
+    case 3:
+        return 1;
+        break;
+    case 4:
+    case 5:
+    case 6:
+        return 2;
+        break;
+    case 7:
+    case 8:
+    case 9:
+        return 3;
+        break;
+    case 10:
+    case 11:
+    case 12:
+        return 4;
+        break;
+    default:
+        return 0;
+        break;
+    }
+}
+
 // Bài 86: Tính S(n) = 1^3 + 2^3 + … + N^3
 // Bài 87: Tìm số nguyên dương n nhỏ nhất sao cho 1 + 2 + … + n > 10000
 // Bài 88: Hãy sử dụng vòng lặp for để xuất tất cả các ký tự từ A đến Z
