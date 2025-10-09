@@ -61,6 +61,22 @@ int kiemTraQuy(int n){
 }
 
 // Bài 86: Tính S(n) = 1^3 + 2^3 + … + N^3
+double luyThua(double x, int n){
+    double result = 1;    
+    for(int i=1; i<=n; i++){
+        result *= x;
+    }
+    return result;
+}
+
+int TimSbai86(int n){
+    int total = 0;
+    for(int i=0; i<=n; i++){
+        total += luyThua(i,3);
+    }
+    return total;
+}
+
 // Bài 87: Tìm số nguyên dương n nhỏ nhất sao cho 1 + 2 + … + n > 10000
 // Bài 88: Hãy sử dụng vòng lặp for để xuất tất cả các ký tự từ A đến Z
 // Bài 89: Viết chương trình tính tổng các giá trị lẻ nguyên dương nhỏ hơn N

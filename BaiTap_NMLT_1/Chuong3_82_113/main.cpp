@@ -7,8 +7,8 @@ int main(){
     printf("Nhập n: ");
     scanf("%d",&n);
     
-    int result = kiemTraQuy(n);
-    printf("%d là quý %d",n,result);
+    int result = TimSbai86(n);
+    printf("Kết quả: %d",result);
 
     return 0;
 }
