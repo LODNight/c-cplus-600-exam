@@ -2,8 +2,8 @@
 
 // Bài 82: Viết chương trình tìm số lớn nhất trong 3 số thực a, b, c
 double timSoThucLonNhat(double a, double b, double c);
-
 // Bài 83: Viết chương trình nhập 2 số thực, kiểm tra xem chúng có cùng dấu hay không
+bool kiemTraDau(double a, double b);
 // Bài 84: Viết chương trình giải và biện luận phương trình bậc nhất ax + b = 0
 // Bài 85: Nhập vào tháng của 1 năm. Cho biết tháng thuộc quý mấy trong năm
 // Bài 86: Tính S(n) = 1^3 + 2^3 + … + N^3

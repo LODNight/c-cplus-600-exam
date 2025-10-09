@@ -10,6 +10,16 @@ double timSoThucLonNhat(double a, double b, double c){
 }
 
 // Bài 83: Viết chương trình nhập 2 số thực, kiểm tra xem chúng có cùng dấu hay không
+bool kiemTraDau(double a, double b){
+    // Cách 1: Kiểm tra bằng if else đơn giản
+    if(a == 0 || b == 0) return false;
+    if(a > 0 && b < 0) return false;
+    return true;
+
+    // Cách 2: Return vể Phép nhân. nếu nhân nhau > 0 => cùng dấu, còn lại trái dấu
+    return (a*b > 0);
+}
+
 // Bài 84: Viết chương trình giải và biện luận phương trình bậc nhất ax + b = 0
 // Bài 85: Nhập vào tháng của 1 năm. Cho biết tháng thuộc quý mấy trong năm
 // Bài 86: Tính S(n) = 1^3 + 2^3 + … + N^3

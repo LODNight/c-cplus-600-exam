@@ -4,15 +4,14 @@
 
 int main(){
     int n;
-    double a = 20.9;
+    double a = 0;
     double b = 20.7;
-    double c = 12.91;
     // printf("Nhập n: ");
     // scanf("%d",&n);
     
-    double result = timSoThucLonNhat(a,b,c);
-
-    printf("%lf",result);
+    bool result = kiemTraDau(a, b);
+    if(result) printf("Cùng dấu");
+    else printf("Trái dấu");
 
     return 0;
 }
