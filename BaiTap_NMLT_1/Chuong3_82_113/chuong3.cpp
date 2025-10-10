@@ -158,6 +158,12 @@ int tongCacSoNguyenToNhoHonN(int n){
 }
 
 // Bài 94: Viết chương trình in ra tất cả các số lẻ nhỏ hơn 100 trừ các số 5, 7, 93
+void inSoLeTruCacSoDaCho(){
+    for(int i=0; i<100; i++){
+        if(i==5 || i==7 || i==93) continue;
+        if(i%2 != 0) printf("%d ",i);
+    }
+}
 // Bài 95: Viết chương trình nhập 3 số thực. Hãy thay tất	 cả các số âm bằng trị tuyệt đối của nó
 // Bài 96: Viết chương trình nhập giá trị x sau tính giá trị của hàm số
 // f(x) = 2x^2 + 5x + 9 khi x >= 5, f(x) = -2x^2 + 4x – 9 khi x < 5

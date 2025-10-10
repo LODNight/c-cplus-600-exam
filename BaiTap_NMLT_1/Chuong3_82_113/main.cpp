@@ -9,8 +9,9 @@ int main(){
     // printf("Nhập m: ");
     // scanf("%d",&m);
 
-    int result = tongCacSoNguyenToNhoHonN(n);
-    printf("Kết quả: %d",result);
+    // int result = tongCacSoNguyenToNhoHonN(n);
+    // printf("Kết quả: %d",result);
+    inSoLeTruCacSoDaCho();
 
     return 0;
 }
