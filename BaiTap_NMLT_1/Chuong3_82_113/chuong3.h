@@ -24,6 +24,8 @@ void inSoLeDuoi100();
 // Bài 92: Tìm ước số chung lớn nhất của 2 số nguyên dương
 int timUocChungLonNhat(int a, int b);
 // Bài 93: Tính tổng các số nguyên tố nhỏ hơn N (N nguyên dương)
+bool kiemTraSoNguyenTo(int n);
+int tongCacSoNguyenToNhoHonN(int n);
 // Bài 94: Viết chương trình in ra tất cả các số lẻ nhỏ hơn 100 trừ các số 5, 7, 93
 // Bài 95: Viết chương trình nhập 3 số thực. Hãy thay tất	 cả các số âm bằng trị tuyệt đối của nó
 // Bài 96: Viết chương trình nhập giá trị x sau tính giá trị của hàm số

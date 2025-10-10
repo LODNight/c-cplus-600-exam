@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <math.h>
 
 
 // Bài 82: Viết chương trình tìm số lớn nhất trong 3 số thực a, b, c
@@ -137,7 +138,25 @@ int timUocChungLonNhat(int a, int b){
     }
     return uocChung;
 }
+
 // Bài 93: Tính tổng các số nguyên tố nhỏ hơn N (N nguyên dương)
+bool kiemTraSoNguyenTo(int n){
+    if(n <= 1) return false;
+    for(int i=2; i <= sqrt(n); i++){
+        if(n%i==0) return false;
+    }
+    return true;
+}
+
+int tongCacSoNguyenToNhoHonN(int n){
+    if(n<=2) return 0;
+    int tong=0;
+    for(int i=2; i<n; i++){
+        if(kiemTraSoNguyenTo(i)) tong += i;
+    }
+    return tong;
+}
+
 // Bài 94: Viết chương trình in ra tất cả các số lẻ nhỏ hơn 100 trừ các số 5, 7, 93
 // Bài 95: Viết chương trình nhập 3 số thực. Hãy thay tất	 cả các số âm bằng trị tuyệt đối của nó
 // Bài 96: Viết chương trình nhập giá trị x sau tính giá trị của hàm số

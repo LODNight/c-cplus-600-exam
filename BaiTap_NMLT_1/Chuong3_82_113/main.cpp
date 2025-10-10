@@ -6,10 +6,10 @@ int main(){
     int n,m;
     printf("Nhập n: ");
     scanf("%d",&n);
-    printf("Nhập m: ");
-    scanf("%d",&m);
+    // printf("Nhập m: ");
+    // scanf("%d",&m);
 
-    int result = timUocChungLonNhat(n,m);
+    int result = tongCacSoNguyenToNhoHonN(n);
     printf("Kết quả: %d",result);
 
     return 0;
