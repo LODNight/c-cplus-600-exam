@@ -4,11 +4,12 @@
 
 int main(){
     int n;
-    printf("Nhập n: ");
-    scanf("%d",&n);
+    // printf("Nhập n: ");
+    // scanf("%d",&n);
 
-    int result = timMLonNhaKhiTongBeHonN(n);
-    printf("Kết quả: %d",result);
+    // int result = timMLonNhaKhiTongBeHonN(n);
+    // printf("Kết quả: %d",result);
+    inSoLeDuoi100();
 
     return 0;
 }

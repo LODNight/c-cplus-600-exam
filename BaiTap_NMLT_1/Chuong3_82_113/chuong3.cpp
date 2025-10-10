@@ -119,6 +119,12 @@ int timMLonNhaKhiTongBeHonN(int n){
     return i-1;
 }
 // Bài 91: In tất cả các số nguyên dương lẻ nhỏ hơn 100
+void inSoLeDuoi100(){
+    for(int i=0; i<100; i++){
+        if(i % 2 != 0) printf("%d ",i);
+    }
+}
+
 // Bài 92: Tìm ước số chung lớn nhất của 2 số nguyên dương
 // Bài 93: Tính tổng các số nguyên tố nhỏ hơn N (N nguyên dương)
 // Bài 94: Viết chương trình in ra tất cả các số lẻ nhỏ hơn 100 trừ các số 5, 7, 93
