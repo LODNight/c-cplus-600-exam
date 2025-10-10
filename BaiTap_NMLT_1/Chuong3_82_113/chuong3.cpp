@@ -126,6 +126,17 @@ void inSoLeDuoi100(){
 }
 
 // Bài 92: Tìm ước số chung lớn nhất của 2 số nguyên dương
+int timUocChungLonNhat(int a, int b){
+    if(a<=0 || b<=0) return 0;
+    int max = a;
+    if(b>max) max=b;
+
+    int uocChung = 0;
+    for(int i=1; i<max; i++){
+        if(a%i==0 && b%i==0) uocChung = i;
+    }
+    return uocChung;
+}
 // Bài 93: Tính tổng các số nguyên tố nhỏ hơn N (N nguyên dương)
 // Bài 94: Viết chương trình in ra tất cả các số lẻ nhỏ hơn 100 trừ các số 5, 7, 93
 // Bài 95: Viết chương trình nhập 3 số thực. Hãy thay tất	 cả các số âm bằng trị tuyệt đối của nó

@@ -3,13 +3,14 @@
 #include "chuong3.cpp"
 
 int main(){
-    int n;
-    // printf("Nhập n: ");
-    // scanf("%d",&n);
+    int n,m;
+    printf("Nhập n: ");
+    scanf("%d",&n);
+    printf("Nhập m: ");
+    scanf("%d",&m);
 
-    // int result = timMLonNhaKhiTongBeHonN(n);
-    // printf("Kết quả: %d",result);
-    inSoLeDuoi100();
+    int result = timUocChungLonNhat(n,m);
+    printf("Kết quả: %d",result);
 
     return 0;
 }
