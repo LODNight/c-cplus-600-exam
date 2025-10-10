@@ -164,7 +164,14 @@ void inSoLeTruCacSoDaCho(){
         if(i%2 != 0) printf("%d ",i);
     }
 }
-// Bài 95: Viết chương trình nhập 3 số thực. Hãy thay tất	 cả các số âm bằng trị tuyệt đối của nó
+
+// Bài 95: Viết chương trình nhập 3 số thực. Hãy thay tất cả các số âm bằng trị tuyệt đối của nó
+void thayDoiSoAm(double a, double b, double c){
+    if(a < 0) a *= -1.0;
+    if(b < 0) b *= -1.0;
+    if(c < 0) c *= -1.0;
+    printf("%lf %lf %lf", a,b,c);
+}
 // Bài 96: Viết chương trình nhập giá trị x sau tính giá trị của hàm số
 // f(x) = 2x^2 + 5x + 9 khi x >= 5, f(x) = -2x^2 + 4x – 9 khi x < 5
 // Bài 97: Viết chương trình nhập 3 cạnh của 1 tam giác, cho biết đó là tam giác gì
