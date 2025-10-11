@@ -173,7 +173,9 @@ void thayDoiSoAm(double a, double b, double c){
     printf("%lf %lf %lf", a,b,c);
 }
 // Bài 96: Viết chương trình nhập giá trị x sau tính giá trị của hàm số
-// f(x) = 2x^2 + 5x + 9 khi x >= 5, f(x) = -2x^2 + 4x – 9 khi x < 5
+// f(x) = 2x^2 + 5x + 9 khi x >= 5, 
+// f(x) = -2x^2 + 4x – 9 khi x < 5
+
 // Bài 97: Viết chương trình nhập 3 cạnh của 1 tam giác, cho biết đó là tam giác gì
 // Bài 98: Lập chương trình giải hệ: ax + by = c
 // Dx + ey = f. Các hệ số nhập từ bàn phím
@@ -181,6 +183,40 @@ void thayDoiSoAm(double a, double b, double c){
 // Bài 100: Viết chương trình giải phương trình bậc 2
 // Bài 101: Viết chương trình nhập tháng, năm. Hãy cho biết tháng đó có bao nhiêu ngày
 // Bài 102: Viết chương trình nhập vào 1 ngày (ngày, tháng, năm). Tìm ngày kế ngày vừa nhập (ngày, tháng, năm)
+int timSoNgayTrongThang(int m, int y){
+    if (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12){
+        return 31;
+    } 
+    if (m == 4 || m == 6 || m == 9 || m == 11){
+        return 30;
+    } else {
+        return timNamNhuan(y);
+    }
+}
+
+int timNamNhuan(int y){
+    if((y % 400 == 0) || (y % 4 == 0 && y % 100 != 0)){
+        return 29;
+    } else {
+        return 28;
+    }
+}
+
+void timNgayKeTiep(int d, int m, int y){
+    int max_d = timSoNgayTrongThang(m,y); 
+    if(d < max_d){
+        d++;
+    } 
+    if(d > max_d){
+        d= 1;
+        m++;
+    }
+    if(m > 12){
+        y++;
+        m = 1;
+    }
+    printf("%d/%d/%d",d,m,y);
+}
 // Bài 103: Viết chương trình nhập vào 1 ngày ( ngày, tháng, năm). Tìm ngày trước ngày vừa nhập (ngày, tháng, năm)
 // Bài 104: Viết chương trình nhập ngày, tháng, năm. Tính xem ngày đó là ngày thứ bao nhiêu trong năm
 // Bài 105: Viết chương trình nhập 1 số nguyên có 2 chữ số. Hãy in ra cách đọc của số nguyên này
@@ -191,6 +227,19 @@ void thayDoiSoAm(double a, double b, double c){
 // Bài 110: Cần có tổng 200000 đồng từ 3 loại giấy bạc 1000 đồng, 
 // 2000 đồng, 5000 đồng. 
 // Lập chương trình để tìm ra tất cả các phương án có thể
+void Doitien(int n){
+    // x * 1000 + y * 2000 + 5000 * z = n
+    for(int soto5000 = 0; soto5000 * 5000 <= n; soto5000++){
+        for(int soTo2000 = 0; soTo2000 * 2000 + soto5000 * 5000 <=n; soTo2000++){
+            int soTienConLai = n - (soTo2000 * 2000 + soto5000 * 5000);
+            if(soTienConLai % 1000 == 0){
+                int soto1000 = soTienConLai / 1000;
+                printf("%5d to 5000 + %5d to 2000 + %5d to 1000\n",soto5000,soTo2000,soto1000);
+            }
+        }
+    }
+
+}
 // Bài 111: Viết chương trình in ra tam giác cân có độ cao h
 // a. Tam giác cân đặc nằm giữa màn hình
 
