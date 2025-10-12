@@ -32,6 +32,7 @@ void inSoLeTruCacSoDaCho();
 void thayDoiSoAm(double a, double b, double c);
 // Bài 96: Viết chương trình nhập giá trị x sau tính giá trị của hàm số
 // f(x) = 2x^2 + 5x + 9 khi x >= 5, f(x) = -2x^2 + 4x – 9 khi x < 5
+double tinhGiaTriHamSo(double n);
 // Bài 97: Viết chương trình nhập 3 cạnh của 1 tam giác, cho biết đó là tam giác gì
 // Bài 98: Lập chương trình giải hệ: ax + by = c
 // Dx + ey = f. Các hệ số nhập từ bàn phím
