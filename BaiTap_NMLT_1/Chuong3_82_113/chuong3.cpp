@@ -184,6 +184,28 @@ double tinhGiaTriHamSo(double n){
 }
 
 // Bài 97: Viết chương trình nhập 3 cạnh của 1 tam giác, cho biết đó là tam giác gì
+// Tổng 2 cạnh phải lớn hơn cạnh còn lại
+// a = b = c    => Đều
+// a = b        => Cân
+void xacDinhHinhTamGiac(double a, double b, double c){
+    if(a<=0 || b <=0 || c<=0 || a+b<=c || a+c<=b || b+c<=a) {
+        printf("Không phải là 3 cạnh của tam giác");
+        return;
+    }
+    double a2 = a*a;
+    double b2 = b*b;
+    double c2 = c*c;
+    if(a==b && b==c){
+        printf("Tam giác ĐỀU");
+    }
+    else if(a2+b2==c2 || a2+c2==b2 || b2+c2==a2){
+        // Kiểm tra vuông cân
+        if(a==b || a==c || b==c) printf("Tam giác VUÔNG CÂN");
+        else printf("Tam giác VUÔNG");
+    }
+    else if(a==b || a==c || c==b) printf("Tam giác CÂN");
+    else printf("Tam giác THƯỜNG");
+}
 // Bài 98: Lập chương trình giải hệ: ax + by = c
 // Dx + ey = f. Các hệ số nhập từ bàn phím
 // Bài 99: Viết chương trình nhập vào 3 số thực. Hãy in 3 số ấy ra màn hình theo thứ tự tăng dần mà chỉ dùng tối đa 1 biến phụ
