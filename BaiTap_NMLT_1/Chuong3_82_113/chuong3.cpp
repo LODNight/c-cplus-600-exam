@@ -300,8 +300,6 @@ int timSoNgayTrongThang(int m, int y){
     }
 }
 // Bài 102: Viết chương trình nhập vào 1 ngày (ngày, tháng, năm). Tìm ngày kế ngày vừa nhập (ngày, tháng, năm)
-
-
 void timNgayKeTiep(int d, int m, int y){
     int max_d = timSoNgayTrongThang(m,y); 
     if(d < max_d){
@@ -318,6 +316,25 @@ void timNgayKeTiep(int d, int m, int y){
     printf("%d/%d/%d",d,m,y);
 }
 // Bài 103: Viết chương trình nhập vào 1 ngày ( ngày, tháng, năm). Tìm ngày trước ngày vừa nhập (ngày, tháng, năm)
+void timNgayTruoc(int d, int m, int y){
+    if(m < 1 || m > 12 || d < 1 || d > timSoNgayTrongThang(m,y)) return;
+    if(d > 1){
+        d--;
+    } 
+    if(d == 1){
+        if(m == 1){
+            y--;
+            m = 12;
+            d = timSoNgayTrongThang(12,y);
+        }
+        else{
+            m--;
+            d = timSoNgayTrongThang(m,y);
+        }
+        
+    }
+    printf("%d/%d/%d",d,m,y);
+}
 // Bài 104: Viết chương trình nhập ngày, tháng, năm. Tính xem ngày đó là ngày thứ bao nhiêu trong năm
 // Bài 105: Viết chương trình nhập 1 số nguyên có 2 chữ số. Hãy in ra cách đọc của số nguyên này
 // Bài 106 Viết chương trình nhập 1 số nguyên có 3 chữ số. Hãy in ra cách đọc của số nguyên này
