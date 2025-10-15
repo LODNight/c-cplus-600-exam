@@ -231,6 +231,33 @@ void soThucTangDan(double a, double b, double c){
 }
 
 // Bài 100: Viết chương trình giải phương trình bậc 2
+void ptBac2(double a, double b, double c){
+    // ax^2 + bx + c = 0
+    if(a==0){
+        if(b==0){
+            printf("Vô nghiệm");
+        } else {
+            printf("Pt có 1 nghiệm %lf", (-c/b));
+        }
+        return;
+    }
+
+    double delta = (b*b) - (4*a*c);
+    double x1,x2;
+    if(delta > 0 ){
+        x1 = (-b + sqrt(delta))/(2*a);
+        x2 = (-b - sqrt(delta))/(2*a);
+        printf("Phương trình có 2 nghiệm: x1 = %lf | x2 = %lf", x1,x2);
+    } 
+    else if (delta == 0){
+        x1 = x2 = -b / (2*a);
+        printf("Phương trình có 1 nghiệm kép %lf",x1);
+    }
+    else {
+        printf("Phương trình vô nghiệm");
+    }
+    
+}
 // Bài 101: Viết chương trình nhập tháng, năm. Hãy cho biết tháng đó có bao nhiêu ngày
 // Bài 102: Viết chương trình nhập vào 1 ngày (ngày, tháng, năm). Tìm ngày kế ngày vừa nhập (ngày, tháng, năm)
 int timSoNgayTrongThang(int m, int y){
@@ -252,7 +279,7 @@ int timNamNhuan(int y){
     }
 }
 
-void timNgayKeTiep(int d, int m, int y){
+void timNgayKeTiep(int d, int m, int y)
     int max_d = timSoNgayTrongThang(m,y); 
     if(d < max_d){
         d++;
