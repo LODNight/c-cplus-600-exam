@@ -20,7 +20,7 @@ int main(){
     printf("Nhập c: ");
     scanf("%lf",&c);
 
-    xacDinhHinhTamGiac(a,b,c);
+    soThucTangDan(a,b,c);
 
     return 0;
 }

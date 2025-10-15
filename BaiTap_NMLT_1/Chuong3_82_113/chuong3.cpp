@@ -208,7 +208,28 @@ void xacDinhHinhTamGiac(double a, double b, double c){
 }
 // Bài 98: Lập chương trình giải hệ: ax + by = c
 // Dx + ey = f. Các hệ số nhập từ bàn phím
+
 // Bài 99: Viết chương trình nhập vào 3 số thực. Hãy in 3 số ấy ra màn hình theo thứ tự tăng dần mà chỉ dùng tối đa 1 biến phụ
+void soThucTangDan(double a, double b, double c){
+    double temp = 0;
+    if(a > b){
+        temp = b;
+        b = a; 
+        a = temp;
+    } 
+    if(b > c){
+        temp = c;
+        c = b;
+        b = temp;
+    }
+    if(c > a){
+        temp = a;
+        a = c;
+        c = temp;
+    }
+    printf("%lf %lf %lf",c,b,a);
+}
+
 // Bài 100: Viết chương trình giải phương trình bậc 2
 // Bài 101: Viết chương trình nhập tháng, năm. Hãy cho biết tháng đó có bao nhiêu ngày
 // Bài 102: Viết chương trình nhập vào 1 ngày (ngày, tháng, năm). Tìm ngày kế ngày vừa nhập (ngày, tháng, năm)
