@@ -281,7 +281,14 @@ void ptBac2(double a, double b, double c){
     
 }
 // Bài 101: Viết chương trình nhập tháng, năm. Hãy cho biết tháng đó có bao nhiêu ngày
-// Bài 102: Viết chương trình nhập vào 1 ngày (ngày, tháng, năm). Tìm ngày kế ngày vừa nhập (ngày, tháng, năm)
+int timNamNhuan(int y){
+    if((y % 400 == 0) || (y % 4 == 0 && y % 100 != 0)){
+        return 29;
+    } else {
+        return 28;
+    }
+}
+
 int timSoNgayTrongThang(int m, int y){
     if (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12){
         return 31;
@@ -292,14 +299,8 @@ int timSoNgayTrongThang(int m, int y){
         return timNamNhuan(y);
     }
 }
+// Bài 102: Viết chương trình nhập vào 1 ngày (ngày, tháng, năm). Tìm ngày kế ngày vừa nhập (ngày, tháng, năm)
 
-int timNamNhuan(int y){
-    if((y % 400 == 0) || (y % 4 == 0 && y % 100 != 0)){
-        return 29;
-    } else {
-        return 28;
-    }
-}
 
 void timNgayKeTiep(int d, int m, int y){
     int max_d = timSoNgayTrongThang(m,y); 
