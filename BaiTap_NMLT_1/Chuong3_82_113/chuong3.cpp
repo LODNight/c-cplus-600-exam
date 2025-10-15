@@ -279,7 +279,7 @@ int timNamNhuan(int y){
     }
 }
 
-void timNgayKeTiep(int d, int m, int y)
+void timNgayKeTiep(int d, int m, int y){
     int max_d = timSoNgayTrongThang(m,y); 
     if(d < max_d){
         d++;

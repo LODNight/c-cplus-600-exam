@@ -40,6 +40,7 @@ void xacDinhHinhTamGiac(double a, double b, double c);
 // Bài 99: Viết chương trình nhập vào 3 số thực. Hãy in 3 số ấy ra màn hình theo thứ tự tăng dần mà chỉ dùng tối đa 1 biến phụ
 void soThucTangDan(double a, double b, double c);
 // Bài 100: Viết chương trình giải phương trình bậc 2
+void ptBac2(double a, double b, double c);
 // Bài 101: Viết chương trình nhập tháng, năm. Hãy cho biết tháng đó có bao nhiêu ngày
 // Bài 102: Viết chương trình nhập vào 1 ngày (ngày, tháng, năm). Tìm ngày kế ngày vừa nhập (ngày, tháng, năm)
 void timNgayKeTiep(int d, int m, int y);
