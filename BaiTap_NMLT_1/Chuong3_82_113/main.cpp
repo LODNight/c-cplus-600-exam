@@ -24,7 +24,7 @@ int main(){
     printf("Nhập \"day/month/year\": ");
     scanf("%d/%d/%d",&d,&m,&y);
 
-    timNgayTruoc(d,m,y);
+    timNgayTrongNam(d,m,y);
 
     return 0;
 }

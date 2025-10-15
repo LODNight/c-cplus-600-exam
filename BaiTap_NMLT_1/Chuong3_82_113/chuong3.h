@@ -49,8 +49,9 @@ int timSoNgayTrongThang(int m, int y);
 void timNgayKeTiep(int d, int m, int y);
 // Bài 103: Viết chương trình nhập vào 1 ngày ( ngày, tháng, năm). Tìm ngày trước ngày vừa nhập (ngày, tháng, năm)
 void timNgayTruoc(int d, int m, int y);
-
 // Bài 104: Viết chương trình nhập ngày, tháng, năm. Tính xem ngày đó là ngày thứ bao nhiêu trong năm
+void timNgayTrongNam(int d, int m, int y);
+
 // Bài 105: Viết chương trình nhập 1 số nguyên có 2 chữ số. Hãy in ra cách đọc của số nguyên này
 // Bài 106 Viết chương trình nhập 1 số nguyên có 3 chữ số. Hãy in ra cách đọc của số nguyên này
 // Bài 107: Viết hàm tính S = CanBacN(x)
