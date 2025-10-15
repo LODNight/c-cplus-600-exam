@@ -187,6 +187,7 @@ double tinhGiaTriHamSo(double n){
 // Tổng 2 cạnh phải lớn hơn cạnh còn lại
 // a = b = c    => Đều
 // a = b        => Cân
+
 void xacDinhHinhTamGiac(double a, double b, double c){
     if(a<=0 || b <=0 || c<=0 || a+b<=c || a+c<=b || b+c<=a) {
         printf("Không phải là 3 cạnh của tam giác");
@@ -206,8 +207,29 @@ void xacDinhHinhTamGiac(double a, double b, double c){
     else if(a==b || a==c || c==b) printf("Tam giác CÂN");
     else printf("Tam giác THƯỜNG");
 }
-// Bài 98: Lập chương trình giải hệ: ax + by = c
+// Bài 98: Lập chương trình giải hệ: 
+// ax + by = c
 // Dx + ey = f. Các hệ số nhập từ bàn phím
+void tinhHePhuongTrinh(double a, double b, double c, double d, double e, double f){
+    double D = a * e - b * d;
+    double Dx = c * e - b * f;
+    double Dy = a * f - c * d;
+    double EPSILON = 1e-6;
+    if(fabs(D) > EPSILON){
+        double x = Dx / D;
+        double y = Dy / D;
+        printf("Pt có nghiệm duy nhất");
+        printf("x = %lf\n",x);
+        printf("y = %lf\n",y);
+    } else {
+        if(fabs(Dx) < EPSILON && fabs(Dy) < EPSILON){
+            printf("Phương trình có vô số nghiệm");
+        }
+        else{
+            printf("Phương trình vô nghiệm");
+        }
+    }
+}
 
 // Bài 99: Viết chương trình nhập vào 3 số thực. Hãy in 3 số ấy ra màn hình theo thứ tự tăng dần mà chỉ dùng tối đa 1 biến phụ
 void soThucTangDan(double a, double b, double c){

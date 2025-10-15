@@ -37,6 +37,7 @@ double tinhGiaTriHamSo(double n);
 void xacDinhHinhTamGiac(double a, double b, double c);
 // Bài 98: Lập chương trình giải hệ: ax + by = c
 // Dx + ey = f. Các hệ số nhập từ bàn phím
+void tinhHePhuongTrinh(double a, double b, double c, double d, double e, double f);
 // Bài 99: Viết chương trình nhập vào 3 số thực. Hãy in 3 số ấy ra màn hình theo thứ tự tăng dần mà chỉ dùng tối đa 1 biến phụ
 void soThucTangDan(double a, double b, double c);
 // Bài 100: Viết chương trình giải phương trình bậc 2

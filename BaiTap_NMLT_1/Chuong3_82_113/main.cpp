@@ -13,14 +13,20 @@ int main(){
     // printf("Kết quả: %lf",result);
 
     double a,b,c;
-    printf("Nhập a: ");
-    scanf("%lf",&a);
-    printf("Nhập b: ");
-    scanf("%lf",&b);
-    printf("Nhập c: ");
-    scanf("%lf",&c);
+    double d,e,f;
+    // printf("Nhập a: ");
+    // scanf("%lf",&a);
+    // printf("Nhập b: ");
+    // scanf("%lf",&b);
+    // printf("Nhập c: ");
+    // scanf("%lf",&c);
 
-    ptBac2(a,b,c);
+    printf("Nhập a,b,c (pt1 = ax + by = c)");
+    scanf("%lf %lf %lf",&a,&b,&c);
+    printf("Nhập d,e,f (pt2 = dx + ey = f)");
+    scanf("%lf %lf %lf",&d,&e,&f);
+
+    tinhHePhuongTrinh(a,b,c,d,e,f);
 
     return 0;
 }
