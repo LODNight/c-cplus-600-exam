@@ -26,6 +26,6 @@ int main(){
 
     // timNgayTrongNam(d,m,y);
 
-    inBangCuuChuong(3);
+    inHinhChuNhatRong(3,4);
     return 0;
 }

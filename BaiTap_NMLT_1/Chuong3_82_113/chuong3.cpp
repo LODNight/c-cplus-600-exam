@@ -380,6 +380,24 @@ void Doitien(int n){
 // d. Tam giác vuông cân rỗng
 // Bài 112: Viết chương trình in ra hình chữ nhật có kích thước m x n
 // a. Hình chữ nhật đặc
+void inHinhChuNhatDac(int n, int m){
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+}
 // b. Hình chữ nhật rỗng
+void inHinhChuNhatRong(int n, int m){
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            if(i==0 || i==n-1 || j==0 || j==m-1) printf("*");
+            else printf(" ");           
+            printf(" ");
+        }
+        printf("\n");
+    }
+}
 // Bài 113: Lập chương trình tính sin(x) với độ chính xác 0.00001 theo công thức
 // Sin(x) = x – x^3/3! + x^5/5! + … + (-1)^n . x^(2n + 1)/(2n + 1)!

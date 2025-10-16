@@ -70,6 +70,8 @@ void Doitien(int n);
 // d. Tam giác vuông cân rỗng
 // Bài 112: Viết chương trình in ra hình chữ nhật có kích thước m x n
 // a. Hình chữ nhật đặc
+void inHinhChuNhatDac(int n, int m);
 // b. Hình chữ nhật rỗng
+void inHinhChuNhatRong(int n, int m);
 // Bài 113: Lập chương trình tính sin(x) với độ chính xác 0.00001 theo công thức
 // Sin(x) = x – x^3/3! + x^5/5! + … + (-1)^n . x^(2n + 1)/(2n + 1)!
