@@ -64,10 +64,14 @@ void inBangCuuChuong(int n);
 void Doitien(int n);
 // Bài 111: Viết chương trình in ra tam giác cân có độ cao h
 // a. Tam giác cân đặc nằm giữa màn hình
-
+void inTamGiacCanDac(int n);
 // b. Tam giác cân rỗng nằm giữa màn hình
+void inTamGiacCanRong(int n);
 // c. Tam giác vuông cân đặc
+void inTamGiacVuongCanDac(int n);
 // d. Tam giác vuông cân rỗng
+void inTamGiacVuongCanRong(int n);
+
 // Bài 112: Viết chương trình in ra hình chữ nhật có kích thước m x n
 // a. Hình chữ nhật đặc
 void inHinhChuNhatDac(int n, int m);

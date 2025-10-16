@@ -375,9 +375,54 @@ void Doitien(int n){
 }
 // Bài 111: Viết chương trình in ra tam giác cân có độ cao h
 // a. Tam giác cân đặc nằm giữa màn hình
+void inTamGiacCanDac(int n){
+    for(int i=0; i<n; i++){
+        for(int j=0; j<(n-1-i); j++){
+            printf(" ");
+        }
+        for(int k=0; k<(i*2+1);k++){
+            printf("*");
+        }
+        printf("\n");
+    }
+}
 // b. Tam giác cân rỗng nằm giữa màn hình
+void inTamGiacCanRong(int n){
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n-i-1; j++){
+            printf(" ");
+        }
+        for(int k=0; k<(i*2+1); k++){
+            if(k==(i*2) || k==0 || i==n-1){
+                printf("*");
+            } else {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
 // c. Tam giác vuông cân đặc
+void inTamGiacVuongCanDac(int n){
+    for(int i=0; i<=n; i++){
+        for(int j=0; j<=i;j++){
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
 // d. Tam giác vuông cân rỗng
+void inTamGiacVuongCanRong(int n){
+    for(int i=0; i<=n; i++){
+        for(int j=0; j<=i;j++){
+            if(i==0 || i==n || j==0 || j==i) printf("*");
+            else printf(" ");
+            printf(" ");
+        } 
+        printf("\n");
+    }
+}
+
 // Bài 112: Viết chương trình in ra hình chữ nhật có kích thước m x n
 // a. Hình chữ nhật đặc
 void inHinhChuNhatDac(int n, int m){
