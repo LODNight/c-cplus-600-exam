@@ -348,9 +348,68 @@ void timNgayTrongNam(int d, int m, int y){
     printf("%d",days + d);
 }
 // Bài 105: Viết chương trình nhập 1 số nguyên có 2 chữ số. Hãy in ra cách đọc của số nguyên này
+void docChuSo(int n){
+    if(abs(n)>10){
+       printf("Vui Long nhap so co 1 chu so");
+       return; 
+    }
+    if(n<0) printf("Am ");
+    switch (abs(n))
+    {
+    case 0: printf("Khong"); break;
+    case 1: printf("Mot"); break;
+    case 2: printf("Hai"); break;
+    case 3: printf("BVa"); break;
+    case 4: printf("Bon"); break;
+    case 5: printf("Nam"); break;
+    case 6: printf("Sau"); break;
+    case 7: printf("Bay"); break;
+    case 8: printf("Tam"); break;
+    case 9: printf("Chin"); break;
+    }
+}
+void docHaiChuSo(int n){
+    if(abs(n)>99){
+        printf("Nhap chu so co it hon 3 chu so");
+        return;
+    }
+    if(abs(n)<10){
+        docChuSo(n);
+        return;
+    } 
+    if(n<0){
+        printf("Am ");
+        n = abs(n);
+    } 
+
+    int chuc = n / 10;
+    int don_vi = n % 10;
+    // Hang Chuc
+    if(chuc == 1){
+        printf("Muoi "); // 13: Muoi Ba  | 15: Muoi Lam
+    } else {
+        docChuSo(chuc);     // 30: Ba Muoi | 40: Bon Muoi
+        printf(" muoi");
+    }
+
+    // Hang Don Vi
+    //
+    if(don_vi != 0){
+        // 13, 15, 17
+        if(don_vi == 5){
+            printf(" lam");
+        } else {
+            printf(" ");
+            docChuSo(don_vi);
+        }
+       
+    }
+
+}
 // Bài 106 Viết chương trình nhập 1 số nguyên có 3 chữ số. Hãy in ra cách đọc của số nguyên này
 // Bài 107: Viết hàm tính S = CanBacN(x)
 // Bài 108: Viết hàm tính S = x^y
+
 // Bài 109: Viết chương trình in bảng cửu chương ra màn hình
 void inBangCuuChuong(int n){
     for(int i=1; i<=10; i++){

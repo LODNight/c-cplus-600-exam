@@ -53,6 +53,8 @@ void timNgayTruoc(int d, int m, int y);
 void timNgayTrongNam(int d, int m, int y);
 
 // Bài 105: Viết chương trình nhập 1 số nguyên có 2 chữ số. Hãy in ra cách đọc của số nguyên này
+void docChuSo(int n);
+void docHaiChuSo(int n);
 // Bài 106 Viết chương trình nhập 1 số nguyên có 3 chữ số. Hãy in ra cách đọc của số nguyên này
 // Bài 107: Viết hàm tính S = CanBacN(x)
 // Bài 108: Viết hàm tính S = x^y
