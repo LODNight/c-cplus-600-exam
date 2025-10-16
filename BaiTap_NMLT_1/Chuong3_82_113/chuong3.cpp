@@ -352,6 +352,11 @@ void timNgayTrongNam(int d, int m, int y){
 // Bài 107: Viết hàm tính S = CanBacN(x)
 // Bài 108: Viết hàm tính S = x^y
 // Bài 109: Viết chương trình in bảng cửu chương ra màn hình
+void inBangCuuChuong(int n){
+    for(int i=1; i<=10; i++){
+        printf("%d x %d = %d\n",n,i,n*i);
+    }
+}
 // Bài 110: Cần có tổng 200000 đồng từ 3 loại giấy bạc 1000 đồng, 
 // 2000 đồng, 5000 đồng. 
 // Lập chương trình để tìm ra tất cả các phương án có thể
@@ -370,7 +375,6 @@ void Doitien(int n){
 }
 // Bài 111: Viết chương trình in ra tam giác cân có độ cao h
 // a. Tam giác cân đặc nằm giữa màn hình
-
 // b. Tam giác cân rỗng nằm giữa màn hình
 // c. Tam giác vuông cân đặc
 // d. Tam giác vuông cân rỗng

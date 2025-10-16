@@ -21,10 +21,11 @@ int main(){
     // scanf("%lf",&b);
     // printf("Nhập c: ");
     // scanf("%lf",&c);
-    printf("Nhập \"day/month/year\": ");
-    scanf("%d/%d/%d",&d,&m,&y);
+    // printf("Nhập \"day/month/year\": ");
+    // scanf("%d/%d/%d",&d,&m,&y);
 
-    timNgayTrongNam(d,m,y);
+    // timNgayTrongNam(d,m,y);
 
+    inBangCuuChuong(3);
     return 0;
 }

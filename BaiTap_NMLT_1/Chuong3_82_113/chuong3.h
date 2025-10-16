@@ -57,6 +57,7 @@ void timNgayTrongNam(int d, int m, int y);
 // Bài 107: Viết hàm tính S = CanBacN(x)
 // Bài 108: Viết hàm tính S = x^y
 // Bài 109: Viết chương trình in bảng cửu chương ra màn hình
+void inBangCuuChuong(int n);
 // Bài 110: Cần có tổng 200000 đồng từ 3 loại giấy bạc 1000 đồng, 
 // 2000 đồng, 5000 đồng. 
 // Lập chương trình để tìm ra tất cả các phương án có thể
