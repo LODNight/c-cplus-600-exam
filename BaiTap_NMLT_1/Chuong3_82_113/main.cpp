@@ -26,6 +26,6 @@ int main(){
 
     // timNgayTrongNam(d,m,y);
 
-    docHaiChuSo(55);
+    docBaChuSo(408);
     return 0;
 }

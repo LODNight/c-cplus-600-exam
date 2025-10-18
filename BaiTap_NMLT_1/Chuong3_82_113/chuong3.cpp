@@ -356,16 +356,16 @@ void docChuSo(int n){
     if(n<0) printf("Am ");
     switch (abs(n))
     {
-    case 0: printf("Khong"); break;
-    case 1: printf("Mot"); break;
-    case 2: printf("Hai"); break;
-    case 3: printf("BVa"); break;
-    case 4: printf("Bon"); break;
-    case 5: printf("Nam"); break;
-    case 6: printf("Sau"); break;
-    case 7: printf("Bay"); break;
-    case 8: printf("Tam"); break;
-    case 9: printf("Chin"); break;
+    case 0: printf("khong"); break;
+    case 1: printf("mot"); break;
+    case 2: printf("hai"); break;
+    case 3: printf("ba"); break;
+    case 4: printf("bon"); break;
+    case 5: printf("nam"); break;
+    case 6: printf("sau"); break;
+    case 7: printf("bay"); break;
+    case 8: printf("tam"); break;
+    case 9: printf("chin"); break;
     }
 }
 void docHaiChuSo(int n){
@@ -386,7 +386,7 @@ void docHaiChuSo(int n){
     int don_vi = n % 10;
     // Hang Chuc
     if(chuc == 1){
-        printf("Muoi "); // 13: Muoi Ba  | 15: Muoi Lam
+        printf("muoi "); // 13: Muoi Ba  | 15: Muoi Lam
     } else {
         docChuSo(chuc);     // 30: Ba Muoi | 40: Bon Muoi
         printf(" muoi");
@@ -407,6 +407,34 @@ void docHaiChuSo(int n){
 
 }
 // Bài 106 Viết chương trình nhập 1 số nguyên có 3 chữ số. Hãy in ra cách đọc của số nguyên này
+void docBaChuSo(int n){
+    if(abs(n)>999){
+        printf("Nhap 3 chu so");
+        return;
+    }
+    if(abs(n)<100){
+        docHaiChuSo(n);
+        return;
+    }
+    if(n<0){
+        printf("Am ");
+        n = abs(n);
+    }
+
+    int tram = n/100;
+    int chuc = n%100;
+    int chuc1 = (n/10)%10;
+    int don_vi = n%10;
+
+    docChuSo(tram);
+    printf(" tram ");
+    if(chuc1==0){
+        printf("le ");
+        docChuSo(don_vi);
+    } else {
+        docHaiChuSo(chuc);
+    }
+}
 // Bài 107: Viết hàm tính S = CanBacN(x)
 // Bài 108: Viết hàm tính S = x^y
 
