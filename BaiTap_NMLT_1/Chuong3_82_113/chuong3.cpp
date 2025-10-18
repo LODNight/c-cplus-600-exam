@@ -437,6 +437,13 @@ void docBaChuSo(int n){
 }
 // Bài 107: Viết hàm tính S = CanBacN(x)
 // Bài 108: Viết hàm tính S = x^y
+double tinhMuY(double x, int y){
+    double total = x;
+    for(int i=0; i<y; i++){
+        total*=x;
+    }
+    return total;
+}
 
 // Bài 109: Viết chương trình in bảng cửu chương ra màn hình
 void inBangCuuChuong(int n){

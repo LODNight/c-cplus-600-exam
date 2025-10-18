@@ -59,6 +59,7 @@ void docHaiChuSo(int n);
 void docBaChuSo(int n);
 // Bài 107: Viết hàm tính S = CanBacN(x)
 // Bài 108: Viết hàm tính S = x^y
+double tinhMuY(double x, int y);
 // Bài 109: Viết chương trình in bảng cửu chương ra màn hình
 void inBangCuuChuong(int n);
 // Bài 110: Cần có tổng 200000 đồng từ 3 loại giấy bạc 1000 đồng, 
