@@ -436,11 +436,24 @@ void docBaChuSo(int n){
     }
 }
 // Bài 107: Viết hàm tính S = CanBacN(x)
+double tinhCanhBacN(int n, int x){
+    if(n <= 0){
+        printf("N phai lon hon 0");
+        return 0.0;
+    }
+    if(n%2==0 && x<0){
+        printf("Khong the tinh can bac chan cua mot so am");
+        return 0.0;
+    }
+    if(x==0) return 0.0;
+    
+    return pow(x,1.0/n);
+}
 // Bài 108: Viết hàm tính S = x^y
 double tinhMuY(double x, int y){
     double total = x;
     for(int i=0; i<y; i++){
-        total*=x;
+        total *= x;
     }
     return total;
 }

@@ -58,6 +58,7 @@ void docHaiChuSo(int n);
 // Bài 106 Viết chương trình nhập 1 số nguyên có 3 chữ số. Hãy in ra cách đọc của số nguyên này
 void docBaChuSo(int n);
 // Bài 107: Viết hàm tính S = CanBacN(x)
+double tinhCanhBacN(int n, int x);
 // Bài 108: Viết hàm tính S = x^y
 double tinhMuY(double x, int y);
 // Bài 109: Viết chương trình in bảng cửu chương ra màn hình

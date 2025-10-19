@@ -26,6 +26,7 @@ int main(){
 
     // timNgayTrongNam(d,m,y);
 
-    docBaChuSo(408);
+    double a = tinhCanhBacN(2,16);
+    printf("%.2lf",a);
     return 0;
 }
