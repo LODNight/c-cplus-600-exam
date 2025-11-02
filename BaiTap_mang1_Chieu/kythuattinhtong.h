@@ -1,6 +1,6 @@
 #pragma once
 
-int KiemTraSoNguyenTo(int n);
+bool KiemTraSoNguyenTo(int n);
 double tbcSoNguyenTo(int a[100], int n);
 int timSoAmDauTien(int a[100], int n);
 
@@ -12,6 +12,9 @@ int timViTriCoGiaTriNhoNhat(int a[100], int n);
 
 // Bài 124: Viết hàm kiểm tra trong mảng các số nguyên có tồn tại giá trị chẵn nhỏ hơn 2004 hay không
 bool kiemTraGiaTriChanNhoHon2004(int a[100], int n);
+
+// Bài 125: Viết hàm đếm số lượng số nguyên tố nhỏ hơn 100 trong mảng
+int demSoLuongSoNguyenTo(int a[100], int n);
 
 void thongKePhanTuTrongMang(int a[100], int n);
 

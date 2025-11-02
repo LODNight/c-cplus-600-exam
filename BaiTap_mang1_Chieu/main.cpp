@@ -14,14 +14,8 @@ int main(){
     NhapMang(a,n);
     XuatMang(a,n);
 
-    // int kq = timViTriCoGiaTriNhoNhat(a,n);
-    // printf("\nKet qua la: %d",kq);
-
-
-    if(kiemTraGiaTriChanNhoHon2004(a,n)){
-        printf("\n TRUE");
-    } else 
-        printf("\n FALSES");
+    int kq = demSoLuongSoNguyenTo(a,n);
+    printf("\nKet qua la: %d",kq);
 
     return 0;
 }

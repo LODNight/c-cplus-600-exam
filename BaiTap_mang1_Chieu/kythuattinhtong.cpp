@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdbool.h>
 
-int KiemTraSoNguyenTo(int n){
+bool KiemTraSoNguyenTo(int n){
     if(n <= 2) return 0;
     for(int i=2; i<n; i++){
         if(n % i ==0){
-            return 0;
+            return false;
         }
     }
-    return 1;
-
+    return true;
 }
 
 double tbcSoNguyenTo(int a[100], int& n){
@@ -68,6 +68,17 @@ bool kiemTraGiaTriChanNhoHon2004(int a[100], int n){
         }
     }
     return false;
+}
+
+// Bài 125: Viết hàm đếm số lượng số nguyên tố nhỏ hơn 100 trong mảng
+int demSoLuongSoNguyenTo(int a[100], int n){
+    int count = 0;
+    for(int i=0; i < n; i++){
+        if(KiemTraSoNguyenTo(a[i]) && a[i] < 100){
+            count++;
+        }
+    }
+    return count;
 }
 
 
