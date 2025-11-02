@@ -7,6 +7,9 @@ int timSoAmDauTien(int a[100], int n);
 // Bài 122: Viết hàm tìm giá trị lớn nhất trong mảng 1 chiều các số thực
 void TimGiaTriLonNhatLaSoThuc(float a[100], int n);
 
+// Bài 123: Viết hàm tìm 1 vị trí mà giá trị tại vị trí đó là giá trị nhỏ nhất trong mảng 1 chiều các số nguyên
+int timViTriCoGiaTriNhoNhat(int a[100], int n);
+
 void thongKePhanTuTrongMang(int a[100], int n);
 
 // Bài 127: Viết hàm sắp xếp mảng 1 chiều các số thực tăng dần

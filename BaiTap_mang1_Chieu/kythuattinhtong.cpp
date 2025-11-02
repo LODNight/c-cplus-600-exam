@@ -47,6 +47,21 @@ void TimGiaTriLonNhatLaSoThuc(float a[100], int n){
     printf("So lon nhat la %f",max);
 }
 
+// Bài 123: Viết hàm tìm 1 vị trí mà giá trị tại vị trí đó là giá trị nhỏ nhất trong mảng 1 chiều các số nguyên
+int timViTriCoGiaTriNhoNhat(int a[100], int n){
+    int min = a[0];
+    int vitriMin = 0;
+    for(int i=1; i < n; i++){
+        if(a[i] < min){
+            min = a[i];
+            vitriMin = i;
+        }
+    }
+    return vitriMin;
+}
+
+
+
 void thongKePhanTuTrongMang(int a[100], int n){
     if(n<=0) 
         printf("Ko có phần tử");
