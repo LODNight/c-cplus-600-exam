@@ -163,6 +163,18 @@ void SapXepMang1ChieuTangDanTheoSoThuc(float a[100], int n){
     }
 }
 
+// -------------------------
+// Bài 132: Viết hàm liệt kê các giá trị chẵn trong mảng 1 chiều các số nguyên
+void lietKeCacGiaTriChan(int a[100], int n){    
+    if(n < 0)
+        printf("Loi: Khong co phan tu");
+    printf("\n");
+    for(int i = 0; i < n; i++){
+        if(a[i] % 2 == 0){
+            printf("%d ",a[i]);
+        }
+    }
+}
 
 // -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){
