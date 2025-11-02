@@ -81,6 +81,16 @@ int demSoLuongSoNguyenTo(int a[100], int n){
     return count;
 }
 
+// Bài 126: Viết hàm tính tổng các giá trị âm trong mảng 1 chiều các số thực
+int tongCacSoThucAm(float a[100], int n){
+    int count = 0;
+    for(int i = 0; i < n; i++){
+        if(a[i] < 0){
+            count++;
+        }
+    }
+    return count;
+}
 
 
 void thongKePhanTuTrongMang(int a[100], int n){

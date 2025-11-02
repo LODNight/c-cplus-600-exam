@@ -16,6 +16,9 @@ bool kiemTraGiaTriChanNhoHon2004(int a[100], int n);
 // Bài 125: Viết hàm đếm số lượng số nguyên tố nhỏ hơn 100 trong mảng
 int demSoLuongSoNguyenTo(int a[100], int n);
 
+// Bài 126: Viết hàm tính tổng các giá trị âm trong mảng 1 chiều các số thực
+int tongCacSoThucAm(float a[100], int n);
+
 void thongKePhanTuTrongMang(int a[100], int n);
 
 // Bài 127: Viết hàm sắp xếp mảng 1 chiều các số thực tăng dần

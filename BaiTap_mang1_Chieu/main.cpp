@@ -11,11 +11,24 @@ int main(){
     float b[100];
     int m;
 
-    NhapMang(a,n);
-    XuatMang(a,n);
+    // -------------------
+    // NhapMang(a,n);
+    // XuatMang(a,n);
 
-    int kq = demSoLuongSoNguyenTo(a,n);
+    // int kq = demSoLuongSoNguyenTo(a,n);
+    // printf("\nKet qua la: %d",kq);
+    // -------------------
+
+
+    // -------------------
+    float a_thuc[100];
+    NhapMangSoThuc(a_thuc,n);
+    XuatMangSoThuc(a_thuc,n);
+
+    int kq = tongCacSoThucAm(a_thuc,n);
     printf("\nKet qua la: %d",kq);
+
+    // -------------------
 
     return 0;
 }
