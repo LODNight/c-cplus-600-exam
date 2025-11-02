@@ -12,24 +12,24 @@ int main(){
     int m;
 
     // -------------------
-    NhapMang(a,n);
-    XuatMang(a,n);
+    // NhapMang(a,n);
+    // XuatMang(a,n);
 
     // int kq = demSoLuongSoNguyenTo(a,n);
     // printf("\nKet qua la: %d",kq);
-    lietKeCacGiaTriChan(a,n);
+    // lietKeCacGiaTriChan(a,n);
     // -------------------
 
 
     // -------------------
-    // float a_thuc[100];
-    // NhapMangSoThuc(a_thuc,n);
-    // SapXepMang1ChieuTangDanTheoSoThuc(a_thuc,n);
-    // XuatMangSoThuc(a_thuc,n);
+    float a_thuc[100];
+    NhapMangSoThuc(a_thuc,n);
+    XuatMangSoThuc(a_thuc,n);
 
     // int kq = tongCacSoThucAm(a_thuc,n);
     // printf("\nKet qua la: %d",kq);
 
+    lietKeViTriSoThucAm(a_thuc,n);
     // -------------------
 
     return 0;

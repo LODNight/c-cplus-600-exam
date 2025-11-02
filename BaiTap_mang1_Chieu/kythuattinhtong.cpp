@@ -177,6 +177,20 @@ void lietKeCacGiaTriChan(int a[100], int n){
 }
 
 // -------------------------
+// Bài 133: Viết hàm liệt kê các vị trí mà giá trị tại đó là giá trị âm trong mảng 1 chiều các số thực
+void lietKeViTriSoThucAm(float a[100], int n){
+    if(n < 0){
+        printf("Khong tim thay phan tu");
+    }
+    printf("\nCac vi tri am la: ");
+    for(int i=0; i < n; i++){
+        if(a[i] < 0){
+            printf("[%d] ", i);
+        }
+    }
+}
+
+// -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){
     int soLanXuatHien[10] = { 0 };
     for(int i = 0; i < n; i++){
