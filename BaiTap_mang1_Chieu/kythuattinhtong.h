@@ -27,6 +27,9 @@ void SapXepMang1ChieuTangDan(int a[100], int n);
 // Bài 127: Viết hàm sắp xếp mảng 1 chiều các số thực tăng dần
 void SapXepMang1ChieuTangDanTheoSoThuc(float a[100], int n);
 
+// Bài 132: Viết hàm liệt kê các giá trị chẵn trong mảng 1 chiều các số nguyên
+
+
 // 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
 int TimSoXuatHienItNhat(int a[100], int n);
 

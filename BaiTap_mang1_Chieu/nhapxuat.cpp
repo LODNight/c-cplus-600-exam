@@ -1,16 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 
-// Nhập mảng số nguyên dương
-void NhapMang(int a[100], int& n){
-    printf("Nhập sl mảng: ");
-    scanf_s("%d",&n);
-    for(int i=0; i < n; i++){
-        printf("Nhập pt [%d]: ",i);
-        scanf_s("%d",&a[i]);
-    }
-}
-
+// -------------------------
+// Bài 128 + 130: Viết hàm nhập, xuất mảng 1 chiều các số thực
 // Nhập mảng số thực
 void NhapMangSoThuc(float a[100], int& n){
     printf("Nhập sl mảng: ");
@@ -21,13 +13,6 @@ void NhapMangSoThuc(float a[100], int& n){
     }
 }
 
-// Xuất mảng số nguyên
-void XuatMang(int a[100], int n){
-    for (int i=0; i<n; i++){
-        printf("[%2d]",a[i]);
-    }
-}
-
 // Xuất mảng số thực
 void XuatMangSoThuc(float a[100], int n){
     for (int i=0; i<n; i++){
@@ -35,7 +20,27 @@ void XuatMangSoThuc(float a[100], int n){
     }
 }
 
+// -------------------------
+// Bài 129 + 131: Viết hàm nhập, xuất mảng 1 chiều các số nguyên
+// Nhập mảng số nguyên dương
+void NhapMang(int a[100], int& n){
+    printf("Nhập sl mảng: ");
+    scanf_s("%d",&n);
+    for(int i=0; i < n; i++){
+        printf("Nhập pt [%d]: ",i);
+        scanf_s("%d",&a[i]);
+    }
+}
 
+// Xuất mảng số nguyên
+void XuatMang(int a[100], int n){
+    for (int i=0; i<n; i++){
+        printf("[%2d]",a[i]);
+    }
+}
+
+
+// -------------------------
 // Xóa mảng số nguyên
 void XoaMang(int a[100], int &n, int k){
     if(k < 0 || k > n-1) return;
