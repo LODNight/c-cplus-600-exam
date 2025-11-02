@@ -23,10 +23,12 @@ int main(){
     // -------------------
     float a_thuc[100];
     NhapMangSoThuc(a_thuc,n);
+    SapXepMang1ChieuTangDanTheoSoThuc(a_thuc,n);
     XuatMangSoThuc(a_thuc,n);
 
-    int kq = tongCacSoThucAm(a_thuc,n);
-    printf("\nKet qua la: %d",kq);
+
+    // int kq = tongCacSoThucAm(a_thuc,n);
+    // printf("\nKet qua la: %d",kq);
 
     // -------------------
 

@@ -2,6 +2,9 @@
 #include <math.h>
 #include <stdbool.h>
 
+// -------------------------
+// Kiểm tra số nguyên tố
+// return True/False
 bool KiemTraSoNguyenTo(int n){
     if(n <= 2) return 0;
     for(int i=2; i<n; i++){
@@ -12,6 +15,9 @@ bool KiemTraSoNguyenTo(int n){
     return true;
 }
 
+// -------------------------
+// Tính trung bình cộng các số nguyên tố
+// return trung bình cộng
 double tbcSoNguyenTo(int a[100], int& n){
     int sum,count;
     for(int i=0; i<n; i++){
@@ -25,6 +31,9 @@ double tbcSoNguyenTo(int a[100], int& n){
     return 1.0 * sum / count;
 }
 
+// -------------------------
+// Tìm số Âm đầu tiên trong mảng số nguyên
+// return vị trí / -1 nếu ko tìm thấy
 int timSoAmDauTien(int a[100], int n){
     int vitri;
     for(int i=0; i<n; i++){
@@ -32,10 +41,10 @@ int timSoAmDauTien(int a[100], int n){
             return i;
         }
     }
-
     return -1;
 }
 
+// -------------------------
 // Bài 122: Viết hàm tìm giá trị lớn nhất trong mảng 1 chiều các số thực
 void TimGiaTriLonNhatLaSoThuc(float a[100], int n){
     float max = a[0];
@@ -47,6 +56,7 @@ void TimGiaTriLonNhatLaSoThuc(float a[100], int n){
     printf("So lon nhat la %f",max);
 }
 
+// -------------------------
 // Bài 123: Viết hàm tìm 1 vị trí mà giá trị tại vị trí đó là giá trị nhỏ nhất trong mảng 1 chiều các số nguyên
 int timViTriCoGiaTriNhoNhat(int a[100], int n){
     int min = a[0];
@@ -60,6 +70,7 @@ int timViTriCoGiaTriNhoNhat(int a[100], int n){
     return vitriMin;
 }
 
+// -------------------------
 // Bài 124: Viết hàm kiểm tra trong mảng các số nguyên có tồn tại giá trị chẵn nhỏ hơn 2004 hay không
 bool kiemTraGiaTriChanNhoHon2004(int a[100], int n){
     for(int i=0; i < n; i++){
@@ -70,6 +81,7 @@ bool kiemTraGiaTriChanNhoHon2004(int a[100], int n){
     return false;
 }
 
+// -------------------------
 // Bài 125: Viết hàm đếm số lượng số nguyên tố nhỏ hơn 100 trong mảng
 int demSoLuongSoNguyenTo(int a[100], int n){
     int count = 0;
@@ -81,6 +93,7 @@ int demSoLuongSoNguyenTo(int a[100], int n){
     return count;
 }
 
+// -------------------------
 // Bài 126: Viết hàm tính tổng các giá trị âm trong mảng 1 chiều các số thực
 int tongCacSoThucAm(float a[100], int n){
     int count = 0;
@@ -92,7 +105,8 @@ int tongCacSoThucAm(float a[100], int n){
     return count;
 }
 
-
+// -------------------------
+// Thống kê Phần tử trong mảng
 void thongKePhanTuTrongMang(int a[100], int n){
     if(n<=0) 
         printf("Ko có phần tử");
@@ -120,8 +134,9 @@ void thongKePhanTuTrongMang(int a[100], int n){
     }
 }
 
+// -------------------------
+// Sắp xếp mảng 1 chiều các số nguyen tăng dần
 void SapXepMang1ChieuTangDan(int a[100], int n){
-
     for(int i = 0; i < n - 1; i++){
         for(int j = i+1; j < n ; j++){
             if(a[i] > a[j]){
@@ -133,6 +148,23 @@ void SapXepMang1ChieuTangDan(int a[100], int n){
     }
 }
 
+// -------------------------
+// Bài 127: Viết hàm sắp xếp mảng 1 chiều các số thục tăng dần
+void SapXepMang1ChieuTangDanTheoSoThuc(float a[100], int n){
+    float t = 0;
+    for(int i=0; i < n-1; i++){
+        for(int j=i+1; j < n; j++){
+            if(a[i] > a[j]){
+                t = a[i];
+                a[i] = a[j];
+                a[j] = t; 
+            }
+        }
+    }
+}
+
+
+// -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){
     int soLanXuatHien[10] = { 0 };
     for(int i = 0; i < n; i++){
@@ -158,6 +190,7 @@ int TimSoXuatHienItNhat(int a[100], int n){
     return chuSoXuatHienItNhat;
 }
 
+// -------------------------
 void TimChuSoXuatHienItNhat(int a[100], int n, int chuSoItNhat[10], int m){
      int soLanXuatHien[10] = { 0 };
     for(int i = 0; i < n; i++){
@@ -187,6 +220,7 @@ void TimChuSoXuatHienItNhat(int a[100], int n, int chuSoItNhat[10], int m){
     }
 }
 
+// -------------------------
 // 236
 int DemMangCon(int a[100], int nA , int b[100], int nB){
     if(nA <=0 || nB <= 0) return 0;
@@ -210,10 +244,10 @@ int DemMangCon(int a[100], int nA , int b[100], int nB){
 }
 
 
-
+// -------------------------
+// Xóa các phần tử trùng lập
 void XoaTrungLap(int a[100], int& n){
     if(n<=0) return;
-    
     int newSize = 0;
     for(int i=0; i<n; i++){
         int count = 0;
@@ -230,6 +264,8 @@ void XoaTrungLap(int a[100], int& n){
     n = newSize;
 }
 
+// -------------------------
+// Đếm mảng con tăng dần
 int DemMangConTang(int a[100], int n){
     if(n <= 0) return 0;
     int i = 0;
@@ -245,6 +281,8 @@ int DemMangConTang(int a[100], int n){
     return dem;
 }
 
+// -------------------------
+// Liên kết lại các mảng con
 void LienKetMangCon(int a[100], int n){
     if(n <= 0) return;
     for(int i = 0; i < n; i++){
@@ -256,4 +294,3 @@ void LienKetMangCon(int a[100], int n){
         }
     }
 }
-
