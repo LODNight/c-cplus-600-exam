@@ -60,6 +60,16 @@ int timViTriCoGiaTriNhoNhat(int a[100], int n){
     return vitriMin;
 }
 
+// Bài 124: Viết hàm kiểm tra trong mảng các số nguyên có tồn tại giá trị chẵn nhỏ hơn 2004 hay không
+bool kiemTraGiaTriChanNhoHon2004(int a[100], int n){
+    for(int i=0; i < n; i++){
+        if(a[i] < 2004 && a[i] % 2 == 0){
+            return true;
+        }
+    }
+    return false;
+}
+
 
 
 void thongKePhanTuTrongMang(int a[100], int n){

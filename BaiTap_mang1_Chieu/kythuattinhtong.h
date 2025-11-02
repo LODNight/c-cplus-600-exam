@@ -10,6 +10,9 @@ void TimGiaTriLonNhatLaSoThuc(float a[100], int n);
 // Bài 123: Viết hàm tìm 1 vị trí mà giá trị tại vị trí đó là giá trị nhỏ nhất trong mảng 1 chiều các số nguyên
 int timViTriCoGiaTriNhoNhat(int a[100], int n);
 
+// Bài 124: Viết hàm kiểm tra trong mảng các số nguyên có tồn tại giá trị chẵn nhỏ hơn 2004 hay không
+bool kiemTraGiaTriChanNhoHon2004(int a[100], int n);
+
 void thongKePhanTuTrongMang(int a[100], int n);
 
 // Bài 127: Viết hàm sắp xếp mảng 1 chiều các số thực tăng dần
