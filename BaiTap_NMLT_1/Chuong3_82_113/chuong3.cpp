@@ -299,8 +299,8 @@ int timSoNgayTrongThang(int m, int y){
         return timNamNhuan(y);
     }
 }
-// Bài 102: Viết chương trình nhập vào 1 ngày (ngày, tháng, năm). Tìm ngày kế ngày vừa nhập (ngày, tháng, năm)
 
+// Bài 102: Viết chương trình nhập vào 1 ngày (ngày, tháng, năm). Tìm ngày kế ngày vừa nhập (ngày, tháng, năm)
 void timNgayKeTiep(int d, int m, int y){
     int max_d = timSoNgayTrongThang(m,y); 
     if(d < max_d){
@@ -316,8 +316,8 @@ void timNgayKeTiep(int d, int m, int y){
     }
     printf("%d/%d/%d",d,m,y);
 }
-// Bài 103: Viết chương trình nhập vào 1 ngày ( ngày, tháng, năm). Tìm ngày trước ngày vừa nhập (ngày, tháng, năm)
 
+// Bài 103: Viết chương trình nhập vào 1 ngày ( ngày, tháng, năm). Tìm ngày trước ngày vừa nhập (ngày, tháng, năm)
 void timNgayTruoc(int d, int m, int y){
     if(m < 1 || m > 12 || d < 1 || d > timSoNgayTrongThang(m,y)) return;
     if(d > 1){

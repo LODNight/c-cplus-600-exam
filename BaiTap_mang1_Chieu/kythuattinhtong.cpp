@@ -36,6 +36,17 @@ int timSoAmDauTien(int a[100], int n){
     return -1;
 }
 
+// Bài 122: Viết hàm tìm giá trị lớn nhất trong mảng 1 chiều các số thực
+void TimGiaTriLonNhatLaSoThuc(float a[100], int n){
+    float max = a[0];
+    for(int i=0; i < n; i++){
+        if(a[i] > max){
+            max = a[i];
+        }
+    }
+    printf("So lon nhat la %f",max);
+}
+
 void thongKePhanTuTrongMang(int a[100], int n){
     if(n<=0) 
         printf("Ko có phần tử");

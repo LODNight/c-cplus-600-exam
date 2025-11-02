@@ -1,10 +1,15 @@
 #pragma once
+
 int KiemTraSoNguyenTo(int n);
 double tbcSoNguyenTo(int a[100], int n);
 int timSoAmDauTien(int a[100], int n);
 
+// Bài 122: Viết hàm tìm giá trị lớn nhất trong mảng 1 chiều các số thực
+void TimGiaTriLonNhatLaSoThuc(float a[100], int n);
+
 void thongKePhanTuTrongMang(int a[100], int n);
-// 127
+
+// Bài 127: Viết hàm sắp xếp mảng 1 chiều các số thực tăng dần
 void SapXepMang1ChieuTangDan(int a[100], int n);
 
 // 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
