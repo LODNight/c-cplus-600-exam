@@ -191,6 +191,21 @@ void lietKeViTriSoThucAm(float a[100], int n){
 }
 
 // -------------------------
+// Bài 134: Viết hàm tìm giá trị lớn nhất trong mảng 1 chiều các số thực
+float timGiaTriLonNhatTrongMangSoThuc(float a[100], int n){
+    float max = a[0];
+    for(int i=0; i < n; i++){
+        if(a[i] > max){
+            max = a[i];
+        }
+    }
+    return max;
+}
+
+
+
+
+// -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){
     int soLanXuatHien[10] = { 0 };
     for(int i = 0; i < n; i++){

@@ -35,6 +35,13 @@ void lietKeCacGiaTriChan(int a[100], int n);
 // Bài 133: Viết hàm liệt kê các vị trí mà giá trị tại đó là giá trị âm trong mảng 1 chiều các số thực
 void lietKeViTriSoThucAm(float a[100], int n);
 
+// -------------------------
+// Bài 134: Viết hàm tìm giá trị lớn nhất trong mảng 1 chiều các số thực
+float timGiaTriLonNhatTrongMangSoThuc(float a[100], int n);
+
+
+
+
 // 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
 int TimSoXuatHienItNhat(int a[100], int n);
 
