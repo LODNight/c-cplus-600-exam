@@ -51,6 +51,10 @@ int timGiaTriChanCuoiCung(int a[100], int n);
 // Bài 137: Tìm 1 vị trí mà giá trị tại vị trí đó là giá trị nhỏ nhất trong mảng 1 chiều các số thực
 int timViTriCoGiaTriNhoNhatMangSoThuc(float a[100], int n);
 
+// -------------------------
+// Bài 138: Tìm vị trí của giá trị chẵn đầu tiên trong mảng 1 chiều các số nguyên. Nếu mảng không có giá trị chẵn thì sẽ trả về -1
+int timViTriGiaTriChanDauTien(int a[100], int n);
+
 
 // 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
 int TimSoXuatHienItNhat(int a[100], int n);

@@ -238,6 +238,17 @@ int timViTriCoGiaTriNhoNhatMangSoThuc(float a[100], int n){
     return vitriMin;
 }
 
+// -------------------------
+// Bài 138: Tìm vị trí của giá trị chẵn đầu tiên trong mảng 1 chiều các số nguyên. Nếu mảng không có giá trị chẵn thì sẽ trả về -1
+int timViTriGiaTriChanDauTien(int a[100], int n){
+    for(int i=0; i < n; i++){
+        if(a[i] % 2 == 0){
+            return a[i];
+        }
+    }
+    return -1;
+}
+
 
 // -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){
