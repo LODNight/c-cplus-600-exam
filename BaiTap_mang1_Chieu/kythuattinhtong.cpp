@@ -349,10 +349,18 @@ int timSoChanDauTien(int a[100], int n){
             return a[i];
         }
     } 
-    return -1
+    return -1;
 }
 
-
+// -------------------------
+// Bài 144: Tìm số nguyên tố đầu tiên trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về  – 1
+int timSoNguyenToDauTien(int a[100], int n){
+    for(int i=0; i < n; i++){
+        if(KiemTraSoNguyenTo(a[i]))
+            return a[i];
+    }
+    return -1;
+}
 
 // -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){
