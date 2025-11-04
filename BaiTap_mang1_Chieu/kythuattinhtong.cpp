@@ -297,9 +297,36 @@ float timSoNhoNhatTrongMangSoThuc(float a[100], int n){
     if(soDuong){
         return min;
     } else{
-        return -1
+        return -1;
     }
     
+}
+
+// -------------------------
+// 	Bài 141: Hãy tìm vị trí giá trị dương nhỏ nhất trong mảng 1 chiều các số thực. Nếu mảng không có giá trị dương thì trả về  -1
+int timViTriSoDuongNhoNhatTrongMangSoThuc(float a[100], int n){
+    float min;
+    bool soDuong = false;
+    int vitriMin;
+    for(int i=0; i < n ;i++){
+        if(a[i] > 0){
+            if(!soDuong){
+                soDuong = true;
+                min = a[i];
+                vitriMin = i;
+            }
+            else if(a[i] < min){
+                min = a[i];
+                vitriMin = i;
+            }
+        }
+    }
+    if(soDuong){
+        return vitriMin;
+    } else {
+        return -1;
+    }
+
 }
 
 

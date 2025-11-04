@@ -66,7 +66,11 @@ int timViTriSoHoanThienCuoiCung(int a[100], int n);
 
 // -------------------------
 // Bài 140: Hãy tìm giá trị dương nhỏ nhất trong mảng 1 chiều các số thực. Nếu mảng không có giá trị dương thì sẽ trả về -1
-float timSoNhoNhatTrongMangSoThuc(float a[100], int n);
+float timSoDuongNhoNhatTrongMangSoThuc(float a[100], int n);
+
+// -------------------------
+// 	Bài 141: Hãy tìm vị trí giá trị dương nhỏ nhất trong mảng 1 chiều các số thực. Nếu mảng không có giá trị dương thì trả về  -1
+int timViTriSoDuongNhoNhatTrongMangSoThuc(float a[100], int n);
 
 
 // 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
