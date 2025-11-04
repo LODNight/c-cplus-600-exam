@@ -278,6 +278,32 @@ int timViTriSoHoanThienCuoiCung(int a[100], int n){
 }
 
 // -------------------------
+// Bài 140: Hãy tìm giá trị dương nhỏ nhất trong mảng 1 chiều các số thực. Nếu mảng không có giá trị dương thì sẽ trả về -1
+float timSoNhoNhatTrongMangSoThuc(float a[100], int n){
+    float min;
+    bool soDuong = false;
+    // Kiểm tra số dương
+    for(int i=0; i < n; i++){
+        if(a[i] > 0){
+            if(!soDuong){
+                min = a[i];
+                soDuong = true;
+            } else if (a[i] < min)
+            {
+                min = a[i];
+            }
+        }
+    }
+    if(soDuong){
+        return min;
+    } else{
+        return -1
+    }
+    
+}
+
+
+// -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){
     int soLanXuatHien[10] = { 0 };
     for(int i = 0; i < n; i++){
