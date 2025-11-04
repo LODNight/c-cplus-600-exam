@@ -329,6 +329,19 @@ int timViTriSoDuongNhoNhatTrongMangSoThuc(float a[100], int n){
 
 }
 
+// -------------------------
+// Bài 142: Tìm giá trị nhỏ nhất trong mảng 1 chiều số thực
+float timGiaTriNhoNhatMang1Chieu(float a[100], int n){
+    float min = a[0];
+    for(int i=1; i < n; i++){
+        if(a[i] < min){
+            min = a[i];
+        }
+    }
+    return min;
+}
+
+
 
 // -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){
