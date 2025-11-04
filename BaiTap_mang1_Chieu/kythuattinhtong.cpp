@@ -202,7 +202,16 @@ float timGiaTriLonNhatTrongMangSoThuc(float a[100], int n){
     return max;
 }
 
-
+// -------------------------
+// Bài 135: Viết hàm tìm giá trị dương đầu tiên trong mảng 1 chiều các số thực. Nếu mảng không có giá trị dương thì trả về -1
+float timGiaTriDuongDauTienTrongMangSoThuc(float a[100], int n){
+    for(int i=0; i < n; i++){
+        if(a[i] > 0){
+            return a[i];
+        }
+    }
+    return -1;
+}
 
 
 // -------------------------

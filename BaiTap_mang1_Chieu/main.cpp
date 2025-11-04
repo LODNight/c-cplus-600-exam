@@ -26,10 +26,9 @@ int main(){
     NhapMangSoThuc(a_thuc,n);
     XuatMangSoThuc(a_thuc,n);
 
-    // int kq = tongCacSoThucAm(a_thuc,n);
-    // printf("\nKet qua la: %d",kq);
+    int kq = timGiaTriDuongDauTienTrongMangSoThuc(a_thuc,n);
+    printf("\nKet qua la: %d",kq);
 
-    lietKeViTriSoThucAm(a_thuc,n);
     // -------------------
 
     return 0;

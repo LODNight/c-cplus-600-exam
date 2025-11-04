@@ -39,7 +39,9 @@ void lietKeViTriSoThucAm(float a[100], int n);
 // Bài 134: Viết hàm tìm giá trị lớn nhất trong mảng 1 chiều các số thực
 float timGiaTriLonNhatTrongMangSoThuc(float a[100], int n);
 
-
+// -------------------------
+// Bài 135: Viết hàm tìm giá trị dương đầu tiên trong mảng 1 chiều các số thực. Nếu mảng không có giá trị dương thì trả về -1
+float timGiaTriDuongDauTienTrongMangSoThuc(float a[100], int n);
 
 
 // 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
