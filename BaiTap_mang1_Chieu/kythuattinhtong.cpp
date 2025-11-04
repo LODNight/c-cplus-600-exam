@@ -213,6 +213,18 @@ float timGiaTriDuongDauTienTrongMangSoThuc(float a[100], int n){
     return -1;
 }
 
+// -------------------------
+// Bài 136: Tìm số chẵn cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có giá trị chẵn thì trả về -1
+int timGiaTriChanCuoiCung(int a[100], int n){
+    for(int i=n-1; i > 0; i--){
+        if(a[i] % 2 == 0){
+            return a[i];
+        }
+    }
+    return -1;
+}
+
+
 
 // -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){
