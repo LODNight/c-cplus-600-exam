@@ -363,6 +363,30 @@ int timSoNguyenToDauTien(int a[100], int n){
 }
 
 // -------------------------
+// 	Bài 145: Tìm số hoàn thiện đầu tiên trong mảng 1 chiều số nguyên. Nếu mảng không có số hoàn thiện thì trả về  -1
+int timSoHoanThienDauTien(int a[100], int n){
+    for(int i=0; i < n; i++){
+        // soHoanThien(a[i])
+        int tong = 1;
+        for(int j=2; j < sqrt(a[i]); j++){
+            if(a[i] % j == 0){
+                tong += j;
+                if(j != a[i] / j){
+                    tong += a[i] / j;
+                }
+            }
+        }
+        if(tong == a[i])
+            return a[i];
+    }
+    return -1;
+}
+
+
+
+
+
+// -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){
     int soLanXuatHien[10] = { 0 };
     for(int i = 0; i < n; i++){
