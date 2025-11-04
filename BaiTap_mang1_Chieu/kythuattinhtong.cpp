@@ -224,6 +224,19 @@ int timGiaTriChanCuoiCung(int a[100], int n){
     return -1;
 }
 
+// -------------------------
+// Bài 137: Tìm 1 vị trí mà giá trị tại vị trí đó là giá trị nhỏ nhất trong mảng 1 chiều các số thực
+int timViTriCoGiaTriNhoNhatMangSoThuc(float a[100], int n){
+    float min = a[0];
+    int vitriMin = 0;
+    for(int i=0; i < n; i++){
+        if(a[i] < min){
+            min = a[i];
+            vitriMin = i;
+        }
+    }
+    return vitriMin;
+}
 
 
 // -------------------------

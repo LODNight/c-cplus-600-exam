@@ -12,21 +12,21 @@ int main(){
     int m;
 
     // -------------------
-    NhapMang(a,n);
-    XuatMang(a,n);
+    // NhapMang(a,n);
+    // XuatMang(a,n);
 
-    int kq = timGiaTriChanCuoiCung(a,n);
-    printf("\nKet qua la: %d",kq);
-    // -------------------
-
-
-    // -------------------
-    // float a_thuc[100];
-    // NhapMangSoThuc(a_thuc,n);
-    // XuatMangSoThuc(a_thuc,n);
-
-    // int kq = timGiaTriDuongDauTienTrongMangSoThuc(a_thuc,n);
+    // int kq = timGiaTriChanCuoiCung(a,n);
     // printf("\nKet qua la: %d",kq);
+    // -------------------
+
+
+    // -------------------
+    float a_thuc[100];
+    NhapMangSoThuc(a_thuc,n);
+    XuatMangSoThuc(a_thuc,n);
+
+    int kq = timViTriCoGiaTriNhoNhatMangSoThuc(a_thuc,n);
+    printf("\nKet qua la: %d",kq);
 
     // -------------------
 

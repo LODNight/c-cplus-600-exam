@@ -47,6 +47,9 @@ float timGiaTriDuongDauTienTrongMangSoThuc(float a[100], int n);
 // Bài 136: Tìm số chẵn cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có giá trị chẵn thì trả về -1
 int timGiaTriChanCuoiCung(int a[100], int n);
 
+// -------------------------
+// Bài 137: Tìm 1 vị trí mà giá trị tại vị trí đó là giá trị nhỏ nhất trong mảng 1 chiều các số thực
+int timViTriCoGiaTriNhoNhatMangSoThuc(float a[100], int n);
 
 
 // 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
