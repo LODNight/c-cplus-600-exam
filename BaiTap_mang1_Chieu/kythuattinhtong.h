@@ -55,6 +55,16 @@ int timViTriCoGiaTriNhoNhatMangSoThuc(float a[100], int n);
 // Bài 138: Tìm vị trí của giá trị chẵn đầu tiên trong mảng 1 chiều các số nguyên. Nếu mảng không có giá trị chẵn thì sẽ trả về -1
 int timViTriGiaTriChanDauTien(int a[100], int n);
 
+// -------------------------
+// Kiểm tra số hoàn thiện 
+int soHoanThien(int n);
+
+// -------------------------
+// Bài 139: Tìm vị trí số hoàn thiện cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có số hoàn thiện thì trả về giá trị  -1
+// Note: Số hoàn thiện = Tổng các ước số dương của chính nó
+int timViTriSoHoanThienCuoiCung(int a[100], int n);
+
+
 
 // 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
 int TimSoXuatHienItNhat(int a[100], int n);

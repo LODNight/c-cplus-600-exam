@@ -249,6 +249,33 @@ int timViTriGiaTriChanDauTien(int a[100], int n){
     return -1;
 }
 
+// -------------------------
+// Kiểm tra số hoàn thiện 
+int soHoanThien(int n){
+    if (n <= 0) return 0;
+    int tong = 1;
+    for(int i=2; i < sqrt(n); i++){
+        if(n % i == 0){
+            tong += i;
+            if(i != n / i){
+                tong += n / i;
+            }
+        }
+    }
+    return tong == n;
+}
+
+// -------------------------
+// Bài 139: Tìm vị trí số hoàn thiện cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có số hoàn thiện thì trả về giá trị  -1
+// Note: Số hoàn thiện = Tổng các ước số dương của chính nó
+int timViTriSoHoanThienCuoiCung(int a[100], int n){
+    for(int i=n-1; i > 0; i--){
+        if(soHoanThien(a[i])){
+            return i;
+        }
+    }
+    return -1;
+}
 
 // -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){
