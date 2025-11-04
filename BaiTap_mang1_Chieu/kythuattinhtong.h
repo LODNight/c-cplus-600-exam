@@ -76,6 +76,10 @@ int timViTriSoDuongNhoNhatTrongMangSoThuc(float a[100], int n);
 // Bài 142: Tìm giá trị nhỏ nhất trong mảng 1 chiều số thực
 float timGiaTriNhoNhatMang1Chieu(float a[100], int n);
 
+// -------------------------
+// 	Bài 143: Viết hàm tìm số chẵn đầu tiên trong mảng các số nguyên. Nếu mảng không có giá trị chẵn thì trả về  -1
+int timSoChanDauTien(int a[100], int n);
+
 
 // 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
 int TimSoXuatHienItNhat(int a[100], int n);
