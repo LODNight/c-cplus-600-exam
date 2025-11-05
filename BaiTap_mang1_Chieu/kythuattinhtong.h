@@ -57,7 +57,7 @@ int timViTriGiaTriChanDauTien(int a[100], int n);
 
 // -------------------------
 // Kiểm tra số hoàn thiện 
-int soHoanThien(int n);
+bool soHoanThien(int n);
 
 // -------------------------
 // Bài 139: Tìm vị trí số hoàn thiện cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có số hoàn thiện thì trả về giá trị  -1
@@ -101,12 +101,13 @@ int timSoDuongCuoiCungTrongMangSoThuc(float a[100], int n);
 // 	Bài 148: Tìm số nguyên tố cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về  -1
 int soNguyenToCuoiCung(int a[100], int n);
 
-
 // -------------------------
 // 	Bài 149: Tìm số hoàn thiện cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có số hoàn thiện thì trả về  -1
+int timSoHoanThienCuoiCung(int a[100], int n);
 
 // -------------------------
 // 	Bài 150: Hãy tìm giá trị âm lớn nhất trong mảng 1 chiều các số thực. Nếu mảng không có giá trị âm thì trả về  -1
+float giaTriAmLonNhatSoThuc(float a[100], int n);
 
 // -------------------------
 // 	Bài 151: Hãy tìm số nguyên tố lớn nhất trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về -1

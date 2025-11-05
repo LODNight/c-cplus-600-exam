@@ -251,7 +251,7 @@ int timViTriGiaTriChanDauTien(int a[100], int n){
 
 // -------------------------
 // Kiểm tra số hoàn thiện 
-int soHoanThien(int n){
+bool soHoanThien(int n){
     if (n <= 0) return 0;
     int tong = 1;
     for(int i=2; i < sqrt(n); i++){
@@ -412,6 +412,40 @@ int soNguyenToCuoiCung(int a[100], int n){
     }
     return -1;
 }
+
+// -------------------------
+// 	Bài 149: Tìm số hoàn thiện cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có số hoàn thiện thì trả về  -1
+int timSoHoanThienCuoiCung(int a[100], int n){
+    for(int i=n-1; i > 0; i--){
+        if(soHoanThien(a[i]))
+            return a[i];
+    }
+    return -1;
+}
+
+
+// -------------------------
+// 	Bài 150: Hãy tìm giá trị âm lớn nhất trong mảng 1 chiều các số thực. Nếu mảng không có giá trị âm thì trả về  -1
+float giaTriAmLonNhatSoThuc(float a[100], int n){
+    bool soAm = false;
+    float min;
+    for(int i=0; i < n; i++){
+        if(a[i] < 0){
+            if(!soAm){
+                soAm = true;
+                min = a[i];
+            }
+            else if(a[i] < min){
+                min = a[i];
+            }
+        }
+    }
+    if(soAm)
+        return min;
+    else
+        return -1;
+}
+
 
 
 // -------------------------
