@@ -469,6 +469,30 @@ int soNguyenToLonNhat(int a[100], int n){
 }
 
 // -------------------------
+// 	Bài 152: Hãy tìm số hoàn thiện nhỏ nhất trong mảng 1 chiều các số nguyên. Nếu mảng không có số hoàn thiện thì trả về -1
+int soHoanThienNhoNhat(int a[100], int n){
+    bool sht = false;
+    int max;
+    for(int i=0; i < n; i++){
+        if(soHoanThien(a[i])){
+            if(!sht){
+                max = a[i];
+                sht = true;
+            } 
+            else if(a[i] > max){
+                max = a[i];
+            }
+        }
+    }
+    if(sht) return max;
+    else return -1
+}
+
+
+
+
+
+// -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){
     int soLanXuatHien[10] = { 0 };
     for(int i = 0; i < n; i++){
