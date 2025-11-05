@@ -485,10 +485,28 @@ int soHoanThienNhoNhat(int a[100], int n){
         }
     }
     if(sht) return max;
-    else return -1
+    else return -1;
 }
 
-
+// -------------------------
+// 	Bài 153: Hãy tìm giá trị chẵn nhỏ nhất trong mảng 1 chiều các số nguyên. Nếu mảng không có số chẵn thì trả về -1
+int giaTriChanNhoNhatTrongMang1Chieu(int a[100], int n){
+    int min;
+    bool soChan = false;
+    for(int i=0; i<n; i++){
+        if(a[i] % 2 == 0){
+           if(!soChan){
+                 soChan = true;
+                min = a[i];
+            } 
+            else if(a[i] < min){
+                min = a[i];
+           }
+        }
+    }
+    if(soChan) return min;
+    else return -1;
+}
 
 
 
