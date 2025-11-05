@@ -403,6 +403,15 @@ int timSoDuongCuoiCungTrongMangSoThuc(float a[100], int n){
     return -1;
 }
 
+// -------------------------
+// 	Bài 148: Tìm số nguyên tố cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về  -1
+int soNguyenToCuoiCung(int a[100], int n){
+    for(int i=n-1; i > 0; i--){
+        if(KiemTraSoNguyenTo(a[i]))
+            return a[i];
+    }
+    return -1;
+}
 
 
 // -------------------------
