@@ -121,9 +121,10 @@ int soHoanThienNhoNhat(int a[100], int n);
 // 	Bài 153: Hãy tìm giá trị chẵn nhỏ nhất trong mảng 1 chiều các số nguyên. Nếu mảng không có số chẵn thì trả về -1
 int giaTriChanNhoNhatTrongMang1Chieu(int a[100], int n);
 
-
 // -------------------------
 // 	Bài 154: Hãy tìm vị trí giá trị âm nhỏ nhất trong mảng các số thực. Nếu mảng không có số âm thì trả về -1
+int viTriSoThucAmNhoNhat(float a[100], int n);
+
 
 // -------------------------
 

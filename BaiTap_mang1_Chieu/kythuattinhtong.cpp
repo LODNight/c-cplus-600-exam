@@ -496,7 +496,7 @@ int giaTriChanNhoNhatTrongMang1Chieu(int a[100], int n){
     for(int i=0; i<n; i++){
         if(a[i] % 2 == 0){
            if(!soChan){
-                 soChan = true;
+                soChan = true;
                 min = a[i];
             } 
             else if(a[i] < min){
@@ -508,7 +508,25 @@ int giaTriChanNhoNhatTrongMang1Chieu(int a[100], int n){
     else return -1;
 }
 
-
+// -------------------------
+// 	Bài 154: Hãy tìm vị trí giá trị âm nhỏ nhất trong mảng các số thực. Nếu mảng không có số âm thì trả về -1
+int viTriSoThucAmNhoNhat(float a[100], int n){
+    bool soAm = false;
+    float min;
+    for(int i=0; i < n; i++){
+        if(a[i] < 0){
+            if(!soAm){
+                min = a[i];
+                soAm = true;
+            }
+            else if(a[i] < min){
+                min = a[i];
+            }
+        }
+    }
+    if(soAm) return min;
+    else return -1;
+}
 
 // -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){
