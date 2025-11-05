@@ -111,6 +111,7 @@ float giaTriAmLonNhatSoThuc(float a[100], int n);
 
 // -------------------------
 // 	Bài 151: Hãy tìm số nguyên tố lớn nhất trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về -1
+int soNguyenToLonNhat(int a[100], int n);
 
 // -------------------------
 // 	Bài 152: Hãy tìm số hoàn thiện nhỏ nhất trong mảng 1 chiều các số nguyên. Nếu mảng không có số hoàn thiện thì trả về -1

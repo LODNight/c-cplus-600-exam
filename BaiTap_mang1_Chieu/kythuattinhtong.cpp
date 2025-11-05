@@ -446,7 +446,27 @@ float giaTriAmLonNhatSoThuc(float a[100], int n){
         return -1;
 }
 
-
+// -------------------------
+// 	Bài 151: Hãy tìm số nguyên tố lớn nhất trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về -1
+int soNguyenToLonNhat(int a[100], int n){
+    int max;
+    bool soNguyenTo = false; 
+    for(int i=0; i < n; i++){
+        if(KiemTraSoNguyenTo(a[i])){
+            if(!soNguyenTo){
+                soNguyenTo = true;
+                max = a[i];
+            }
+            else if(a[i] > max){
+                max = a[i];
+            }
+        }
+    }
+    if(soNguyenTo)
+        return max;
+    else 
+        return -1;
+}
 
 // -------------------------
 int TimSoXuatHienItNhat(int a[100], int n){

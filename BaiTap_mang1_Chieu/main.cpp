@@ -15,7 +15,7 @@ int main(){
     NhapMang(a,n);
     XuatMang(a,n);
 
-    int kq = timViTriSoHoanThienCuoiCung(a,n);
+    int kq = soNguyenToLonNhat(a,n);
     printf("\nKet qua la: %d",kq);
     // -------------------
 
