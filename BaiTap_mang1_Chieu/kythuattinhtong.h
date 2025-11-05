@@ -91,9 +91,11 @@ int timSoHoanThienDauTien(int a[100], int n);
 
 // -------------------------
 // 	Bài 146: Tìm giá trị âm đầu tiên trong mảng 1 chiều các số thực. Nếu mảng không có giá trị âm thì trả về -1
+float timSoAmDauTienTrongMangSoThuc(int a[100], int n);
 
 // -------------------------
 // 	Bài 147: Tìm số dương cuối cùng trong mảng số thực. Nếu mảng không có giá trị dương thì trả về  -1
+
 
 // -------------------------
 // 	Bài 148: Tìm số nguyên tố cuối cùng trong mảng 1 chiều các số nguyên. Nếu mảng không có số nguyên tố thì trả về  -1
