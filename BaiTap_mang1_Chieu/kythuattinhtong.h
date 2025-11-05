@@ -95,6 +95,7 @@ float timSoAmDauTienTrongMangSoThuc(int a[100], int n);
 
 // -------------------------
 // 	Bài 147: Tìm số dương cuối cùng trong mảng số thực. Nếu mảng không có giá trị dương thì trả về  -1
+int timSoDuongCuoiCungTrongMangSoThuc(int a[100], int n);
 
 
 // -------------------------

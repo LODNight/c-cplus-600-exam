@@ -384,11 +384,21 @@ int timSoHoanThienDauTien(int a[100], int n){
 
 // -------------------------
 // 	Bài 146: Tìm giá trị âm đầu tiên trong mảng 1 chiều các số thực. Nếu mảng không có giá trị âm thì trả về -1
-float timSoAmDauTienTrongMangSoThuc(int a[100], int n){
+float timSoAmDauTienTrongMangSoThuc(float a[100], int n){
     for(int i=0; i < n; i++){
         if(a[i] < 0){
             return a[i];                
         }
+    }
+    return -1;
+}
+
+// -------------------------
+// 	Bài 147: Tìm số dương cuối cùng trong mảng số thực. Nếu mảng không có giá trị dương thì trả về  -1
+int timSoDuongCuoiCungTrongMangSoThuc(float a[100], int n){
+    for(int i=n-1; i > 0; i--){
+        if(a[i] > 0)
+            return a[i];
     }
     return -1;
 }
