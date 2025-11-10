@@ -5,10 +5,11 @@
 
 // -------------------------
 // 	Bài 155: Hãy tìm giá trị trong mảng các số thực xa giá trị x nhất
-float timSoThucXaNhatSoVoiX(float a[100], int n, int x);
+float timSoThucXaNhatSoVoiX(float a[100], int n, float x);
 
 // -------------------------
 // 	Bài 156: Hãy tìm giá trị trong mảng các số thực gần giá trị x nhất
+float soThucGanNhatVoiX(float a[100], int n, float x);
 
 // -------------------------
 // 	Bài 157: Cho mảng 1 chiều các số thực, hãy tìm đoạn [a, b] sao cho đoạn này chứa tất cả các giá trị trong mảng
