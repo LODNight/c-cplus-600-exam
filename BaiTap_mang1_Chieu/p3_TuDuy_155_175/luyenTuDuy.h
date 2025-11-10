@@ -32,6 +32,7 @@ float giaTriAmCuoiCungLonHonTru1(float a[100], int n);
 // -------------------------
 // 	Bài 161: Cho mảng 1 chiều các số nguyên, hãy tìm giá trị đầu tiên nằm trong khoảng [x, y] cho trước. 
 // Nếu mảng không có giá trị thỏa điều kiện trên thì trả về -1
+int giaTriDauTienNamTrongManXY(int a[100], int n, int x, int y);
 
 // -------------------------
 // 	Bài 162: Cho mảng 1 chiều các số thực. Hãy viết hàm tìm một vị trí trong mảng thỏa 2 điều kiện: 

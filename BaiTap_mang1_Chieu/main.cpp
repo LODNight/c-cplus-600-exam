@@ -14,21 +14,21 @@ int main(){
     int m;
 
     // -------------------
-    // NhapMang(a,n);
-    // XuatMang(a,n);
+    NhapMang(a,n);
+    XuatMang(a,n);
 
-    // int kq = soNguyenToLonNhat(a,n);
-    // printf("\nKet qua la: %d",kq);
+    int kq = giaTriDauTienNamTrongManXY(a,n,5,10);
+    printf("\nKet qua la: %d",kq);
     // -------------------
 
 
     // -------------------
-    float a_thuc[100];
-    NhapMangSoThuc(a_thuc,n);
-    XuatMangSoThuc(a_thuc,n);
+    // float a_thuc[100];
+    // NhapMangSoThuc(a_thuc,n);
+    // XuatMangSoThuc(a_thuc,n);
 
-    float kq = giaTriAmCuoiCungLonHonTru1(a_thuc,n);
-    printf("\nKet qua la: %f",kq);
+    // float kq = giaTriAmCuoiCungLonHonTru1(a_thuc,n);
+    // printf("\nKet qua la: %f",kq);
 
 
     // giaTriABTrongMang(a_thuc,n);
