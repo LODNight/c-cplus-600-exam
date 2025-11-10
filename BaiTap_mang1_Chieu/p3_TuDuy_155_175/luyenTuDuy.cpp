@@ -30,3 +30,19 @@ float soThucGanNhatVoiX(float a[100], int n, float x){
     }
     return min;
 }
+
+// -------------------------
+// 	Bài 157: Cho mảng 1 chiều các số thực, hãy tìm đoạn [a, b] sao cho đoạn này chứa tất cả các giá trị trong mảng
+void giaTriABTrongMang(float a[100], int n){
+    float min = a[0];
+    float max = a[0];
+    for(int i=0; i < n; i++){
+        if(a[i] > max){
+            max = a[i];
+        }
+        if(a[i] < min){
+            min = a[i];
+        }
+    }
+    printf("\n[%.2f, %.2f]", min,max);
+}

@@ -13,6 +13,7 @@ float soThucGanNhatVoiX(float a[100], int n, float x);
 
 // -------------------------
 // 	Bài 157: Cho mảng 1 chiều các số thực, hãy tìm đoạn [a, b] sao cho đoạn này chứa tất cả các giá trị trong mảng
+void giaTriABTrongMang(float a[100], int n);
 
 // -------------------------
 // 	Bài 158: Cho mảng 1 chiều các số thực, hãy tìm giá trị x sao cho đoạn [-x, x] chứa tất cả các giá trị trong mảng
