@@ -17,7 +17,8 @@ void giaTriABTrongMang(float a[100], int n);
 
 // -------------------------
 // 	Bài 158: Cho mảng 1 chiều các số thực, hãy tìm giá trị x sao cho đoạn [-x, x] chứa tất cả các giá trị trong mảng
-// 	5 9 -10 7 6
+// 	5 9 -10 7 6  => x = 10
+float timXtrongMangSoThuc(float a[100], int n);
 
 // -------------------------
 // 	Bài 159: Cho mảng 1 chiều các số thực, hãy tìm giá trị đầu tiên lớn hơn giá trị 2003. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về  -1

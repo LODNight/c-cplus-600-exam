@@ -46,3 +46,16 @@ void giaTriABTrongMang(float a[100], int n){
     }
     printf("\n[%.2f, %.2f]", min,max);
 }
+
+// -------------------------
+// 	Bài 158: Cho mảng 1 chiều các số thực, hãy tìm giá trị x sao cho đoạn [-x, x] chứa tất cả các giá trị trong mảng
+// 	5 9 -10 7 6  => x = 10
+float timXtrongMangSoThuc(float a[100], int n){
+    float max = fabs(a[0]);
+    for(int i=0; i < n; i++){
+        if(fabs(a[i]) > max){
+            max = fabs(a[i]);
+        }
+    }
+    return max;
+}

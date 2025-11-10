@@ -27,9 +27,11 @@ int main(){
     NhapMangSoThuc(a_thuc,n);
     XuatMangSoThuc(a_thuc,n);
 
-    // int kq = soThucGanNhatVoiX(a_thuc,n,5);
-    // printf("\nKet qua la: %d",kq);
-    giaTriABTrongMang(a_thuc,n);
+    int kq = timXtrongMangSoThuc(a_thuc,n);
+    printf("\nKet qua la: %d",kq);
+
+
+    // giaTriABTrongMang(a_thuc,n);
 
     // -------------------
 
