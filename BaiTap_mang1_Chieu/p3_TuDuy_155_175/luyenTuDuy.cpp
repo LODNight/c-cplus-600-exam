@@ -59,3 +59,36 @@ float timXtrongMangSoThuc(float a[100], int n){
     }
     return max;
 }
+
+// -------------------------
+// 	Bài 159: Cho mảng 1 chiều các số thực, hãy tìm giá trị đầu tiên lớn hơn giá trị 2003. 
+// Nếu mảng không có giá trị thỏa điều kiện trên thì trả về  -1
+float giaTriDauTienLonHon2003(float a[100], int n){
+    for(int i=0; i < n; i++){
+        if(a[i] > 2003){
+            return a[i]; 
+        }
+    }
+    return -1;
+}
+
+// -------------------------
+// 	Bài 160: Cho mảng 1 chiều các số thực, hãy tìm giá trị âm cuối cùng lớn hơn giá trị -1. 
+// Nếu mảng không có giá trị thỏa điều kiện trên thì trả về -1
+float giaTriAmCuoiCungLonHonTru1(float a[100], int n){
+    float max;
+    bool soAm = false;
+    for(int i=0; i < n; i++){
+        if(a[i] < 0 && a[i] > -1){
+            if(!soAm){
+                max = a[i];
+                soAm = true;
+            } 
+            else if(a[i] > max){
+                max = a[i];
+            }
+        }
+    }
+    if(soAm) return max;
+    else return -1;
+}

@@ -1,6 +1,5 @@
 #pragma once
 
-
 // ================= BÀI TẬP LUYỆN TẬP TƯ DUY =================
 
 // -------------------------
@@ -21,16 +20,23 @@ void giaTriABTrongMang(float a[100], int n);
 float timXtrongMangSoThuc(float a[100], int n);
 
 // -------------------------
-// 	Bài 159: Cho mảng 1 chiều các số thực, hãy tìm giá trị đầu tiên lớn hơn giá trị 2003. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về  -1
+// 	Bài 159: Cho mảng 1 chiều các số thực, hãy tìm giá trị đầu tiên lớn hơn giá trị 2003. 
+// Nếu mảng không có giá trị thỏa điều kiện trên thì trả về  -1
+float giaTriDauTienLonHon2003(float a[100], int n);
 
 // -------------------------
-// 	Bài 160: Cho mảng 1 chiều các số thực, hãy tìm giá trị âm cuối cùng lớn hơn giá trị -1. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về -1
+// 	Bài 160: Cho mảng 1 chiều các số thực, hãy tìm giá trị âm cuối cùng lớn hơn giá trị -1. 
+// Nếu mảng không có giá trị thỏa điều kiện trên thì trả về -1
+float giaTriAmCuoiCungLonHonTru1(float a[100], int n);
 
 // -------------------------
-// 	Bài 161: Cho mảng 1 chiều các số nguyên, hãy tìm giá trị đầu tiên nằm trong khoảng [x, y] cho trước. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về -1
+// 	Bài 161: Cho mảng 1 chiều các số nguyên, hãy tìm giá trị đầu tiên nằm trong khoảng [x, y] cho trước. 
+// Nếu mảng không có giá trị thỏa điều kiện trên thì trả về -1
 
 // -------------------------
-// 	Bài 162: Cho mảng 1 chiều các số thực. Hãy viết hàm tìm một vị trí trong mảng thỏa 2 điều kiện: có 2 giá trị lân cận và giá trị tại đó bằng tích 2 giá trị lân cận. Nếu mảng không tồn tại giá trị như vậy thì trả về giá trị -1
+// 	Bài 162: Cho mảng 1 chiều các số thực. Hãy viết hàm tìm một vị trí trong mảng thỏa 2 điều kiện: 
+// có 2 giá trị lân cận và giá trị tại đó bằng tích 2 giá trị lân cận. 
+// Nếu mảng không tồn tại giá trị như vậy thì trả về giá trị -1
 
 // -------------------------
 // 	Bài 163: Tìm số chính phương đầu tiên trong mảng 1 chiều các số nguyên
@@ -42,7 +48,8 @@ float timXtrongMangSoThuc(float a[100], int n);
 // 	Bài 165: Cho mảng 1 chiều các số nguyên. Hãy tìm giá trị đầu tiên có chữ số đầu tiên là chữ số lẻ
 
 // -------------------------
-// 	Bài 166: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm giá trị đầu tiên trong mảng có dạng 2^k. Nếu mảng không có giá trị dạng 2k thì hàm sẽ trả về 0
+// 	Bài 166: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm giá trị đầu tiên trong mảng có dạng 2^k. 
+// Nếu mảng không có giá trị dạng 2k thì hàm sẽ trả về 0
 
 // -------------------------
 // 	Bài 167: Hãy tìm giá trị thỏa điều kiện toàn chữ số lẻ và là giá trị lớn nhất thỏa điều kiện ấy trong mảng 1 chiều các số nguyên. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về 0
@@ -72,8 +79,6 @@ float timXtrongMangSoThuc(float a[100], int n);
 // 	Bài 175 (*): Cho mảng số thực có nhiều hơn 2 giá trị và các giá trị trong mảng khác nhau từng đôi một. Hãy viết hàm tìm 2 giá trị gần nhau nhất trong mảng (Lưu ý: Mảng có các giá trị khác nhau từng đôi một còn có tên là mảng phân biệt)
 
 // -------------------------
-
-
 
 // 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
 int TimSoXuatHienItNhat(int a[100], int n);

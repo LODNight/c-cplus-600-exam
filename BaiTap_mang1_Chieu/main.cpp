@@ -27,8 +27,8 @@ int main(){
     NhapMangSoThuc(a_thuc,n);
     XuatMangSoThuc(a_thuc,n);
 
-    int kq = timXtrongMangSoThuc(a_thuc,n);
-    printf("\nKet qua la: %d",kq);
+    float kq = giaTriAmCuoiCungLonHonTru1(a_thuc,n);
+    printf("\nKet qua la: %f",kq);
 
 
     // giaTriABTrongMang(a_thuc,n);
