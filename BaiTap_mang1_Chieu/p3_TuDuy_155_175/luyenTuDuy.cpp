@@ -97,21 +97,10 @@ float giaTriAmCuoiCungLonHonTru1(float a[100], int n){
 // 	Bài 161: Cho mảng 1 chiều các số nguyên, hãy tìm giá trị đầu tiên nằm trong khoảng [x, y] cho trước. 
 // Nếu mảng không có giá trị thỏa điều kiện trên thì trả về -1
 int giaTriDauTienNamTrongManXY(int a[100], int n, int x, int y){
-    int min;
-    bool soHopLe = false; 
     for(int i=0; i < n; i++){
-        if(a[i] < y){
-            if(a[i] > x){
-                if(!soHopLe){
-                    soHopLe = true;
-                    min = a[i];
-                } 
-                else if(a[i] < min){
-                    min = a[i];
-                }
-            }
+        if(a[i] < y && a[i] > x){
+            return a[i];
         }
     }
-    if(soHopLe) return min;
-    else return -1;
+    return -1;
 }
