@@ -98,9 +98,22 @@ float giaTriAmCuoiCungLonHonTru1(float a[100], int n){
 // Nếu mảng không có giá trị thỏa điều kiện trên thì trả về -1
 int giaTriDauTienNamTrongManXY(int a[100], int n, int x, int y){
     for(int i=0; i < n; i++){
-        if(a[i] < y && a[i] > x){
+        if(a[i] <= y && a[i] >= x){
             return a[i];
         }
+    }
+    return -1;
+}
+
+// -------------------------
+// 	Bài 162: Cho mảng 1 chiều các số thực. Hãy viết hàm tìm một vị trí trong mảng thỏa 2 điều kiện: 
+// có 2 giá trị lân cận và giá trị tại đó bằng tích 2 giá trị lân cận. 
+// Nếu mảng không tồn tại giá trị như vậy thì trả về giá trị -1
+int viTriGiaTriBangTichLanCan(float a[100], int n){
+    if(n < 2) return -1;
+    for(int i=1; i < n-1; i++){
+        if((a[i-1] * a[i+1]) == a[i]) 
+            return i;
     }
     return -1;
 }

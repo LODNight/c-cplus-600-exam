@@ -38,6 +38,7 @@ int giaTriDauTienNamTrongManXY(int a[100], int n, int x, int y);
 // 	Bài 162: Cho mảng 1 chiều các số thực. Hãy viết hàm tìm một vị trí trong mảng thỏa 2 điều kiện: 
 // có 2 giá trị lân cận và giá trị tại đó bằng tích 2 giá trị lân cận. 
 // Nếu mảng không tồn tại giá trị như vậy thì trả về giá trị -1
+int viTriGiaTriBangTichLanCan(float a[100], int n);
 
 // -------------------------
 // 	Bài 163: Tìm số chính phương đầu tiên trong mảng 1 chiều các số nguyên
