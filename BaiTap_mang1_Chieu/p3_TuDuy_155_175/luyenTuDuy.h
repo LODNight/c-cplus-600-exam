@@ -42,7 +42,9 @@ int viTriGiaTriBangTichLanCan(float a[100], int n);
 
 // -------------------------
 // 	Bài 163: Tìm số chính phương đầu tiên trong mảng 1 chiều các số nguyên
+bool soChinhPhuong(int n);
 
+int soChinhPhuongDauTien(int a[100], int n);
 // -------------------------
 // 	Bài 164: Cho mảng 1 chiều các số nguyên. Hãy tìm giá trị đầu tiên thỏa mãn tính chất số gánh
 
