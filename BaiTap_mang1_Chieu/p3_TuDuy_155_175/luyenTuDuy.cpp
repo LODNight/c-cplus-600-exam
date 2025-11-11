@@ -122,10 +122,9 @@ int viTriGiaTriBangTichLanCan(float a[100], int n){
 // Bài 163: Tìm số chính phương đầu tiên trong mảng 1 chiều các số nguyên
 // Số chính phương = bình phương 1 số n
 bool soChinhPhuong(int n){
-    for(int i=2; i < n; i++){
-        if(sqrt(n) == i) return true;
-    }
-    return false;
+    if(n < 0) return false;
+    int e = (int) sqrt(n);
+    return (e * e == n);
 }
 
 int soChinhPhuongDauTien(int a[100], int n){
