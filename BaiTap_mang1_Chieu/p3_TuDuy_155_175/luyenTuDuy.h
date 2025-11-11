@@ -45,8 +45,13 @@ int viTriGiaTriBangTichLanCan(float a[100], int n);
 bool soChinhPhuong(int n);
 
 int soChinhPhuongDauTien(int a[100], int n);
+
 // -------------------------
 // 	Bài 164: Cho mảng 1 chiều các số nguyên. Hãy tìm giá trị đầu tiên thỏa mãn tính chất số gánh
+// số gánh là số đảo ngược của chính nó VD: 121, 12321, 32123
+bool soGanh(int n);
+
+int soGanhDauTien(int a[100], int n);
 
 // -------------------------
 // 	Bài 165: Cho mảng 1 chiều các số nguyên. Hãy tìm giá trị đầu tiên có chữ số đầu tiên là chữ số lẻ

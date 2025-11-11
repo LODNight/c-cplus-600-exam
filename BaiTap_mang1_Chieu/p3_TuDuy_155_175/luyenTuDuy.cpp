@@ -133,3 +133,24 @@ int soChinhPhuongDauTien(int a[100], int n){
     }
     return -1;
 }
+
+// -------------------------
+// 	Bài 164: Cho mảng 1 chiều các số nguyên. Hãy tìm giá trị đầu tiên thỏa mãn tính chất số gánh
+// số gánh là số đảo ngược của chính nó VD: 121, 12321, 32123
+bool soGanh(int n){
+    if(n < 0) return -1;
+    int dao = 0;
+    int i = n;
+    while (i > 0){
+        dao = (dao * 10) + (i % 10);
+        i /= 10;
+    }
+    return dao == n;
+}
+
+int soGanhDauTien(int a[100], int n){
+    for(int i=0; i < n; i++){
+        if(soGanh(a[i])) return a[i];
+    }
+    return -1;
+}
