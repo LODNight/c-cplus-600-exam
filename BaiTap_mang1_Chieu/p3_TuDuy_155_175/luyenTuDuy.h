@@ -55,6 +55,9 @@ int soGanhDauTien(int a[100], int n);
 
 // -------------------------
 // 	Bài 165: Cho mảng 1 chiều các số nguyên. Hãy tìm giá trị đầu tiên có chữ số đầu tiên là chữ số lẻ
+bool chuSoDauTien(int n);
+
+int soDauTienChuSoLe(int a[100], int n);
 
 // -------------------------
 // 	Bài 166: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm giá trị đầu tiên trong mảng có dạng 2^k. 

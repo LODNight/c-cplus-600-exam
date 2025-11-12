@@ -154,3 +154,23 @@ int soGanhDauTien(int a[100], int n){
     }
     return -1;
 }
+
+// -------------------------
+// 	Bài 165: Cho mảng 1 chiều các số nguyên. Hãy tìm giá trị đầu tiên có chữ số đầu tiên là chữ số lẻ
+
+bool chuSoDauTien(int n){
+    int a = abs(n);
+    while(n >= 10){
+        n /= 10;
+    }
+    return n;
+}
+
+int soDauTienChuSoLe(int a[100], int n){
+    if(n < 0) return -1;
+    for(int i=0; i < n; i++){
+        int soDau = chuSoDauTien(a[i]);
+        if(soDau % 2 != 0) return a[i];
+    }
+    return -1;
+}
