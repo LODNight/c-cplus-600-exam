@@ -157,7 +157,6 @@ int soGanhDauTien(int a[100], int n){
 
 // -------------------------
 // 	Bài 165: Cho mảng 1 chiều các số nguyên. Hãy tìm giá trị đầu tiên có chữ số đầu tiên là chữ số lẻ
-
 bool chuSoDauTien(int n){
     int a = abs(n);
     while(n >= 10){
@@ -173,4 +172,39 @@ int soDauTienChuSoLe(int a[100], int n){
         if(soDau % 2 != 0) return a[i];
     }
     return -1;
+}
+
+// -------------------------
+// 	Bài 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
+void demChuSoXuatHien(int n, int dem[]){
+    n = abs(n);
+
+    if(n == 0){
+        dem[0]++;
+        return;
+    }
+
+    while(n > 0){
+        int chuSo = n % 10;
+        dem[chuSo]++;
+        n /= 10;
+    }
+}
+
+int chuSoItNhatTrongMang(int a[], int n){
+    int dem[10] = {0};
+    for(int i=0; i < n; i++){
+        demChuSoXuatHien(a[i],dem);
+    }
+
+    int min = 99999;
+    int result = -1;
+    for(int i=0; i < 10; i++){
+        if(dem[i] > 0 && dem[i] < min){
+            min = dem[i];
+            result = i;
+        }
+    }
+
+    return result;
 }

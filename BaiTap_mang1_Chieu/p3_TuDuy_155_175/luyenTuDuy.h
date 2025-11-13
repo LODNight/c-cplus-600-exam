@@ -82,7 +82,10 @@ int soDauTienChuSoLe(int a[100], int n);
 // 	Bài 172: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm bội chung nhỏ nhất của tất cả các phần tử trong mảng
 
 // -------------------------
-// 	Bài 173 (*): Cho mảng 1 chiều các số nguyên. Hãy  viết hàm tìm chữ số xuất hiện ít nhất trong mảng
+// 	Bài 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
+void demChuSoXuatHien(int n, int dem[]);
+
+int chuSoItNhatTrongMang(int a[], int n);
 
 // -------------------------
 // 	Bài 174 (*): Cho mảng số thực có nhiều hơn 2 giá trị và các giá trị trong mảng khác nhau từng đôi một. Hãy viết hàm liệt kê tất cả các cặp giá trị (a, b) trong mảng thỏa điều kiện a <= b
@@ -92,7 +95,7 @@ int soDauTienChuSoLe(int a[100], int n);
 
 // -------------------------
 
-// 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
-int TimSoXuatHienItNhat(int a[100], int n);
+// // 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
+// int TimSoXuatHienItNhat(int a[100], int n);
 
-void TimChuSoXuatHienItNhat(int a[100], int n, int chuSoItNhat[10], int m);
+// void TimChuSoXuatHienItNhat(int a[100], int n, int chuSoItNhat[10], int m);
