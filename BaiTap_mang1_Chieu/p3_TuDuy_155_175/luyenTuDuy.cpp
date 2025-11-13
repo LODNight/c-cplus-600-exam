@@ -221,6 +221,24 @@ int soDauTienChuSoLe(int a[100], int n)
 }
 
 // -------------------------
+// 	Bài 166: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm giá trị đầu tiên trong mảng có dạng 2^k. 
+// Nếu mảng không có giá trị dạng 2k thì hàm sẽ trả về 0
+int giaTriDauTienCoDang2K(int a[100], int n){
+    for(int i=0; i < n; i++){
+        if(a[i] > 0){
+            int luyThuaCua2 = 1;
+            while(luyThuaCua2 <= a[i]){
+                if(luyThuaCua2 == a[i]){
+                    return a[i]
+                }
+                luyThuaCua2 *= 2;
+            }
+        }
+    }
+    return 0;
+}
+
+// -------------------------
 // 	Bài 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
 void demChuSoXuatHien(int n, int dem[])
 {
@@ -280,7 +298,6 @@ void lietKeCacCapGiaTri(float a[], int n)
 
     }
 }
-
 
 // -------------------------
 // 	Bài 175 (*): Cho mảng số thực có nhiều hơn 2 giá trị và các giá trị trong mảng khác nhau từng đôi một. Hãy viết hàm tìm 2 giá trị gần nhau nhất trong mảng (Lưu ý: Mảng có các giá trị khác nhau từng đôi một còn có tên là mảng phân biệt)
