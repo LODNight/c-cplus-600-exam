@@ -31,7 +31,7 @@ int main(){
     // printf("\nKet qua la: %f",kq);
 
 
-    lietKeCacCapGiaTri(a_thuc,n);
+    lietKeCacCapGiaTriGanNhau(a_thuc,n);
 
     // -------------------
 

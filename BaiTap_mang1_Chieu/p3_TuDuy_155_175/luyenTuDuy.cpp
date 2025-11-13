@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdbool.h>
+#include <float.h>
 
 // -------------------------
 // 	Bài 155: Hãy tìm giá trị trong mảng các số thực xa giá trị x nhất
@@ -262,8 +263,7 @@ int chuSoItNhatTrongMang(int a[], int n)
 }
 
 // -------------------------
-// 	Bài 174 (*): Cho mảng số thực có nhiều hơn 2 giá trị và các giá trị trong mảng khác nhau từng đôi một. 
-// Hãy viết hàm liệt kê tất cả các cặp giá trị (a, b) trong mảng thỏa điều kiện a <= b
+// 	Bài 174 (*): Cho mảng số thực có nhiều hơn 2 giá trị và các giá trị trong mảng khác nhau từng đôi một. Hãy viết hàm liệt kê tất cả các cặp giá trị (a, b) trong mảng thỏa điều kiện a <= b
 void lietKeCacCapGiaTri(float a[], int n)
 {
     if (n < 2)
@@ -279,4 +279,31 @@ void lietKeCacCapGiaTri(float a[], int n)
         }
 
     }
+}
+
+
+// -------------------------
+// 	Bài 175 (*): Cho mảng số thực có nhiều hơn 2 giá trị và các giá trị trong mảng khác nhau từng đôi một. Hãy viết hàm tìm 2 giá trị gần nhau nhất trong mảng (Lưu ý: Mảng có các giá trị khác nhau từng đôi một còn có tên là mảng phân biệt)
+void lietKeCacCapGiaTriGanNhau(float a[], int n){
+    if(n < 2) return;
+
+    float min = FLT_MAX;
+    float val1 = a[0];
+    float val2 = a[1];
+
+    for(int i=0; i < n-1; i++){
+        for(int j=i+1; j < n; j++){
+            if(a[i] == a[j]) return;
+            float min_diff = fabs(a[i] - a[j]);
+
+            if(min_diff < min){
+                val1 = a[i];
+                val2 = a[j];
+                min = min_diff;
+            }
+
+            
+        }
+    }
+    printf("\n[%.2f-%.2f]", val1,val2);
 }

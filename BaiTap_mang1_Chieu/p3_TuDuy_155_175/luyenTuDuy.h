@@ -93,10 +93,4 @@ void lietKeCacCapGiaTri(float a[], int n);
 
 // -------------------------
 // 	Bài 175 (*): Cho mảng số thực có nhiều hơn 2 giá trị và các giá trị trong mảng khác nhau từng đôi một. Hãy viết hàm tìm 2 giá trị gần nhau nhất trong mảng (Lưu ý: Mảng có các giá trị khác nhau từng đôi một còn có tên là mảng phân biệt)
-
-// -------------------------
-
-// // 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
-// int TimSoXuatHienItNhat(int a[100], int n);
-
-// void TimChuSoXuatHienItNhat(int a[100], int n, int chuSoItNhat[10], int m);
+void lietKeCacCapGiaTriGanNhau(float a[], int n);
