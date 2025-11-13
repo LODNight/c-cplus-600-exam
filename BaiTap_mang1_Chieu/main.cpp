@@ -14,24 +14,24 @@ int main(){
     int m;
 
     // -------------------
-    NhapMang(a,n);
-    XuatMang(a,n);
+    // NhapMang(a,n);
+    // XuatMang(a,n);
 
-    int kq =chuSoItNhatTrongMang(a,n);
-    printf("\nKet qua la: %d",kq);
+    // int kq =chuSoItNhatTrongMang(a,n);
+    // printf("\nKet qua la: %d",kq);
     // -------------------
 
 
     // -------------------
-    // float a_thuc[100];
-    // NhapMangSoThuc(a_thuc,n);
-    // XuatMangSoThuc(a_thuc,n);
+    float a_thuc[100];
+    NhapMangSoThuc(a_thuc,n);
+    XuatMangSoThuc(a_thuc,n);
 
     // float kq = viTriGiaTriBangTichLanCan(a_thuc,n);
     // printf("\nKet qua la: %f",kq);
 
 
-    // giaTriABTrongMang(a_thuc,n);
+    lietKeCacCapGiaTri(a_thuc,n);
 
     // -------------------
 
