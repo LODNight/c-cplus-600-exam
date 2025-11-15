@@ -66,6 +66,7 @@ int giaTriDauTienCoDang2K(int a[100], int n);
 
 // -------------------------
 // 	Bài 167: Hãy tìm giá trị thỏa điều kiện toàn chữ số lẻ và là giá trị lớn nhất thỏa điều kiện ấy trong mảng 1 chiều các số nguyên. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về 0
+int giaTriToanLeLonNhat(int a[100], int n);
 
 // -------------------------
 // 	Bài 168: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm giá trị lớn nhất trong mảng có dạng 5^k. Nếu mảng khong tồn tại giá trị 5^k thì hàm sẽ trả về 0

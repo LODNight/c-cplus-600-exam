@@ -229,13 +229,34 @@ int giaTriDauTienCoDang2K(int a[100], int n){
             int luyThuaCua2 = 1;
             while(luyThuaCua2 <= a[i]){
                 if(luyThuaCua2 == a[i]){
-                    return a[i]
+                    return a[i];
                 }
                 luyThuaCua2 *= 2;
             }
         }
     }
     return 0;
+}
+
+// -------------------------
+// 	Bài 167: Hãy tìm giá trị thỏa điều kiện toàn chữ số lẻ và là giá trị lớn nhất thỏa điều kiện ấy trong mảng 1 chiều các số nguyên. Nếu mảng không có giá trị thỏa điều kiện trên thì trả về 0
+int giaTriToanLeLonNhat(int a[100], int n){
+    int max = 0;
+    int max_p = 0;
+    for(int i=0; i < n; i++){
+        if(a[i] > max){
+            max = a[i];
+            max_p = i;
+        }
+    }
+    int m = a[max_p];
+    int check;
+    while(m > 0){
+        check = m % 10;
+        if(check % 2 == 0) return 0;
+        m /= 10;
+    }
+    return a[max_p];
 }
 
 // -------------------------
