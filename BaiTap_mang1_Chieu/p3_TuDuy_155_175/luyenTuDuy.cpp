@@ -278,6 +278,19 @@ int giaTriLonNhatCoDang5MuK(int a[100], int n){
     return 0;
 }
 
+// -------------------------
+// 	Bài 169: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm số chẵn nhỏ nhất lớn hơn mọi giá trị có trong mảng
+int soChanNhoNhatLonHonMoiGiaTri(int a[100], int n){
+    if(n <= 0) return 0;
+    int max = 0;
+    for(int i=0; i < n; i++){
+        if(a[i] > max){
+            max = a[i];
+        }
+    }
+    if(max % 2 == 0) return (max + 2);
+    else return (max + 1);
+}
 
 
 // -------------------------

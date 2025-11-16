@@ -74,9 +74,11 @@ int giaTriLonNhatCoDang5MuK(int a[100], int n);
 
 // -------------------------
 // 	Bài 169: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm số chẵn nhỏ nhất lớn hơn mọi giá trị có trong mảng
+int soChanNhoNhatLonHonMoiGiaTri(int a[100], int n);
 
 // -------------------------
 // 	Bài 170: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm số nguyên tố nhỏ nhất lớn hơn mọi giá trị có trong mảng
+int soNguyenToNhoNhatLonHonMoiGiaTri(int a[100], int n)
 
 // -------------------------
 // 	Bài 171: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm ước chung lớn nhất của tất cả các phần tử trong mảng
