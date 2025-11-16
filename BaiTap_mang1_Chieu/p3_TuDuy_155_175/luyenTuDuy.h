@@ -70,6 +70,7 @@ int giaTriToanLeLonNhat(int a[100], int n);
 
 // -------------------------
 // 	Bài 168: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm giá trị lớn nhất trong mảng có dạng 5^k. Nếu mảng khong tồn tại giá trị 5^k thì hàm sẽ trả về 0
+int giaTriLonNhatCoDang5MuK(int a[100], int n);
 
 // -------------------------
 // 	Bài 169: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm số chẵn nhỏ nhất lớn hơn mọi giá trị có trong mảng
