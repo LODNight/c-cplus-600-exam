@@ -322,6 +322,35 @@ int soNguyenToNhoNhatLonHonMoiGiaTri(int a[100], int n){
     return 0;
 }
 
+// -------------------------
+// 	Bài 171: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm ước chung lớn nhất của tất cả các phần tử trong mảng
+int uocChungLonNhatCua2So(int a, int b){
+    a = abs(a);
+    b = abs(b);
+    if(a==0) return b;
+    if(b==0) return a;
+
+    while(b != 0){
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+int uocChungLonNhat(int a[100], int n){
+    if(n <=0) return 0;
+    int ucln = a[0];
+
+    for(int i=0; i < n; i++){
+        ucln = uocChungLonNhatCua2So(ucln, a[i]);
+
+        if(ucln == 1) return 1;
+    }
+    
+    return ucln;
+}
+
 
 // -------------------------
 // 	Bài 173 (*): Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm chữ số xuất hiện ít nhất trong mảng
