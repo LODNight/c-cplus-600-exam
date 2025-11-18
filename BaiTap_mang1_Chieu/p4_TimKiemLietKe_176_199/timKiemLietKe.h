@@ -77,6 +77,8 @@ void lkGiaTriChuSoDauTienChan(int a[100], int n);
 
 // -------------------------
 // 	Bài 193: Cho mảng 1 chiều các số nguyên. Hãy viết hàm liệt kê các giá trị trong mảng có dạng 3^k. Nếu mảng không có giá trị đó thì trả về 0
+bool ktDang3K(int n);
+void lkGiaTriCoDang3K(int a[100], int n);
 
 // -------------------------
 // 	Bài 194: Cho mảng 1 chiều các số nguyên có nhiều hơn 2 giá trị. Hãy viết hàm liệt kê các cặp giá trị gần nhau nhất

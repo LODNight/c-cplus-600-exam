@@ -312,3 +312,26 @@ void lkGiaTriChuSoDauTienChan(int a[100], int n){
         if(chuSoDauTienChan(a[i])) printf("%d ", a[i]);
     }
 }
+
+// -------------------------
+// 	Bài 193: Cho mảng 1 chiều các số nguyên. Hãy viết hàm liệt kê các giá trị trong mảng có dạng 3^k. Nếu mảng không có giá trị đó thì trả về 0
+bool ktDang3K(int n){
+    while(n > 1){
+        if(n % 3 != 0) return false;
+        n /= 3;
+    }
+    return (n == 1);
+}
+
+void lkGiaTriCoDang3K(int a[100], int n){
+    if(n < 1) return;
+    printf("\n");
+    bool thoa = false;
+    for(int i=0; i < n; i++){
+        if(ktDang3K(a[i])){
+            thoa = true;
+            printf("%d ", a[i]);
+        } 
+    }
+    if(!thoa) printf("0");
+}
