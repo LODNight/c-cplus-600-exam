@@ -158,6 +158,7 @@ bool soChinhPhuong(int n){
     int e = (int)sqrt(n);
     return (e*e == n);
 }
+
 void lkViTriSoChinhPhuong(int a[100], int n){
     if(n < 1) return;
     printf("\n");
@@ -204,8 +205,36 @@ void lkViTriBanhGiaTriDuongDauTienNhoNhat(float a[100], int n){
             }
         }
     }
+    if(!flag) return;
+    
     printf("\n");
     for(int i=0; i < n; i++){
         if(a[i] == min) printf("%d ",i);
     }
 }
+
+// -------------------------
+// 	Bài 188: Hãy liệt kê các vị trí chẵn lớn nhất trong mảng 1 chiều các số nguyên
+void lkViTriChanLonNhat(int a[100], int n){
+    if(n < 1) return;
+    int max;
+    int flag = false;
+    for(int i=0; i < n; i++){
+        if(a[i] % 2 == 0){
+            if(!flag){
+                max = a[i];
+                flag = true;
+            }
+            else if(a[i] > max){
+                max = a[i];
+            }
+        }
+    }
+    if(!flag) return;
+
+    printf("\n");
+    for(int i=0; i<n; i++){
+        if(a[i] == max) printf("%d ",i);
+    }
+}
+

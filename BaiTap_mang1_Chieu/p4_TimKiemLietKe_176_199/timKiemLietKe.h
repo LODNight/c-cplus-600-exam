@@ -54,6 +54,7 @@ void lkViTriBanhGiaTriDuongDauTienNhoNhat(float a[100], int n);
 
 // -------------------------
 // 	Bài 188: Hãy liệt kê các vị trí chẵn lớn nhất trong mảng 1 chiều các số nguyên
+void lkViTriChanLonNhat(int a[100], int n);
 
 // -------------------------
 // 	Bài 189: Hãy liệt kê các giá trị trong mảng 1 chiều các số nguyên có chữ số đầu tiên là chữ số lẻ
