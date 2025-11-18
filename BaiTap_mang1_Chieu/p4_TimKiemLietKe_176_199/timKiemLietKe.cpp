@@ -165,3 +165,24 @@ void lkViTriSoChinhPhuong(int a[100], int n){
         if(soChinhPhuong(a[i])) printf("%d ",i);
     }
 }
+
+// -------------------------
+// 	Bài 186: Hãy liệt kê các vị trí trong mảng 1 chiều các số thực mà giá trị tại đó bằng giá trị âm đầu tiên trong mảng
+void lkViTriCoGiaTriAmBangGTAmDauTien(float a[100], int n){
+    if(n < 1) return;
+    printf("\n");
+    bool flag = false;
+    float check;
+    for(int i=0; i < n; i++){
+        if(a[i] < 0){
+            if(!flag) {
+                flag = true;
+                check = a[i];
+                printf("%d ",i);
+            }
+            else if(a[i] == check){
+                printf("%d ",i);
+            }
+        }
+    }
+}

@@ -46,6 +46,7 @@ void lkViTriSoChinhPhuong(int a[100], int n);
 
 // -------------------------
 // 	Bài 186: Hãy liệt kê các vị trí trong mảng 1 chiều các số thực mà giá trị tại đó bằng giá trị âm đầu tiên trong mảng
+void lkViTriCoGiaTriAmBangGTAmDauTien(float a[100], int n);
 
 // -------------------------
 // 	Bài 187: Hãy liệt kê các vị trí mà giá trị tại các vị trí đó bằng giá trị dương nhỏ nhất trong mảng 1 chiều các số thực
