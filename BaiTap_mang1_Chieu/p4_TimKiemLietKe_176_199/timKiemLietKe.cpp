@@ -101,7 +101,7 @@ void lkSoLanCanTraiDau(float a[100], int n){
     printf("\n");
     for(int i=0; i < n; i++){
         int thoa = 0;
-        
+
         if(a[i] > 0){
             if(i > 0 && (a[i] * a[i-1] < 0)) thoa = 1;
             if(i < n-1 && (a[i] * a[i+1] < 0)) thoa = 1;
@@ -109,4 +109,26 @@ void lkSoLanCanTraiDau(float a[100], int n){
         
         if(thoa == 1) printf("%.2f ", a[i]);
     }
+}
+
+// -------------------------
+// 	Bài 183: Hãy liệt kê các vị trí mà giá trị tại đó là giá trị lớn nhất trong mảng 1 chiều các số thực
+void lkViTriGiaTriLonNhat(int a[100], int n){
+    if(n<1) return;
+    float max = a[0];
+    // Tim so lon nhat
+    for(int i = 0; i < n; i++){
+        if(a[i] > max){
+            max = a[i];
+        }
+    }
+    printf("\n");
+    // Tim vi tri co so lon nhat
+    for(int i=0; i < n; i++){
+        if(a[i] == max){
+            printf("%d ",i);
+        }
+    }
+
+
 }

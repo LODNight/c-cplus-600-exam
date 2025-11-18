@@ -31,7 +31,8 @@ void lkGiaTriChanLienKe(int a[100], int n);
 void lkSoLanCanTraiDau(int a[100], int n);
 
 // -------------------------
-// 	Bài 183: Hãy liệt kê các vị trí mà giá trị tại đó là giá trị tại đó là giá trị lớn nhất trong mảng 1 chiều các số thực
+// 	Bài 183: Hãy liệt kê các vị trí mà giá trị tại đó là giá trị lớn nhất trong mảng 1 chiều các số thực
+void lkViTriGiaTriLonNhat(float a[100], int n);
 
 // -------------------------
 // 	Bài 184: Hãy liệt kê các vị trí mà giá trị tại đó là số nguyên tố trong mảng 1 chiều các số nguyên
