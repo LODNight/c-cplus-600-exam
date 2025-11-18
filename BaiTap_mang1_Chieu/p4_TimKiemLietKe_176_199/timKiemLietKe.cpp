@@ -260,6 +260,7 @@ void lkGiaTriCoChuSoDauTienLaSoLe(int a[100], int n){
 // 	Bài 190: Hãy liệt kê các giá trị có toàn chữ số lẻ trong mảng 1 chiều các số nguyên
 bool ktChuSoLe(int n){
     int d;
+    if(n ==0 ) return false;
     n = abs(n);
     while(n > 0){
         d = n%10;
@@ -274,5 +275,22 @@ void lkGiaTriToanChuSoLe(int a[100], int n){
     printf("\n");
     for(int i=0; i < n; i++){
         if(ktChuSoLe(a[i])) printf("%d ", a[i]);
+    }
+}
+
+// -------------------------
+// 	Bài 191: Hãy liệt kê các giá trị cực đại trong mảng 1 chiều các số thực. Một phần tử được gọi là cực đại khi lớn hơn các phần tử lân cận
+void lkGiaTriCucDai(float a[100], int n){
+    if(n < 2) return;
+    for(int i=0; i<n; i++){
+        int thoa = 0;
+        if(i == 0 && a[i] > a[i+1]) thoa = 1;
+        else if(i == n-1 && a[i] > a[i-1]) thoa = 1;
+        else if(i > 0 && i < n-1){
+            if(a[i] > a[i-1] && a[i] > a[i+1]) thoa = 1;
+        }
+        if(thoa == 1){
+            printf("%.2f ", a[i]);
+        }
     }
 }
