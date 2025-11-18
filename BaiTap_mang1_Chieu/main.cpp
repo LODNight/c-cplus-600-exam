@@ -14,25 +14,25 @@ int main(){
     int m;
 
     // -------------------
-    NhapMang(a,n);
-    XuatMang(a,n);
+    // NhapMang(a,n);
+    // XuatMang(a,n);
 
     // int kq = soNguyenToNhoNhatLonHonMoiGiaTri(a,n);
     // printf("\nKet qua la: %d",kq);
-    lietKeCacGiaTriLonHonGiaTriKeTiep(a,n);
+    // lietKeCacGiaTriLonHonGiaTriKeTiep(a,n);
     // -------------------
 
 
     // -------------------
-    // float a_thuc[100];
-    // NhapMangSoThuc(a_thuc,n);
-    // XuatMangSoThuc(a_thuc,n);
+    float a_thuc[100];
+    NhapMangSoThuc(a_thuc,n);
+    XuatMangSoThuc(a_thuc,n);
 
     // float kq = viTriGiaTriBangTichLanCan(a_thuc,n);
     // printf("\nKet qua la: %f",kq);
 
 
-    // lietKeCacCapGiaTriGanNhau(a_thuc,n);
+    lkViTriBanhGiaTriDuongDauTienNhoNhat(a_thuc,n);
 
     // -------------------
 

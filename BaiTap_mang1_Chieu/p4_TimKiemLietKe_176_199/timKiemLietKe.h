@@ -50,6 +50,7 @@ void lkViTriCoGiaTriAmBangGTAmDauTien(float a[100], int n);
 
 // -------------------------
 // 	Bài 187: Hãy liệt kê các vị trí mà giá trị tại các vị trí đó bằng giá trị dương nhỏ nhất trong mảng 1 chiều các số thực
+void lkViTriBanhGiaTriDuongDauTienNhoNhat(float a[100], int n);
 
 // -------------------------
 // 	Bài 188: Hãy liệt kê các vị trí chẵn lớn nhất trong mảng 1 chiều các số nguyên

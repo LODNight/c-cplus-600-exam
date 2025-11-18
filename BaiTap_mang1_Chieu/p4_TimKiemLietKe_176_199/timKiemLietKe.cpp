@@ -186,3 +186,26 @@ void lkViTriCoGiaTriAmBangGTAmDauTien(float a[100], int n){
         }
     }
 }
+
+// -------------------------
+// 	Bài 187: Hãy liệt kê các vị trí mà giá trị tại các vị trí đó bằng giá trị dương nhỏ nhất trong mảng 1 chiều các số thực
+void lkViTriBanhGiaTriDuongDauTienNhoNhat(float a[100], int n){
+    if(n < 1) return;
+    bool flag = false;
+    float min;
+    for(int i=0; i < n; i++){
+        if(a[i] > 0){
+            if(!flag){
+                min = a[i];
+                flag = true;
+            } 
+            else if(a[i] < min){
+                min = a[i];
+            }
+        }
+    }
+    printf("\n");
+    for(int i=0; i < n; i++){
+        if(a[i] == min) printf("%d ",i);
+    }
+}
