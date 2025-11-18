@@ -4,8 +4,8 @@
 #include "nhapxuat.cpp"
 #include "kythuattinhtong.h"
 #include "kythuattinhtong.cpp"
-#include "p3_TuDuy_155_175/luyenTuDuy.h"
-#include "p3_TuDuy_155_175/luyenTuDuy.cpp"
+#include "p4_TimKiemLietKe_176_199/timKiemLietKe.h"
+#include "p4_TimKiemLietKe_176_199/timKiemLietKe.cpp"
 
 int main(){
     int a[100];
@@ -17,8 +17,9 @@ int main(){
     NhapMang(a,n);
     XuatMang(a,n);
 
-    int kq = soNguyenToNhoNhatLonHonMoiGiaTri(a,n);
-    printf("\nKet qua la: %d",kq);
+    // int kq = soNguyenToNhoNhatLonHonMoiGiaTri(a,n);
+    // printf("\nKet qua la: %d",kq);
+    lietKeCacGiaTriLonHonGiaTriKeTiep(a,n);
     // -------------------
 
 

@@ -49,3 +49,15 @@ void lietKeSoChanTrongDoanXY(int a[100], int n, int x, int y){
         }
     }
 }
+
+// -------------------------
+// 	Bài 179: Hãy liệt kê các giá trị trong mảng mà thỏa điều kiện lớn hơn giá trị tuyệt đối của giá trị đứng liền sau nó
+void lietKeCacGiaTriLonHonGiaTriKeTiep(int a[100], int n){
+    if(n<=0) return;
+    printf("\n");
+    for(int i=0; i < n-1; i++){
+        if(a[i] > abs(a[i+1])){
+            printf("%d ", a[i]);
+        }
+    }
+}

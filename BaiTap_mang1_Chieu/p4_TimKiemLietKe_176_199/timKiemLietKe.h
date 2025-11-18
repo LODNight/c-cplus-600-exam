@@ -12,10 +12,11 @@ void lietKeCacSoTrongDoanXY(float a[100], int n, float x, float y);
 
 // -------------------------
 // 	Bài 178: Hãy liệt kê các số chẵn trong mảng 1 chiều các số nguyên thuộc đoạn [x, y] cho trước (x, y là các số nguyên)
-void lietKeSoChanTrongDoanXY(int a[100], int n, int x, int y)
+void lietKeSoChanTrongDoanXY(int a[100], int n, int x, int y);
 
 // -------------------------
 // 	Bài 179: Hãy liệt kê các giá trị trong mảng mà thỏa điều kiện lớn hơn giá trị tuyệt đối của giá trị đứng liền sau nó
+void lietKeCacGiaTriLonHonGiaTriKeTiep(int a[100], int n);
 
 // -------------------------
 // 	Bài 180: Hãy liệt kê các giá trị trong mảng mà thỏa điều kiện nhỏ hơn trị tuyệt đối của giá trị đứng liền sau nó và lớn hơn trị tuyệt đối của giá trị đứng liền trước nó
