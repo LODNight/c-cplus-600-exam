@@ -20,6 +20,7 @@ void lietKeCacGiaTriLonHonGiaTriKeTiep(int a[100], int n);
 
 // -------------------------
 // 	Bài 180: Hãy liệt kê các giá trị trong mảng mà thỏa điều kiện nhỏ hơn trị tuyệt đối của giá trị đứng liền sau nó và lớn hơn trị tuyệt đối của giá trị đứng liền trước nó
+void lkGiaTriNhoHonSauLonHonTruoc(int a[100], int n);
 
 // -------------------------
 // 	Bài 181: Cho mảng 1 chiều các số nguyên. Hãy viết hàm liệt kê các giá trị chẵn có ít nhất 1 lân cận cũng là giá trị chẵn

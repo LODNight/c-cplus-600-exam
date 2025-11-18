@@ -61,3 +61,15 @@ void lietKeCacGiaTriLonHonGiaTriKeTiep(int a[100], int n){
         }
     }
 }
+
+// -------------------------
+// 	Bài 180: Hãy liệt kê các giá trị trong mảng mà thỏa điều kiện nhỏ hơn trị tuyệt đối của giá trị đứng liền sau nó và lớn hơn trị tuyệt đối của giá trị đứng liền trước nó
+void lkGiaTriNhoHonSauLonHonTruoc(int a[100], int n){
+    if(n < 3) return;
+    printf("\n");
+    for(int i=1; i < n-1; i++){
+        if(a[i] > abs(a[i-1]) && a[i] < abs(a[i+1])){
+            printf("%d", a[i]);
+        }
+    }
+}
