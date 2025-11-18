@@ -73,3 +73,22 @@ void lkGiaTriNhoHonSauLonHonTruoc(int a[100], int n){
         }
     }
 }
+
+// -------------------------
+// 	Bài 181: Cho mảng 1 chiều các số nguyên. Hãy viết hàm liệt kê các giá trị chẵn có ít nhất 1 lân cận cũng là giá trị chẵn
+void lkGiaTriChanLienKe(int a[100], int n){
+    if(n<2) return;
+    printf("\n");
+    for(int i=0; i < n; i++){
+        if(a[i] % 2 ==0){
+            int thoa = 0;
+            
+            if(i > 0 && a[i-1] % 2 == 0) thoa = 1;
+            if(n < n-1 && a[i+1] % 2 ==0) thoa = 1;
+            
+            if(thoa == 1)
+                printf("%d",a[i]);
+            
+        }
+    }
+}

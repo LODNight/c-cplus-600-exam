@@ -24,6 +24,7 @@ void lkGiaTriNhoHonSauLonHonTruoc(int a[100], int n);
 
 // -------------------------
 // 	Bài 181: Cho mảng 1 chiều các số nguyên. Hãy viết hàm liệt kê các giá trị chẵn có ít nhất 1 lân cận cũng là giá trị chẵn
+void lkGiaTriChanLienKe(int a[100], int n);
 
 // -------------------------
 // 	Bài 182: Cho mảng 1 chiều các số thực. Hãy viết hàm liệt kê tất cả các giá trị trong mảng có ít nhất 1 lận cận trái dấu với nó
