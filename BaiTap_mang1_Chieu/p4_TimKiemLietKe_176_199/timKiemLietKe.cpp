@@ -27,8 +27,25 @@ void lietKeCacSoTrongDoanXY(float a[100], int n, float x, float y){
     }
     printf("\n");
     for(int i=0; i < n; i++){
-        if(a[i] <= x && a[i] >= y){
+        if(a[i] >= x && a[i] <= y){
             printf("%.2f ",a[i]);
         } 
+    }
+}
+
+// -------------------------
+// 	Bài 178: Hãy liệt kê các số chẵn trong mảng 1 chiều các số nguyên thuộc đoạn [x, y] cho trước (x, y là các số nguyên)
+void lietKeSoChanTrongDoanXY(int a[100], int n, int x, int y){
+    if(n<=0) return;
+    if(y<x){
+        int temp = y;
+        y = x;
+        x = temp;
+    }
+    printf("\n");
+    for(int i=0; i < n; i++){
+        if(a[i] >= x && a[i] <=y && a[i] % 2 == 0){
+            printf("%.2f ", a[i]);
+        }
     }
 }
