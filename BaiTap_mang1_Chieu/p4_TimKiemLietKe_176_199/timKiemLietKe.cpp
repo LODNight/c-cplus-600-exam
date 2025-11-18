@@ -82,7 +82,7 @@ void lkGiaTriChanLienKe(int a[100], int n){
     for(int i=0; i < n; i++){
         if(a[i] % 2 ==0){
             int thoa = 0;
-            
+
             if(i > 0 && a[i-1] % 2 == 0) thoa = 1;
             if(n < n-1 && a[i+1] % 2 ==0) thoa = 1;
             
@@ -90,5 +90,23 @@ void lkGiaTriChanLienKe(int a[100], int n){
                 printf("%d",a[i]);
             
         }
+    }
+}
+
+
+// -------------------------
+// 	Bài 182: Cho mảng 1 chiều các số thực. Hãy viết hàm liệt kê tất cả các giá trị trong mảng có ít nhất 1 lận cận trái dấu với nó
+void lkSoLanCanTraiDau(float a[100], int n){
+    if(n < 2) return;
+    printf("\n");
+    for(int i=0; i < n; i++){
+        int thoa = 0;
+        
+        if(a[i] > 0){
+            if(i > 0 && (a[i] * a[i-1] < 0)) thoa = 1;
+            if(i < n-1 && (a[i] * a[i+1] < 0)) thoa = 1;
+        }
+        
+        if(thoa == 1) printf("%.2f ", a[i]);
     }
 }

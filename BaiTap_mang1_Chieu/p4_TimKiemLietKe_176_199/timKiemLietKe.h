@@ -28,6 +28,7 @@ void lkGiaTriChanLienKe(int a[100], int n);
 
 // -------------------------
 // 	Bài 182: Cho mảng 1 chiều các số thực. Hãy viết hàm liệt kê tất cả các giá trị trong mảng có ít nhất 1 lận cận trái dấu với nó
+void lkSoLanCanTraiDau(int a[100], int n);
 
 // -------------------------
 // 	Bài 183: Hãy liệt kê các vị trí mà giá trị tại đó là giá trị tại đó là giá trị lớn nhất trong mảng 1 chiều các số thực
