@@ -63,6 +63,7 @@ void lkGiaTriCoChuSoDauTienLaSoLe(int a[100], int n);
 
 // -------------------------
 // 	Bài 190: Hãy liệt kê các giá trị có toàn chữ số lẻ trong mảng 1 chiều các số nguyên
+bool ktChuSoLe(int n)
 
 // -------------------------
 // 	Bài 191: Hãy liệt kê các giá trị cực đại trong mảng 1 chiều các số thực. Một phần tử được gọi là cực đại khi lớn hơn các phần tử lân cận

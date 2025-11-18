@@ -247,6 +247,7 @@ bool ktChuSoDauTienLe(int n){
     }
     return (n % 2 != 0);
 }
+
 void lkGiaTriCoChuSoDauTienLaSoLe(int a[100], int n){
     if(n<1) return;
     printf("\n");
@@ -255,3 +256,23 @@ void lkGiaTriCoChuSoDauTienLaSoLe(int a[100], int n){
     }
 }
 
+// -------------------------
+// 	Bài 190: Hãy liệt kê các giá trị có toàn chữ số lẻ trong mảng 1 chiều các số nguyên
+bool ktChuSoLe(int n){
+    int d;
+    n = abs(n);
+    while(n > 0){
+        d = n%10;
+        if(d % 2 == 0) return false;
+        n/=10;
+    }
+    return true;
+}
+
+void lkGiaTriToanChuSoLe(int a[100], int n){
+    if(n < 1) return;
+    printf("\n");
+    for(int i=0; i < n; i++){
+        if(ktChuSoLe(a[i])) printf("%d ", a[i]);
+    }
+}
