@@ -58,6 +58,8 @@ void lkViTriChanLonNhat(int a[100], int n);
 
 // -------------------------
 // 	Bài 189: Hãy liệt kê các giá trị trong mảng 1 chiều các số nguyên có chữ số đầu tiên là chữ số lẻ
+bool ktChuSoDauTienLe(int n);
+void lkGiaTriCoChuSoDauTienLaSoLe(int a[100], int n);
 
 // -------------------------
 // 	Bài 190: Hãy liệt kê các giá trị có toàn chữ số lẻ trong mảng 1 chiều các số nguyên

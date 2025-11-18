@@ -206,7 +206,7 @@ void lkViTriBanhGiaTriDuongDauTienNhoNhat(float a[100], int n){
         }
     }
     if(!flag) return;
-    
+
     printf("\n");
     for(int i=0; i < n; i++){
         if(a[i] == min) printf("%d ",i);
@@ -235,6 +235,23 @@ void lkViTriChanLonNhat(int a[100], int n){
     printf("\n");
     for(int i=0; i<n; i++){
         if(a[i] == max) printf("%d ",i);
+    }
+}
+
+// -------------------------
+// 	Bài 189: Hãy liệt kê các giá trị trong mảng 1 chiều các số nguyên có chữ số đầu tiên là chữ số lẻ
+bool ktChuSoDauTienLe(int n){
+    n = abs(n);
+    while(n >= 10){
+        n/= 10;
+    }
+    return (n % 2 != 0);
+}
+void lkGiaTriCoChuSoDauTienLaSoLe(int a[100], int n){
+    if(n<1) return;
+    printf("\n");
+    for(int i = 0; i < n; i++){
+        if(ktChuSoDauTienLe(a[i])) printf("%d ",a[i]);
     }
 }
 
