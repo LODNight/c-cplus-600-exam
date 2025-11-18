@@ -4,9 +4,11 @@
 
 // -------------------------
 // 	Bài 176: Hãy liệt kê các số âm trong mảng 1 chiều các số thực
+void lietKeSoAmTrongMang1ChieuSoThuc(float a[100], int n);
 
 // -------------------------
 // 	Bài 177: Hãy liệt kê các số trong mảng 1 chiều các số thực thuộc đoạn [x, y] cho trước
+void lietKeCacSoTrongDoanXY(float a[100], int n, float x, float y);
 
 // -------------------------
 // 	Bài 178: Hãy liệt kê các số chẵn trong mảng 1 chiều các số nguyên thuộc đoạn [x, y] cho trước (x, y là các số nguyên)

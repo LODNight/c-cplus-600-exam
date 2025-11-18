@@ -82,7 +82,8 @@ int soNguyenToNhoNhatLonHonMoiGiaTri(int a[100], int n);
 
 // -------------------------
 // 	Bài 171: Cho mảng 1 chiều các số nguyên. Hãy viết hàm tìm ước chung lớn nhất của tất cả các phần tử trong mảng
-int uocChungLonNhatCua2So(int a, int b)
+int uocChungLonNhatCua2So(int a, int b);
+
 int uocChungLonNhat(int a[100], int n);
 
 // -------------------------
