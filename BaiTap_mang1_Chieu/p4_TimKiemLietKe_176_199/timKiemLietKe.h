@@ -72,6 +72,8 @@ void lkGiaTriCucDai(float a[100], int n);
 
 // -------------------------
 // 	Bài 192: Hãy liệt kê các  giá trị trong mảng 1 chiều các số nguyên có chữ số đầu tiên là số chẵn
+bool chuSoDauTienChan(int n);
+void lkGiaTriChuSoDauTienChan(int a[100], int n);
 
 // -------------------------
 // 	Bài 193: Cho mảng 1 chiều các số nguyên. Hãy viết hàm liệt kê các giá trị trong mảng có dạng 3^k. Nếu mảng không có giá trị đó thì trả về 0

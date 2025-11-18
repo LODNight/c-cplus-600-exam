@@ -294,3 +294,21 @@ void lkGiaTriCucDai(float a[100], int n){
         }
     }
 }
+
+// -------------------------
+// 	Bài 192: Hãy liệt kê các  giá trị trong mảng 1 chiều các số nguyên có chữ số đầu tiên là số chẵn
+bool chuSoDauTienChan(int n){
+    n = abs(n);
+    while(n >= 10){
+        n /= 10;
+    }
+    return (n % 2 == 0);
+}
+
+void lkGiaTriChuSoDauTienChan(int a[100], int n){
+    if(n < 1) return;
+    printf("\n");
+    for(int i = 0; i < n; i++){
+        if(chuSoDauTienChan(a[i])) printf("%d ", a[i]);
+    }
+}
