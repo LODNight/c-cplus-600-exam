@@ -135,7 +135,7 @@ void lkViTriGiaTriLonNhat(float a[100], int n){
 // 	Bài 184: Hãy liệt kê các vị trí mà giá trị tại đó là số nguyên tố trong mảng 1 chiều các số nguyên
 bool soNguyenTo(int n){
     if(n < 2) return false;
-    for(int i = 2; i < n; i++){
+    for(int i = 2; i < sqrt(n); i++){
         if(n % i == 0)
             return false;
     }
@@ -147,5 +147,21 @@ void lkSoNguyenTo(int a[100], int n){
     printf("\n");
     for(int i=0; i < n; i++){
         if(soNguyenTo(a[i])) printf("%d ",i);
+    }
+}
+
+// -------------------------
+// 	Bài 185: Hãy liệt kê các vị trí mà giá trị tại đó là số chính phương trong mảng 1 chiều các số nguyên
+// so chinh phuong = binh phuong cua no
+bool soChinhPhuong(int n){
+    if(n < 0) return false;
+    int e = (int)sqrt(n);
+    return (e*e == n);
+}
+void lkViTriSoChinhPhuong(int a[100], int n){
+    if(n < 1) return;
+    printf("\n");
+    for(int i=0; i < n; i++){
+        if(soChinhPhuong(a[i])) printf("%d ",i);
     }
 }
