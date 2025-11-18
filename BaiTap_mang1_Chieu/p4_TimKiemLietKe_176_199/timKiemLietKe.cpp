@@ -113,7 +113,7 @@ void lkSoLanCanTraiDau(float a[100], int n){
 
 // -------------------------
 // 	Bài 183: Hãy liệt kê các vị trí mà giá trị tại đó là giá trị lớn nhất trong mảng 1 chiều các số thực
-void lkViTriGiaTriLonNhat(int a[100], int n){
+void lkViTriGiaTriLonNhat(float a[100], int n){
     if(n<1) return;
     float max = a[0];
     // Tim so lon nhat
@@ -129,6 +129,23 @@ void lkViTriGiaTriLonNhat(int a[100], int n){
             printf("%d ",i);
         }
     }
+}
 
+// -------------------------
+// 	Bài 184: Hãy liệt kê các vị trí mà giá trị tại đó là số nguyên tố trong mảng 1 chiều các số nguyên
+bool soNguyenTo(int n){
+    if(n < 2) return false;
+    for(int i = 2; i < n; i++){
+        if(n % i == 0)
+            return false;
+    }
+    return true;
+}
 
+void lkSoNguyenTo(int a[100], int n){
+    if(n < 1) return;
+    printf("\n");
+    for(int i=0; i < n; i++){
+        if(soNguyenTo(a[i])) printf("%d ",i);
+    }
 }

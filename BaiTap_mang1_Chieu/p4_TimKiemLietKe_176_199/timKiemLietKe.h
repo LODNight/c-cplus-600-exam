@@ -36,6 +36,8 @@ void lkViTriGiaTriLonNhat(float a[100], int n);
 
 // -------------------------
 // 	Bài 184: Hãy liệt kê các vị trí mà giá trị tại đó là số nguyên tố trong mảng 1 chiều các số nguyên
+bool soNguyenTo(int n);
+void lkSoNguyenTo(int a[100], int n);
 
 // -------------------------
 // 	Bài 185: Hãy liệt kê các vị trí mà giá trị tại đó là số chính phương trong mảng 1 chiều các số nguyên
