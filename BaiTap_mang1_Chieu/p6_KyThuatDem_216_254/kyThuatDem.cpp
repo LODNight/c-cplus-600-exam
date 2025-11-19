@@ -15,6 +15,20 @@ int demSLSoChan(int a[100], int n){
 }
 
 // -------------------------
+// 	Bài 217: Đếm số dương chia hết cho 7 trong mảng
+int demSoDuongChiahetCho7(int a[100], int n){
+    if(n < 1) return;
+    int count = 0;
+    for(int i=0; i < n; i++){
+        if(a[i] % 2 == 0 % a[i] % 7 == 0) count++;
+    }
+    return count;
+}
+
+
+
+
+// -------------------------
 // 	Bài 236(*): Cho 2 mảng a, b. Hãy cho biết số lần xuất hiện của mảng a trong mảng b
 // A: 1 2 3 
 // B: 1 3 5 1 2 3 8 1 2 3 7 6

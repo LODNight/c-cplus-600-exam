@@ -8,6 +8,7 @@ int demSLSoChan(int a[100], int n);
 
 // -------------------------
 // 	Bài 217: Đếm số dương chia hết cho 7 trong mảng
+int demSoDuongChiahetCho7(int a[100], int n);
 
 // -------------------------
 // 	Bài 218: Đếm số đối xứng trong mảng
@@ -41,6 +42,8 @@ int soLanXuatHienCuaMangCon(int a[100], int b[10], int n, int m);
 
 // -------------------------
 // 	Bài 237 + 238(*): Hãy liệt kê các giá trị có số lần xuất hiện nhiều nhất trong mảng
+
+
 // 	Bài 239: Hãy đếm số lượng số nguyên tố phân biệt trong mảng
 // 	Bài 240: Kiểm tra mảng có giá trị 0 hay không? Có trả về 1, không có trả về 0
 // 	Bài 241: Kiểm tra mảng có 2 giá trị 0 liên tiếp hay không? Có trả về 1, không có trả về 0
