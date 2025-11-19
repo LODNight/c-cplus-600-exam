@@ -50,6 +50,8 @@ int tongCacGiaTriDoiXung(int a[100], int n);
 
 // -------------------------
 // 	Bài 210: Tính tổng các giá trị có chữ số đầu tiên là chữ số chẵn trong mảng các số nguyên
+bool chuSoDauTienChang(int n);
+int tongGiaTriChuSoDauTienChang(int a[100], int n);
 
 // -------------------------
 // 	Bài 211: Tính trung bình cộng các số nguyên tố trong mảng 1 chiều các số nguyên

@@ -156,3 +156,22 @@ int tongCacGiaTriDoiXung(int a[100], int n){
     }
     return total;
 }
+
+// -------------------------
+// 	Bài 210: Tính tổng các giá trị có chữ số đầu tiên là chữ số chẵn trong mảng các số nguyên
+bool chuSoDauTienChang(int n){
+    n = abs(n);
+    while(n >= 10){
+        n/=10;
+    }
+    return (n % 2 == 0);
+}
+
+int tongGiaTriChuSoDauTienChang(int a[100], int n){
+    if(n < 1) return 0;
+    int total = 0;
+    for(int i=0; i < n; i++){
+        if(chuSoDauTienChang(a[i])) total += a[i];
+    }
+    return total;
+}
