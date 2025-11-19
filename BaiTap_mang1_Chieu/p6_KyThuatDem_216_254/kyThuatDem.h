@@ -4,7 +4,12 @@
 
 // -------------------------
 // 	Bài 216: Đếm số lượng số chẵn trong mảng
+
+
+// -------------------------
 // 	Bài 217: Đếm số dương chia hết cho 7 trong mảng
+
+// -------------------------
 // 	Bài 218: Đếm số đối xứng trong mảng
 // 	Bài 219: Đếm số lần xuất hiện của giá trị x trong mảng
 // 	Bài 220: Đếm số lượng giá trị tận cùng bằng 5 trong mảng
@@ -27,9 +32,27 @@
 // 	Bài 233: Hãy liệt kê tần suất của các giá trị xuất hiện trong dãy. Lưu ý: mỗi giá trị liệt kê tần suất 1 lần
 // 	Bài 234: Cho 2 mảng a, b. Đếm số lượng giá trị chỉ xuất hiện 1 trong 2 mảng
 // 	Bài 235: Cho 2 mảng a, b. Liệt kê các giá trị chỉ xuất hiện 1 trong 2 mảng
+
+// -------------------------
 // 	Bài 236(*): Cho 2 mảng a, b. Hãy cho biết số lần xuất hiện của mảng a trong mảng b
 // A: 1 2 3 
-// B:  1 3 5 1 2 3 8 1 2 3 7 6
+// B: 1 3 5 1 2 3 8 1 2 3 7 6
+int soLanXuatHienCuaMangCon(int a[100], int b[10], int n, int m){
+    if(m > n || m < 1) return 0;
+    int count = 0;
+    for(int i=0; i <= n-m; i++){
+        bool isMatch = true;
+        for(int j=i; j < m; j++){
+            if(a[i+j] != b[j]){
+                isMatch = false;
+                break;
+            }
+        }
+        if(isMatch)
+    }
+}
+
+// -------------------------
 // 	Bài 237 + 238(*): Hãy liệt kê các giá trị có số lần xuất hiện nhiều nhất trong mảng
 // 	Bài 239: Hãy đếm số lượng số nguyên tố phân biệt trong mảng
 // 	Bài 240: Kiểm tra mảng có giá trị 0 hay không? Có trả về 1, không có trả về 0
