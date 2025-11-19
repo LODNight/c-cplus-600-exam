@@ -234,3 +234,20 @@ float tbcGiaTriLonHonX(float a[100], int n, float x){
     if(count < 1) return 0;
     return total/count;
 }
+
+// -------------------------
+// 	Bài 214: Tính trung bình nhân các giá trị dương có trong mảng 1 chiều các số thực
+float tbnGiaTriDuong(float a[100], int n){
+    if(n < 1) return 0;
+    double total = 1;
+    int count = 0;
+    for(int i=0; i < n; i++){
+        if(a[i] > 0){
+            total *= a[i];
+            count++;
+        }
+    }
+    
+    if(count < 1) return 0;
+    return (float)pow(total,1.0/count);
+}

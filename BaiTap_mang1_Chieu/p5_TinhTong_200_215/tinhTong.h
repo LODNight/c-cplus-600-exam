@@ -64,10 +64,11 @@ float tbcCacSoDuong(float a[100], int n);
 
 // -------------------------
 // 	Bài 213: Tính trung bình cộng các giá trị lớn hơn giá trị x trong mảng 1 chiều các số thực
-float tbcGiaTriLonHonX(int a[100], int n, int x);
+float tbcGiaTriLonHonX(float a[100], int n, int x);
 
 // -------------------------
 // 	Bài 214: Tính trung bình nhân các giá trị dương có trong mảng 1 chiều các số thực
+float tbnGiaTriDuong(float a[100], int n)
 
 // -------------------------
 // 	Bài 215 (*): Tính khoảng cách trung bình giữa các giá trị trong mảng
