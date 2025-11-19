@@ -56,13 +56,15 @@ int tongGiaTriChuSoDauTienChang(int a[100], int n);
 // -------------------------
 // 	Bài 211: Tính trung bình cộng các số nguyên tố trong mảng 1 chiều các số nguyên
 bool soNguyenTo(int n);
-int tbcSoNguyenTo(int a[100], int n);
+float tbcSoNguyenTo(int a[100], int n);
 
 // -------------------------
 // 	Bài 212: Tính trung bình cộng các số dương trong mảng 1 chiều các số thực
+float tbcCacSoDuong(float a[100], int n);
 
 // -------------------------
 // 	Bài 213: Tính trung bình cộng các giá trị lớn hơn giá trị x trong mảng 1 chiều các số thực
+float tbcGiaTriLonHonX(int a[100], int n, int x);
 
 // -------------------------
 // 	Bài 214: Tính trung bình nhân các giá trị dương có trong mảng 1 chiều các số thực

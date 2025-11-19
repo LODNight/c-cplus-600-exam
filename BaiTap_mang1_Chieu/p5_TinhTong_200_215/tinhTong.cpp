@@ -197,6 +197,40 @@ float tbcSoNguyenTo(int a[100], int n){
         }
     }
     if(count < 1) return 0;
-    
+
     return (float)total / count;
+}
+
+// -------------------------
+// 	Bài 212: Tính trung bình cộng các số dương trong mảng 1 chiều các số thực
+float tbcCacSoDuong(float a[100], int n){
+    if(n < 1) return 0;
+    float total = 0;
+    int count = 0;
+    for(int i=0; i < n; i++){
+        if(a[i] > 0){
+            total += a[i];
+            count++;
+        }
+    }
+    if(count < 1) return 0;
+    return (float)total / count;
+}
+
+// -------------------------
+// 	Bài 213: Tính trung bình cộng các giá trị lớn hơn giá trị x trong mảng 1 chiều các số thực
+float tbcGiaTriLonHonX(float a[100], int n, float x){
+    if(n < 1) return 0;
+    int count = 0;
+    float total = 0;
+
+    for(int i=0; i < n; i++){
+        if(a[i] > x){
+            total += a[i];
+            count++;
+        }
+    }
+
+    if(count < 1) return 0;
+    return total/count;
 }
