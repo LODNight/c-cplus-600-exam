@@ -22,6 +22,7 @@ int tongGiaTriCoChuSoHangChucLa5(int a[100], int n);
 
 // -------------------------
 // 	Bài 204: Tính tổng các giá trị lớn hơn giá trị đứng liền trước nó trong mảng 1 chiều các số thực
+int tongGiaTriLonHonGiaTriTruocNo(int a[100], int n);
 
 // -------------------------
 // 	Bài 205: Tính tổng các giá trị lớn hơn trị tuyệt đối của giá trị đứng liền sau nó trong mảng 1 chiều các số thực

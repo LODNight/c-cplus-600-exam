@@ -65,3 +65,14 @@ int tongGiaTriCoChuSoHangChucLa5(int a[100], int n){
     }
     return total;
 }
+
+// -------------------------
+// 	Bài 204: Tính tổng các giá trị lớn hơn giá trị đứng liền trước nó trong mảng 1 chiều các số thực
+int tongGiaTriLonHonGiaTriTruocNo(int a[100], int n){
+    if(n < 2) return 0;
+    int total = 0;
+    for(int i=1; i < n; i++){
+        if(a[i] > a[i-1]) total += a[i];
+    }
+    return total;
+}
