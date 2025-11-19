@@ -14,13 +14,14 @@ int main(){
     int m;
 
     // -------------------
-    // NhapMang(a,n);
-    // XuatMang(a,n);
+    NhapMang(a,n);
+    XuatMang(a,n);
 
-    // int kq = tongGiaTriCucTri(a,n);
-    // printf("\nKet qua la: %d",kq);
+    int kq = tongCacGiaTriDoiXung(a,n);
+    // int kq = soDao(2345);
+
+    printf("\nKet qua la: %d",kq);
     // lietKeCacGiaTriLonHonGiaTriKeTiep(a,n);
-    
     // -------------------
 
 

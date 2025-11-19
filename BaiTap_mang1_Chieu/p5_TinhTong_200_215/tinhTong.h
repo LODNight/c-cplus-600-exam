@@ -44,6 +44,9 @@ int tongSoChinhPhuong(int a[100], int n);
 
 // -------------------------
 // 	Bài 209: Tính tổng các giá trị đối xứng trong mảng các số nguyên
+int soDao(int n);
+bool soDoiXung(int n);
+int tongCacGiaTriDoiXung(int a[100], int n);
 
 // -------------------------
 // 	Bài 210: Tính tổng các giá trị có chữ số đầu tiên là chữ số chẵn trong mảng các số nguyên

@@ -130,3 +130,29 @@ int tongSoChinhPhuong(int a[100], int n){
     }
     return total;
 }
+
+// -------------------------
+// 	Bài 209: Tính tổng các giá trị đối xứng trong mảng các số nguyên
+int soDao(int n){
+    int temp = abs(n);
+    int dao = 0;
+    while(temp > 0){
+        dao = (dao*10) + (temp % 10);
+        temp /= 10;
+    }
+    return dao;
+}
+
+bool soDoiXung(int n){
+    int temp = abs(n);
+    return temp == soDao(temp);
+}
+
+int tongCacGiaTriDoiXung(int a[100], int n){
+    if(n < 2) return 0;
+    int total = 0;
+    for(int i=0; i < n-1; i++){
+        if(soDoiXung(a[i])) total += a[i];
+    }
+    return total;
+}
