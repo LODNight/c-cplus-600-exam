@@ -82,9 +82,11 @@ void lkGiaTriCoDang3K(int a[100], int n);
 
 // -------------------------
 // 	Bài 194: Cho mảng 1 chiều các số nguyên có nhiều hơn 2 giá trị. Hãy viết hàm liệt kê các cặp giá trị gần nhau nhất
+void lkCapGiaTriGanNhauNhat(int a[100], int n);
 
 // -------------------------
 // 	Bài 196: Liệt kê các số âm trong mảng 1 chiều các số nguyên
+void lkSoAmTrongMang1Chieu(int a[100], int n);
 
 // -------------------------
 // 	Bài 197: Hãy liệt kê các giá trị trong mảng các số nguyên có chữ số đầu tiên là chữ số lẻ

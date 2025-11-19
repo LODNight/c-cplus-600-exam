@@ -335,3 +335,31 @@ void lkGiaTriCoDang3K(int a[100], int n){
     }
     if(!thoa) printf("0");
 }
+
+// -------------------------
+// 	Bài 194: Cho mảng 1 chiều các số nguyên có nhiều hơn 2 giá trị. Hãy viết hàm liệt kê các cặp giá trị gần nhau nhất
+void lkCapGiaTriGanNhauNhat(int a[100], int n){
+    if(n < 2) return;
+    for(int i = 0; i < n-1; i++){
+        int min = 9999;
+        int p = a[i+1];
+        for(int j=i; j < n; j++){
+            int check = abs(a[i] - a[j]);
+            if(check < min){
+                min = check;
+            }
+        }
+    }
+}
+
+// -------------------------
+// 	Bài 196: Liệt kê các số âm trong mảng 1 chiều các số nguyên
+void lkSoAmTrongMang1Chieu(int a[100], int n){
+    if(n < 1) return;
+    printf("\n");
+    for(int i=0; i < n; i++){
+        if(a[i] < 0){
+            printf("%d ", a[i]);
+        }
+    }
+}
