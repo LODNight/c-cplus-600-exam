@@ -94,7 +94,8 @@ void lkSoAmTrongMang1Chieu(int a[100], int n);
 
 // -------------------------
 // 	Bài 198: Hãy liệt kê các vị trí mà giá trị tại đó là giá trị lớn nhất trong mảng 1 chiều các số thực
-void lkCacViTriCoGiaTriLonNhatTrongMang(int a[100], int n)
+void lkCacViTriCoGiaTriLonNhatTrongMang(int a[100], int n);
 
 // -------------------------
 // 	Bài 199: Hãy liệt kê các vị trí mà giá trị tại đó là số nguyên tố trong mảng 1 chiều các số nguyên
+void lkCacViTriLaSoNguyenTo(int a[100], int n);

@@ -382,3 +382,13 @@ void lkCacViTriCoGiaTriLonNhatTrongMang(float a[100], int n){
         if(a[i] == max) printf("%d ",i);
     }
 }
+
+// -------------------------
+// 	Bài 199: Hãy liệt kê các vị trí mà giá trị tại đó là số nguyên tố trong mảng 1 chiều các số nguyên
+void lkCacViTriLaSoNguyenTo(int a[100], int n){
+    if(n < 1) return;
+    printf("\n");
+    for(int i=0; i<n; i++){
+        if(soNguyenTo(a[i])) printf("%d ",i);
+    }
+}
