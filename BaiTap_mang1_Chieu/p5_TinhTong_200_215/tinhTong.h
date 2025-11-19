@@ -35,6 +35,7 @@ int tongGiaTriLonHonCacGiaTriXungQuanh(int a[100], int n);
 
 // -------------------------
 // 	Bài 207: Tính tổng các phần tử “cực trị” trong mảng. Một phần tử được gọi là cực trị khi nó lớn hơn hoặc nhỏ hơn các phần tử xung quanh nó
+int tongGiaTriCucTri(int a[100], int n);
 
 // -------------------------
 // 	Bài 208: Tính tổng các giá trị chính phương trong mảng 1 chiều các số nguyên
