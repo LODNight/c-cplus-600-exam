@@ -5,7 +5,14 @@
 
 // -------------------------
 // 	Bài 216: Đếm số lượng số chẵn trong mảng
-int demSLSoChan(int a[100], int n);
+int demSLSoChan(int a[100], int n){
+    if(n < 1) return;
+    int count = 0;
+    for(int i=0; i < n; i++){
+        if(a[i] % 2 == 0) count++;
+    }
+    return count;
+}
 
 // -------------------------
 // 	Bài 236(*): Cho 2 mảng a, b. Hãy cho biết số lần xuất hiện của mảng a trong mảng b
