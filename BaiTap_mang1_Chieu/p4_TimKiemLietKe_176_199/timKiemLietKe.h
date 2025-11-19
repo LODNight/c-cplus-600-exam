@@ -90,9 +90,11 @@ void lkSoAmTrongMang1Chieu(int a[100], int n);
 
 // -------------------------
 // 	Bài 197: Hãy liệt kê các giá trị trong mảng các số nguyên có chữ số đầu tiên là chữ số lẻ
+//  Giống Câu 189
 
 // -------------------------
 // 	Bài 198: Hãy liệt kê các vị trí mà giá trị tại đó là giá trị lớn nhất trong mảng 1 chiều các số thực
+void lkCacViTriCoGiaTriLonNhatTrongMang(int a[100], int n)
 
 // -------------------------
 // 	Bài 199: Hãy liệt kê các vị trí mà giá trị tại đó là số nguyên tố trong mảng 1 chiều các số nguyên

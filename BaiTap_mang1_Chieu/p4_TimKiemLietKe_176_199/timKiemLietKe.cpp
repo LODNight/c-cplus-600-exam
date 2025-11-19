@@ -363,3 +363,22 @@ void lkSoAmTrongMang1Chieu(int a[100], int n){
         }
     }
 }
+
+// -------------------------
+// 	Bài 198: Hãy liệt kê các vị trí mà giá trị tại đó là giá trị lớn nhất trong mảng 1 chiều các số thực
+void lkCacViTriCoGiaTriLonNhatTrongMang(float a[100], int n){
+    if(n < 1) return;
+    printf("\n");
+    
+    int max = a[0];
+    
+    for(int i=0; i < n; i++){
+        if(a[i] > max){
+            max = a[i];
+        }
+    }
+
+    for(int i=0; i < n; i++){
+        if(a[i] == max) printf("%d ",i);
+    }
+}
