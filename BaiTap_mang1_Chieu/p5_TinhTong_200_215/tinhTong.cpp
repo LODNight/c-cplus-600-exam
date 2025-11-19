@@ -175,3 +175,28 @@ int tongGiaTriChuSoDauTienChang(int a[100], int n){
     }
     return total;
 }
+
+// -------------------------
+// 	Bài 211: Tính trung bình cộng các số nguyên tố trong mảng 1 chiều các số nguyên
+bool soNguyenTo(int n){
+    if(n < 2) return false;
+    for(int i = 2; i <= sqrt(n); i++){
+        if(n % i == 0) return false;
+    }
+    return true;
+}
+
+float tbcSoNguyenTo(int a[100], int n){
+    if(n < 2) return 0;
+    int total = 0;
+    int count = 0;
+    for(int i=0; i < n; i++){
+        if(soNguyenTo(a[i])){
+            count++;
+            total += a[i];
+        }
+    }
+    if(count < 1) return 0;
+    
+    return (float)total / count;
+}
