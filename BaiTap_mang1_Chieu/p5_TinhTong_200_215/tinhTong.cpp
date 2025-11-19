@@ -104,10 +104,12 @@ int tongGiaTriLonHonCacGiaTriXungQuanh(int a[100], int n){
 // 	Bài 207: Tính tổng các phần tử “cực trị” trong mảng. Một phần tử được gọi là cực trị khi nó lớn hơn hoặc nhỏ hơn các phần tử xung quanh nó
 int tongGiaTriCucTri(int a[100], int n){
     if(n < 2) return 0;
-    int total =0;
-    for(int i=0; i < n; i++){
+    int total = 0;
+    for(int i=1; i < n-1; i++){
         // Check lớn hơn
-        if(i > 0 && a[i] > a[i-1]) total += a[i];
+        if(a[i] > a[i-1] && a[i] > a[i+1]) total += a[i];
         // Check nho hon
+        else if(a[i] < a[i-1] && a[i] < a[i+1]) total += a[i];
     }
+    return total;
 }

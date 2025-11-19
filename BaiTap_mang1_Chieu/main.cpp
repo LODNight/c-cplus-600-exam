@@ -17,7 +17,7 @@ int main(){
     NhapMang(a,n);
     XuatMang(a,n);
 
-    int kq = tongGiaTriLonHonCacGiaTriXungQuanh(a,n);
+    int kq = tongGiaTriCucTri(a,n);
     printf("\nKet qua la: %d",kq);
     // lietKeCacGiaTriLonHonGiaTriKeTiep(a,n);
 
