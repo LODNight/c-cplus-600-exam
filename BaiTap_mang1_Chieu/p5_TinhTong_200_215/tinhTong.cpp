@@ -87,3 +87,16 @@ int tongGiaTriLonHonTriTuyetDoiLienSau(int a[100], int n){
     }   
     return total;
 }
+
+// -------------------------
+// 	Bài 206: Tính tổng các giá trị lớn hơn các giá trị xung quanh trong mảng 1 chiều các số thực
+// 	 Lưu ý: Một giá trị trong mảng có tối đa 2 giá trị xung quang
+int tongGiaTriLonHonCacGiaTriXungQuanh(int a[100], int n){
+    if(n < 2) return 0;
+    int total = 0;
+    for(int i=0; i<n; i++){
+        if(i > 0 && a[i] > a[i-1]) total += a[i];
+        else if(i < n-1 && a[i] > a[i+1]) total += a[i];
+    }
+    return total;
+}
