@@ -186,9 +186,9 @@ bool soNguyenTo(int n){
     return true;
 }
 
-float tbcSoNguyenTo(int a[100], int n){
+float trungBinhCongSoNguyenTo(int a[100], int n){
     if(n < 2) return 0;
-    int total = 0;
+    float total = 0;
     int count = 0;
     for(int i=0; i < n; i++){
         if(soNguyenTo(a[i])){
@@ -198,7 +198,7 @@ float tbcSoNguyenTo(int a[100], int n){
     }
     if(count < 1) return 0;
 
-    return (float)total / count;
+    return total / count;
 }
 
 // -------------------------
