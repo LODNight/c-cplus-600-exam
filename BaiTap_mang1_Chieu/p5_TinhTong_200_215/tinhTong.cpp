@@ -76,3 +76,14 @@ int tongGiaTriLonHonGiaTriTruocNo(int a[100], int n){
     }
     return total;
 }
+
+// -------------------------
+// 	Bài 205: Tính tổng các giá trị lớn hơn trị tuyệt đối của giá trị đứng liền sau nó trong mảng 1 chiều các số thực
+int tongGiaTriLonHonTriTuyetDoiLienSau(int a[100], int n){
+    if(n < 2) return 0;
+    int total = 0;
+    for(int i=0; i < n-1; i++){
+        if(a[i] > abs(a[i-1])) total += a[i];
+    }   
+    return total;
+}
