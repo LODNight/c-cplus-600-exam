@@ -4,7 +4,7 @@
 
 // -------------------------
 // 	Bài 216: Đếm số lượng số chẵn trong mảng
-
+int demSLSoChan(int a[100], int n);
 
 // -------------------------
 // 	Bài 217: Đếm số dương chia hết cho 7 trong mảng
@@ -37,20 +37,7 @@
 // 	Bài 236(*): Cho 2 mảng a, b. Hãy cho biết số lần xuất hiện của mảng a trong mảng b
 // A: 1 2 3 
 // B: 1 3 5 1 2 3 8 1 2 3 7 6
-int soLanXuatHienCuaMangCon(int a[100], int b[10], int n, int m){
-    if(m > n || m < 1) return 0;
-    int count = 0;
-    for(int i=0; i <= n-m; i++){
-        bool isMatch = true;
-        for(int j=i; j < m; j++){
-            if(a[i+j] != b[j]){
-                isMatch = false;
-                break;
-            }
-        }
-        if(isMatch)
-    }
-}
+int soLanXuatHienCuaMangCon(int a[100], int b[10], int n, int m);
 
 // -------------------------
 // 	Bài 237 + 238(*): Hãy liệt kê các giá trị có số lần xuất hiện nhiều nhất trong mảng
