@@ -4,8 +4,8 @@
 #include "nhapxuat.cpp"
 #include "kythuattinhtong.h"
 #include "kythuattinhtong.cpp"
-#include "p4_TimKiemLietKe_176_199/timKiemLietKe.h"
-#include "p4_TimKiemLietKe_176_199/timKiemLietKe.cpp"
+#include "p5_TinhTong_200_215/tinhTong.h"
+#include "p5_TinhTong_200_215/tinhTong.cpp"
 
 int main(){
     int a[100];
@@ -14,25 +14,24 @@ int main(){
     int m;
 
     // -------------------
-    // NhapMang(a,n);
-    // XuatMang(a,n);
+    NhapMang(a,n);
+    XuatMang(a,n);
 
-    // int kq = soNguyenToNhoNhatLonHonMoiGiaTri(a,n);
-    // printf("\nKet qua la: %d",kq);
+    int kq = tongGiaTriCoChuSoDauTienLe(a,n);
+    printf("\nKet qua la: %d",kq);
     // lietKeCacGiaTriLonHonGiaTriKeTiep(a,n);
     // -------------------
 
 
     // -------------------
-    float a_thuc[100];
-    NhapMangSoThuc(a_thuc,n);
-    XuatMangSoThuc(a_thuc,n);
+    // float a_thuc[100];
+    // NhapMangSoThuc(a_thuc,n);
+    // XuatMangSoThuc(a_thuc,n);
 
     // float kq = viTriGiaTriBangTichLanCan(a_thuc,n);
     // printf("\nKet qua la: %f",kq);
 
-
-    lkViTriBanhGiaTriDuongDauTienNhoNhat(a_thuc,n);
+    // lkViTriBanhGiaTriDuongDauTienNhoNhat(a_thuc,n);
 
     // -------------------
 
