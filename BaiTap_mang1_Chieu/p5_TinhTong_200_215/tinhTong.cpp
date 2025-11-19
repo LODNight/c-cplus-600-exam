@@ -113,3 +113,20 @@ int tongGiaTriCucTri(int a[100], int n){
     }
     return total;
 }
+
+// -------------------------
+// 	Bài 208: Tính tổng các giá trị chính phương trong mảng 1 chiều các số nguyên
+bool soChinhPhuong(int n){
+    if(n<=0) return false;
+    int e = (int)sqrt(n);
+    return (e*e == n);
+}
+
+int tongSoChinhPhuong(int a[100], int n){
+    if(n < 1) return 0;
+    int total = 0;
+    for(int i=0; i<n; i++){
+        if(soChinhPhuong(a[i])) total += a[i];
+    }
+    return total;
+}

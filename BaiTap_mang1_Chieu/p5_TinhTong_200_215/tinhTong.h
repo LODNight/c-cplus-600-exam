@@ -40,7 +40,7 @@ int tongGiaTriCucTri(int a[100], int n);
 // -------------------------
 // 	Bài 208: Tính tổng các giá trị chính phương trong mảng 1 chiều các số nguyên
 bool soChinhPhuong(int n);
-int tong
+int tongSoChinhPhuong(int a[100], int n);
 
 // -------------------------
 // 	Bài 209: Tính tổng các giá trị đối xứng trong mảng các số nguyên
