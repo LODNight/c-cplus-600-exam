@@ -251,3 +251,19 @@ float tbnGiaTriDuong(float a[100], int n){
     if(count < 1) return 0;
     return (float)pow(total,1.0/count);
 }
+
+// -------------------------
+// 	Bài 215 (*): Tính khoảng cách trung bình giữa các giá trị trong mảng
+float kctbCacGiaTri(float a[100], int n){
+    if(n < 2) return 0;
+    double distance = 0;
+    int count = 0;
+    for(int i=0; i < n-1; i++){
+        for(int j=i+1; j < n; j++){
+            distance += fabs(a[i] - a[j]);
+            count++;
+        }
+    }
+    
+    return (float)(distance/count);
+}
