@@ -4,6 +4,7 @@
 
 // -------------------------
 // 	Bài 200: Tính tổng các phần tử trong mảng
+int tongCacPhanTu(int a[100], int n)
 
 // -------------------------
 // 	Bài 201: Tính tổng các giá trị dương trong mảng 1 chiều các số thực
