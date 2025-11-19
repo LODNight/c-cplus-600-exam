@@ -44,3 +44,24 @@ int tongGiaTriCoChuSoDauTienLe(int a[100], int n){
     }
     return total;
 }
+
+// -------------------------
+// 	Bài 203: Tinh tổng các chữ số có chữ số hàng chục là 5 trong mảng 1 chiều các số nguyên
+bool chuSoHangChucLa5(int n){
+    if(n<10) return false;
+    int d = 0;
+    while(n >= 10){
+        d = n % 10;
+        n /= 10;
+    }
+    return (d==5);
+}
+
+int tongGiaTriCoChuSoHangChucLa5(int a[100], int n){
+    if(n < 1) return 0;
+    int total = 0;
+    for(int i=0; i<n; i++){
+        if(chuSoHangChucLa5(a[i])) total += a[i];
+    }
+    return total;
+}

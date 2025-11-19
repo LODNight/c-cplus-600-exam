@@ -17,9 +17,11 @@ int main(){
     NhapMang(a,n);
     XuatMang(a,n);
 
-    int kq = tongGiaTriCoChuSoDauTienLe(a,n);
+    int kq = tongGiaTriCoChuSoHangChucLa5(a,n);
     printf("\nKet qua la: %d",kq);
     // lietKeCacGiaTriLonHonGiaTriKeTiep(a,n);
+
+    // chuSoHangChucLa5(2505);
     // -------------------
 
 

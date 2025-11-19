@@ -17,6 +17,8 @@ int tongGiaTriCoChuSoDauTienLe(int a[100], int n);
 
 // -------------------------
 // 	Bài 203: Tinh tổng các chữ số có chữ số hàng chục là 5 trong mảng 1 chiều các số nguyên
+bool chuSoHangChucLa5(int n);
+int tongGiaTriCoChuSoHangChucLa5(int a[100], int n);
 
 // -------------------------
 // 	Bài 204: Tính tổng các giá trị lớn hơn giá trị đứng liền trước nó trong mảng 1 chiều các số thực
