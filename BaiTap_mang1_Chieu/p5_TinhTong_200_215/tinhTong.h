@@ -4,10 +4,11 @@
 
 // -------------------------
 // 	Bài 200: Tính tổng các phần tử trong mảng
-int tongCacPhanTu(int a[100], int n)
+int tongCacPhanTu(int a[100], int n);
 
 // -------------------------
 // 	Bài 201: Tính tổng các giá trị dương trong mảng 1 chiều các số thực
+int tongCacGiaTriDuongSoThuc(int a[100], int n);}
 
 // -------------------------
 // 	Bài 202: Tính tổng các giá trị có chữ số đầu tiên là chữ số lẻ trong mảng 1 chiều các số nguyên
