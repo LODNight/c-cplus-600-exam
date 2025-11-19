@@ -8,7 +8,7 @@ int tongCacPhanTu(int a[100], int n);
 
 // -------------------------
 // 	Bài 201: Tính tổng các giá trị dương trong mảng 1 chiều các số thực
-int tongCacGiaTriDuongSoThuc(int a[100], int n);
+float tongCacGiaTriDuongSoThuc(float a[100], int n);
 
 // -------------------------
 // 	Bài 202: Tính tổng các giá trị có chữ số đầu tiên là chữ số lẻ trong mảng 1 chiều các số nguyên
@@ -22,16 +22,16 @@ int tongGiaTriCoChuSoHangChucLa5(int a[100], int n);
 
 // -------------------------
 // 	Bài 204: Tính tổng các giá trị lớn hơn giá trị đứng liền trước nó trong mảng 1 chiều các số thực
-int tongGiaTriLonHonGiaTriTruocNo(int a[100], int n);
+float tongGiaTriLonHonGiaTriTruocNo(int a[100], int n);
 
 // -------------------------
 // 	Bài 205: Tính tổng các giá trị lớn hơn trị tuyệt đối của giá trị đứng liền sau nó trong mảng 1 chiều các số thực
-int tongGiaTriLonHonTriTuyetDoiLienSau(int a[100], int n);
+float tongGiaTriLonHonTriTuyetDoiLienSau(float a[100], int n);
 
 // -------------------------
 // 	Bài 206: Tính tổng các giá trị lớn hơn các giá trị xung quanh trong mảng 1 chiều các số thực
 // 	 Lưu ý: Một giá trị trong mảng có tối đa 2 giá trị xung quang
-int tongGiaTriLonHonCacGiaTriXungQuanh(int a[100], int n);
+float tongGiaTriLonHonCacGiaTriXungQuanh(float a[100], int n);
 
 // -------------------------
 // 	Bài 207: Tính tổng các phần tử “cực trị” trong mảng. Một phần tử được gọi là cực trị khi nó lớn hơn hoặc nhỏ hơn các phần tử xung quanh nó
@@ -39,6 +39,8 @@ int tongGiaTriCucTri(int a[100], int n);
 
 // -------------------------
 // 	Bài 208: Tính tổng các giá trị chính phương trong mảng 1 chiều các số nguyên
+bool soChinhPhuong(int n);
+int tong
 
 // -------------------------
 // 	Bài 209: Tính tổng các giá trị đối xứng trong mảng các số nguyên

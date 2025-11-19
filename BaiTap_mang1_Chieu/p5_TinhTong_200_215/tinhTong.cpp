@@ -16,7 +16,7 @@ int tongCacPhanTu(int a[100], int n){
 
 // -------------------------
 // 	Bài 201: Tính tổng các giá trị dương trong mảng 1 chiều các số thực
-int tongCacGiaTriDuongSoThuc(int a[100], int n){
+float tongCacGiaTriDuongSoThuc(float a[100], int n){
     if(n<1) return 0;
     float total = 0;
     for(int i=0; i<n; i++){
@@ -68,9 +68,9 @@ int tongGiaTriCoChuSoHangChucLa5(int a[100], int n){
 
 // -------------------------
 // 	Bài 204: Tính tổng các giá trị lớn hơn giá trị đứng liền trước nó trong mảng 1 chiều các số thực
-int tongGiaTriLonHonGiaTriTruocNo(int a[100], int n){
+float tongGiaTriLonHonGiaTriTruocNo(float a[100], int n){
     if(n < 2) return 0;
-    int total = 0;
+    float total = 0;
     for(int i=1; i < n; i++){
         if(a[i] > a[i-1]) total += a[i];
     }
@@ -81,7 +81,7 @@ int tongGiaTriLonHonGiaTriTruocNo(int a[100], int n){
 // 	Bài 205: Tính tổng các giá trị lớn hơn trị tuyệt đối của giá trị đứng liền sau nó trong mảng 1 chiều các số thực
 int tongGiaTriLonHonTriTuyetDoiLienSau(int a[100], int n){
     if(n < 2) return 0;
-    int total = 0;
+    float total = 0;
     for(int i=0; i < n-1; i++){
         if(a[i] > abs(a[i-1])) total += a[i];
     }   
@@ -93,7 +93,7 @@ int tongGiaTriLonHonTriTuyetDoiLienSau(int a[100], int n){
 // 	 Lưu ý: Một giá trị trong mảng có tối đa 2 giá trị xung quang
 int tongGiaTriLonHonCacGiaTriXungQuanh(int a[100], int n){
     if(n < 2) return 0;
-    int total = 0;
+    float total = 0;
     for(int i=1; i<n-1; i++){
         if(a[i] > a[i-1] && a[i] > a[i+1]) total += a[i];
     }
