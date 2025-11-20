@@ -12,6 +12,8 @@ float timGiaTriLonNhat(float a[100][100], int n, int m);
 int ktTonTaiGiaTriChanNhoHon2015(int a[100][100], int n, int m);
 
 // Bài 317: Viết hàm tính trung bình cộng các số nguyên tố trong ma trận số nguyên
+bool soNguyenTo(int n);
+float tbcSoNguyenTo(int a[100][100], int n, int m);
 
 // Bài 318: Viết hàm tính tổng các giá trị âm trong ma trận số thực
 // Bài 319: Viết hàm sắp xếp ma trận các số thực tăng dần từ trên xuống dưới và từ trái sang phải

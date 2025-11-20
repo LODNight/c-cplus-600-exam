@@ -27,6 +27,30 @@ int ktTonTaiGiaTriChanNhoHon2015(int a[100][100], int n, int m){
     return 0;
 }
 
+// Bài 317: Viết hàm tính trung bình cộng các số nguyên tố trong ma trận số nguyên
+bool soNguyenTo(int n){
+    if(n < 2) return false;
+    for(int i=2; i <= sqrt(n); i++){
+        if(n % i == 0) return false;
+    }
+    return true;
+}
+
+float tbcSoNguyenTo(int a[100][100], int n, int m){
+    if(n < 1 || m < 1) return 0;
+    float total = 0;
+    int count = 0;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            if(soNguyenTo(a[i][j])){
+                total += a[i][j];
+                count++;
+            }
+        }
+    }
+    return total/count;
+}
+
 // if(n < 1 || m < 1) return 0;
 //     for(int i=0; i<n; i++){
 //         for(int j=0; j<m; j++){
