@@ -64,6 +64,28 @@ float tongGiaTriAmMangSoThuc(float a[100][100], int n, int m){
     return total;
 }
 
+// Bài 319: Viết hàm sắp xếp ma trận các số thực tăng dần từ trên xuống dưới và từ trái sang phải
+void sapXepMaTranTangDan(float a[100][100], int n, int m){
+    if(n < 1 || m < 1) return;
+    int k = n*m;
+    // Duyệt qua toàn bộ phần tử
+    for(int i=0; i < k-1; i++){
+        // dùng mảng 2 để kiểm duyệt qua phần tử như mảng 1 chiều
+        for(int j=i+1; j < k; j++){
+            int d1 = i / m;
+            int c1 = i % m;
+            int d2 = j / m;
+            int c2 = j % m;
+
+            if(a[d1][c1] > a[d2][c2]){
+                float temp = a[d2][c2];
+                a[d2][c2] = a[d1][c1];
+                a[d1][c1] = temp;
+            }
+        }
+    }
+}
+
 // if(n < 1 || m < 1) return 0;
 //     for(int i=0; i<n; i++){
 //         for(int j=0; j<m; j++){

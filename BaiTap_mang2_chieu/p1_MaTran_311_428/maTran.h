@@ -19,7 +19,11 @@ float tbcSoNguyenTo(int a[100][100], int n, int m);
 float tongGiaTriAmMangSoThuc(float a[100][100], int n, int m);
 
 // Bài 319: Viết hàm sắp xếp ma trận các số thực tăng dần từ trên xuống dưới và từ trái sang phải
+void sapXepMaTranTangDan(float a[100][100], int n, int m);
+
 // Kỹ thuật tính toán
+
+
 // Bài 320: Tính tổng các số dương trong ma trận các số thực
 // Bài 321: Tính tích các giá trị lẻ trong ma trận các số nguyên
 // Bài 322: Tính tổng các giá trị trên 1 dòng trong ma trận các số thực

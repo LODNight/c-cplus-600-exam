@@ -7,24 +7,28 @@
 
 int main(){
     // ===================
-    int a[100][100];
-    int n,m;
-    nhapMang2Chieu(a,n,m);
-    xuatMang2Chieu(a,n,m);
-    float kq = ktTonTaiGiaTriChanNhoHon2015(a,n,m);
-    printf("\nKet qua la: %.2f", kq);
+    // int a[100][100];
+    // int n,m;
+    // nhapMang2Chieu(a,n,m);
+    // xuatMang2Chieu(a,n,m);
+    // float kq = ktTonTaiGiaTriChanNhoHon2015(a,n,m);
+    // printf("\nKet qua la: %.2f", kq);
     
     // ===================
 
-    // float a[100][100];
-    // int n,m;
-    // nhapMang2ChieuSoThuc(a,n,m);
-    // xuatMang2ChieuSoThuc(a,n,m);
+    float a[100][100];
+    int n,m;
+    nhapMang2ChieuSoThuc(a,n,m);
+    xuatMang2ChieuSoThuc(a,n,m);
 
     // float kq = timGiaTriLonNhat(a,n,m);
     // printf("\nKet qua la: %.2f", kq);
 
+    sapXepMaTranTangDan(a,n,m);
+    printf("\n");
+    xuatMang2ChieuSoThuc(a,n,m);
+
     // ===================
-    
+
     return 0;
 }
