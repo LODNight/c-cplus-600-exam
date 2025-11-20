@@ -9,6 +9,7 @@
 float timGiaTriLonNhat(float a[100][100], int n, int m);
 
 // Bài 316: Viết hàm kiểm tra trong ma trận số nguyên có tồn tại giá trị chẵn nhỏ hơn 2015?
+int ktTonTaiGiaTriChanNhoHon2015(int a[100][100], int n, int m);
 
 // Bài 317: Viết hàm tính trung bình cộng các số nguyên tố trong ma trận số nguyên
 

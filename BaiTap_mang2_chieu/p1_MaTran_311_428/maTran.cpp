@@ -16,13 +16,23 @@ float timGiaTriLonNhat(float a[100][100], int n, int m){
     return max;
 }
 
+// Bài 316: Viết hàm kiểm tra trong ma trận số nguyên có tồn tại giá trị chẵn nhỏ hơn 2015?
+int ktTonTaiGiaTriChanNhoHon2015(int a[100][100], int n, int m){
+    if(n < 1 || m < 1) return 0;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            if(a[i][j] < 2015 & a[i][j] % 2 == 0) return 1;
+        }
+    }
+    return 0;
+}
 
 // if(n < 1 || m < 1) return 0;
-// for(int i=0; i<n; i++){
-//     for(int j=0; j<m; j++){
-        
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<m; j++){
+            
+//         }
 //     }
-// }
 
 // ---------------------------------------
 // Bài 342(*): Đếm số lượng phần tử cực đại trong ma trận các số thực. Một phần tử được gọi là cực đại khi nó lớn hơn các phần tử xung quanh
