@@ -139,6 +139,18 @@ void tichGiaTriDuongTren1CotMaTranSoThuc(float a[100][100], int n, int m){
 
 }
 
+// Bài 324: Tính tổng các giá trị dương trên 1 dòng trong ma trận các số thực
+void tichGiaTriDuongTren1HangMaTranSoThuc(float a[100][100], int n, int m){
+    if(n < 1 || m < 1) return;
+    for(int i=0; i<n; i++){
+        float tich = 1;
+        for(int j=0; j<m; j++){
+            if(a[i][j] > 0)  tich *= a[i][j];  
+        }
+        printf("\nTich cot [%d] = %.2f", i, tich);
+    }
+}
+
 // if(n < 1 || m < 1) return 0;
 //     for(int i=0; i<n; i++){
 //         for(int j=0; j<m; j++){
