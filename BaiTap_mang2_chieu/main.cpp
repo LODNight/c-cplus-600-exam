@@ -24,7 +24,7 @@ int main(){
     // float kq = timGiaTriLonNhat(a,n,m);
     // printf("\nKet qua la: %.2f", kq);
 
-    tongGiaTri1DongSoThuc(a,n,m);
+    tichGiaTriDuongTren1CotMaTranSoThuc(a,n,m);
     // printf("\n");
     // xuatMang2ChieuSoThuc(a,n,m);
 

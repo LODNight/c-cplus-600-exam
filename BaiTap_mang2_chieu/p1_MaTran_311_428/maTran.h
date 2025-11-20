@@ -34,6 +34,7 @@ int tichGiaTriLeTrongMaTranSoNguyen(int a[100][100], int n, int m);
 void tongGiaTri1DongSoThuc(float a[100][100], int n, int m);
 
 // Bài 323: Tính tích các giá trị dương trên 1 cột trong ma trận các số thực
+void tichGiaTriDuongTren1CotMaTranSoThuc(float a[100][100], int n, int m);
 
 // Bài 324: Tính tổng các giá trị dương trên 1 dòng trong ma trận các số thực
 // Bài 325: Tính tích các số chẵn trên 1 cột trong ma trận các số nguyên
