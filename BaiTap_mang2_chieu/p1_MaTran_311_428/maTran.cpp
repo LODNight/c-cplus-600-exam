@@ -86,6 +86,21 @@ void sapXepMaTranTangDan(float a[100][100], int n, int m){
     }
 }
 
+
+
+// Kỹ thuật tính toán
+
+// Bài 320: Tính tổng các số dương trong ma trận các số thực
+float tongSoDuongMaTranSoThuc(float a[100][100], int n, int m){
+    if(n < 1 || m < 1) return 0;
+    float sum = 0;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            if(a[i][j] > 0) sum += a[i][j];
+        }
+    }
+}
+
 // if(n < 1 || m < 1) return 0;
 //     for(int i=0; i<n; i++){
 //         for(int j=0; j<m; j++){

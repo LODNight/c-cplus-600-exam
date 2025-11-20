@@ -25,6 +25,8 @@ void sapXepMaTranTangDan(float a[100][100], int n, int m);
 
 
 // Bài 320: Tính tổng các số dương trong ma trận các số thực
+float tongSoDuongMaTranSoThuc(float a[100][100], int n, int m);
+
 // Bài 321: Tính tích các giá trị lẻ trong ma trận các số nguyên
 // Bài 322: Tính tổng các giá trị trên 1 dòng trong ma trận các số thực
 // Bài 323: Tính tích các giá trị dương trên 1 cột trong ma trận các số thực
