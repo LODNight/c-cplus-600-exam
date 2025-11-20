@@ -16,6 +16,8 @@ bool soNguyenTo(int n);
 float tbcSoNguyenTo(int a[100][100], int n, int m);
 
 // Bài 318: Viết hàm tính tổng các giá trị âm trong ma trận số thực
+float tongGiaTriAmMangSoThuc(float a[100][100], int n, int m);
+
 // Bài 319: Viết hàm sắp xếp ma trận các số thực tăng dần từ trên xuống dưới và từ trái sang phải
 // Kỹ thuật tính toán
 // Bài 320: Tính tổng các số dương trong ma trận các số thực

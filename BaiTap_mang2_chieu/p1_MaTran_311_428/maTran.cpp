@@ -48,7 +48,20 @@ float tbcSoNguyenTo(int a[100][100], int n, int m){
             }
         }
     }
+    if(count < 1) return 0;
     return total/count;
+}
+
+// Bài 318: Viết hàm tính tổng các giá trị âm trong ma trận số thực
+float tongGiaTriAmMangSoThuc(float a[100][100], int n, int m){
+    if(n < 1 || m < 1) return 0;
+    float total = 0;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            if(a[i][j] < 0) total += a[i][j];
+        }
+    }
+    return total;
 }
 
 // if(n < 1 || m < 1) return 0;
