@@ -3,7 +3,11 @@
 // ---------------------------------------
 // Bài 311 + 313: Viết hàm nhập xuất ma trận số nguyên
 // Bài 312 + 314: Viết hàm nhập xuất ma trận số thực
+
+// ---------------------------------------
 // Bài 315: Viết hàm tìm giá trị lớn nhất trong ma trận số thực
+float timGiaTriLonNhat(float a[100][100], int n, int m);
+
 // Bài 316: Viết hàm kiểm tra trong ma trận số nguyên có tồn tại giá trị chẵn nhỏ hơn 2015?
 
 // Bài 317: Viết hàm tính trung bình cộng các số nguyên tố trong ma trận số nguyên
@@ -38,7 +42,7 @@
 
 // ---------------------------------------
 // Bài 342(*): Đếm số lượng phần tử cực đại trong ma trận các số thực. Một phần tử được gọi là cực đại khi nó lớn hơn các phần tử xung quanh
-int demSLCucDaiSoThuc(float a[100][100], int n. int m);
+int demSLCucDaiSoThuc(float a[100][100], int n, int m);
 
 // ---------------------------------------
 // Bài 343(*): Đếm số lượng phần tử cực trị trong ma trận các số thực. Một phần tử được gọi là cực trị khi nó lớn hớn các phần tử xung quanh hoặc nhỏ hơn các phần tử xung quanh

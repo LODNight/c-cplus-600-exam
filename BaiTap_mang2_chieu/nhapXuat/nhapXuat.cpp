@@ -31,7 +31,7 @@ void xuatMang2Chieu(int a[100][100], int n, int m){
 
 // Bài 312 + 314: Viết hàm nhập xuất ma trận số thực
 // Nhập mảng 2 chiều số thực
-void nhapMang2Chieu(float a[100][100], int& n, int& m){
+void nhapMang2ChieuSoThuc(float a[100][100], int& n, int& m){
     printf("Nhap chieu cao mang: ");
     scanf("%d",&n);
     printf("Nhap chieu dai mang: ");
@@ -46,7 +46,7 @@ void nhapMang2Chieu(float a[100][100], int& n, int& m){
 }
 
 // Xuất mảng 2 chiều số thực
-void xuatMang2Chieu(float a[100][100], int n, int m){
+void xuatMang2ChieuSoThuc(float a[100][100], int n, int m){
     for(int i=0; i<n; i++){
         for(int j=0; j<m; j++){
             printf("%4.2f ", a[i][j]);

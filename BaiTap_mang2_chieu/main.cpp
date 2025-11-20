@@ -6,10 +6,20 @@
 #include "p1_MaTran_311_428/maTran.cpp"
 
 int main(){
-    int a[100][100];
+    // ===================
+    // int a[100][100];
+    // int n,m;
+    // nhapMang2Chieu(a,n,m);
+    // xuatMang2Chieu(a,n,m);
+    
+    // ===================
+    float a[100][100];
     int n,m;
-    nhapMang2Chieu(a,n,m);
-    xuatMang2Chieu(a,n,m);
+    nhapMang2ChieuSoThuc(a,n,m);
+    xuatMang2ChieuSoThuc(a,n,m);
+
+    float kq = timGiaTriLonNhat(a,n,m);
+    printf("\nKet qua la: %.2f", kq);
 
     return 0;
 }

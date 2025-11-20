@@ -1,7 +1,9 @@
 #pragma once
 
-// Nhập mảng 2 chiều
-void nhapMang2Chieu(int a[100][100], int& n, int &m);
-
-// Xuất mảng 2 chiều
+// Nhập xuất mảng 2 chiều số nguyên
+void nhapMang2Chieu(int a[100][100], int& n, int& m);
 void xuatMang2Chieu(int a[100][100], int n, int m);
+
+// Nhập xuất mảng 2 chiều số thực
+void nhapMang2ChieuSoThuc(float a[100][100], int& n, int& m);
+void xuatMang2ChieuSoThuc(float a[100][100], int n, int m);
