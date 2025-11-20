@@ -114,6 +114,17 @@ int tichGiaTriLeTrongMaTranSoNguyen(int a[100][100], int n, int m){
     return tich;
 }
 
+// Bài 322: Tính tổng các giá trị trên 1 dòng trong ma trận các số thực
+void tongGiaTri1DongSoThuc(float a[100][100], int n, int m){
+    if(n < 1 || m < 1) return;
+    for(int i=0; i<n; i++){
+        float sum = 0;
+        for(int j=0; j<m; j++){
+            sum += a[i][j];
+        }
+        printf("\nTong dong [%d] = %.2f", i, sum);
+    }
+}
 
 // if(n < 1 || m < 1) return 0;
 //     for(int i=0; i<n; i++){
