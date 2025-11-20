@@ -27,7 +27,6 @@ int demSoDuongChiahetCho7(int a[100], int n){
 
 
 
-
 // -------------------------
 // 	Bài 236(*): Cho 2 mảng a, b. Hãy cho biết số lần xuất hiện của mảng a trong mảng b
 // A: 1 2 3 
