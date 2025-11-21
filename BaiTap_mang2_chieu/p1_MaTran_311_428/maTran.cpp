@@ -162,6 +162,7 @@ void tichGiaTriDuongTren1HangMaTranSoThuc(float a[100][100], int n, int m){
 // Bài 342(*): Đếm số lượng phần tử cực đại trong ma trận các số thực. Một phần tử được gọi là cực đại khi nó lớn hơn các phần tử xung quanh
 
 // C1: Dùng 2 hàm
+// ++++++++++++++++++++++++
 bool laCucDai(float a[100][100], int n, int m, int i, int j){
     for(int dx=-1; dx <= 1; dx++){
         for(int dy=-1; dy <= 1; dy++){
@@ -180,11 +181,39 @@ bool laCucDai(float a[100][100], int n, int m, int i, int j){
     return true;
 }
 
+// int demSLCucDaiSoThuc(float a[100][100], int n, int m){
+//     int count = 0;
+//     for(int i = 0; i < n; i++){
+//         for(int j = 0; j < m; j++){
+//             if(laCucDai(a,n,m,i,j)) count++;
+//         }
+//     }
+//     return count;
+// }
+// ++++++++++++++++++++++++
+
+// C2: 
 int demSLCucDaiSoThuc(float a[100][100], int n, int m){
+    if(n < 1 || m < 1) return false;
     int count = 0;
-    for(int i = 0; i < n; i++){
-        for(int j = 0; j < m; j++){
-            if(laCucDai(a,n,m,i,j)) count++;
+    int dx[8] = {-1, -1, -1,  0, 0,  1, 1, 1};
+    int dy[8] = {-1,  0,  1, -1, 1, -1, 0, 1};
+
+    for(int i=0; i < n; i++){
+        for(int j=0; j < m; j++){
+            bool thoa = true;
+
+            // Kiểm tra theo từng dòng cột -1 0 1
+            for(int k = 0; k < 8; k++){
+                int x = i + dx[k];
+                int y = j + dy[k];
+                if(a[i][j] <= a[x][y]){
+                    thoa = false;
+                    break;
+                }
+            }
+
+            if(thoa) count++;
         }
     }
     return count;
