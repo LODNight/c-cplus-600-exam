@@ -169,13 +169,13 @@ bool laCucDai(float a[100][100], int n, int m, int i, int j){
             if(dx == 0 && dy == 0) continue;
 
             int x = i + dx;
-                int y = j + dy;
+            int y = j + dy;
 
-                if(x >= 0 && x < n && y >= 0 && y < m){
-                    if(a[x][y] >= a[i][j]){
-                        return false; // pha tu xung quanh lon hon hoac bang
-                    }
+            if(x >= 0 && x < n && y >= 0 && y < m){
+                if(a[x][y] >= a[i][j]){
+                    return false; // phan tu xung quanh lon hon hoac bang
                 }
+            }
         }
     }
     return true;
@@ -207,13 +207,50 @@ int demSLCucDaiSoThuc(float a[100][100], int n, int m){
             for(int k = 0; k < 8; k++){
                 int x = i + dx[k];
                 int y = j + dy[k];
-                if(a[i][j] <= a[x][y]){
-                    thoa = false;
-                    break;
+
+                if(x >=0 && x < n && y >=0 && y < n){
+                    if(a[i][j] <= a[x][y]){
+                        thoa = false;
+                        break;
+                    }
                 }
             }
 
             if(thoa) count++;
+        }
+    }
+    return count;
+}
+
+// ---------------------------------------
+// Bài 343(*): Đếm số lượng phần tử cực trị trong ma trận các số thực. Một phần tử được gọi là cực trị khi nó lớn hớn các phần tử xung quanh hoặc nhỏ hơn các phần tử xung quanh
+bool laCucTieu(float a[100][100], int n, int m, int i, int j){
+    for(int dx= -1; dx< 1; dx++){
+        for(int dy=-1; dy<1; dy++){
+            bool thoa = true; 
+            if(dx == 0 && dy == 0) continue;
+            int x = i + dx;
+            int y = j + dy;
+            
+            if(x >= 0 && x < n && y >= m && y < m){
+                if(a[i][j] >= a[x][y]){
+                    thoa = false;
+                    break;
+                }
+            }
+        }
+    }
+    return true;
+}
+
+int demoSLCucTriSoThuc(float a[100][100], int n, int m){
+    if(n < 1 || m < 1) return 0;
+    int count = 0;
+    for(int i=0; i < n; i++){
+        for(int j=0; j < m; j++){
+            if(laCucTieu(a,n,m,i,j) || laCucDai(a,n,m,i,j)){
+                count++;
+            }
         }
     }
     return count;

@@ -68,6 +68,8 @@ int demSLCucDaiSoThuc(float a[100][100], int n, int m);
 
 // ---------------------------------------
 // Bài 343(*): Đếm số lượng phần tử cực trị trong ma trận các số thực. Một phần tử được gọi là cực trị khi nó lớn hớn các phần tử xung quanh hoặc nhỏ hơn các phần tử xung quanh
+bool laCucTieu(float a[100][100], int n, int m, int i, int j);
+int demoSLCucTriSoThuc(float a[100][100], int n, int m);
 
 // ---------------------------------------
 // Bài 344(*): Đếm số lượng giá trị phân biệt có trong ma trận các số thực. 
