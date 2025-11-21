@@ -21,10 +21,10 @@ int main(){
     nhapMang2ChieuSoThuc(a,n,m);
     xuatMang2ChieuSoThuc(a,n,m);
 
-    // float kq = timGiaTriLonNhat(a,n,m);
-    // printf("\nKet qua la: %.2f", kq);
+    float kq = demSLGiaTriPhanBiet(a,n,m);
+    printf("\nKet qua la: %.2f", kq);
 
-    tichGiaTriDuongTren1CotMaTranSoThuc(a,n,m);
+    // tichGiaTriDuongTren1CotMaTranSoThuc(a,n,m);
     // printf("\n");
     // xuatMang2ChieuSoThuc(a,n,m);
 

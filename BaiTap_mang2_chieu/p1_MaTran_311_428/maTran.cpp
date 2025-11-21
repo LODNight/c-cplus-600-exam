@@ -151,13 +151,6 @@ void tichGiaTriDuongTren1HangMaTranSoThuc(float a[100][100], int n, int m){
     }
 }
 
-// if(n < 1 || m < 1) return 0;
-//     for(int i=0; i<n; i++){
-//         for(int j=0; j<m; j++){
-            
-//         }
-//     }
-
 // ---------------------------------------
 // Bài 342(*): Đếm số lượng phần tử cực đại trong ma trận các số thực. Một phần tử được gọi là cực đại khi nó lớn hơn các phần tử xung quanh
 
@@ -255,3 +248,38 @@ int demoSLCucTriSoThuc(float a[100][100], int n, int m){
     }
     return count;
 }
+
+// ---------------------------------------
+// Bài 344(*): Đếm số lượng giá trị phân biệt có trong ma trận các số thực. 
+// Chú ý: Nếu có k phần tử (k >= 1) trong ma trận bằng nhau thì ta chỉ tính là 1
+int demSLGiaTriPhanBiet(float a[100][100], int n, int m){
+    if(n < 1 || m < 1) return 0;
+    int count = 0;
+    float b[n*m];
+    b[0] = a[0][0];
+
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            // Kiểm tra mảng b có tồn tại giá trị chưa
+            bool thoa = true;
+            for(int k=0; k < count; k++){
+                if(a[i][j] == b[k]){
+                    thoa = false;
+                    break;
+                }
+            }
+            if(thoa){
+                b[count] = a[i][j];
+                count++;
+            }
+        }
+    }
+    return count;
+}
+
+// if(n < 1 || m < 1) return 0;
+//     for(int i=0; i<n; i++){
+//         for(int j=0; j<m; j++){
+            
+//         }
+//     }
