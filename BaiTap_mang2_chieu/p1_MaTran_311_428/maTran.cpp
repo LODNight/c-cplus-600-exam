@@ -161,19 +161,31 @@ void tichGiaTriDuongTren1HangMaTranSoThuc(float a[100][100], int n, int m){
 // ---------------------------------------
 // Bài 342(*): Đếm số lượng phần tử cực đại trong ma trận các số thực. Một phần tử được gọi là cực đại khi nó lớn hơn các phần tử xung quanh
 
-// 3 4 7 8
-// 6 8 2 1
-// 9 0 3 3
-// 1 1 2 8
-// => 8 8 9 8
-int demSLCucDaiSoThuc(float a[100][100], int n, int m){
-    if(n < 2 && m < 2) return 0;
-    for(int i=0; i < n; i++){
-        for(int j=0; j < m; j++){
-            // hang 1 
-            if(i==0 && a[0][j]){
-                return 0;
-            }
+// C1: Dùng 2 hàm
+bool laCucDai(float a[100][100], int n, int m, int i, int j){
+    for(int dx=-1; dx <= 1; dx++){
+        for(int dy=-1; dy <= 1; dy++){
+            if(dx == 0 && dy == 0) continue;
+
+            int x = i + dx;
+                int y = j + dy;
+
+                if(x >= 0 && x < n && y >= 0 && y < m){
+                    if(a[x][y] >= a[i][j]){
+                        return false; // pha tu xung quanh lon hon hoac bang
+                    }
+                }
         }
     }
+    return true;
+}
+
+int demSLCucDaiSoThuc(float a[100][100], int n, int m){
+    int count = 0;
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < m; j++){
+            if(laCucDai(a,n,m,i,j)) count++;
+        }
+    }
+    return count;
 }
