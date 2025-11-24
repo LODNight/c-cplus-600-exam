@@ -79,13 +79,17 @@ int demSLGiaTriPhanBiet(float a[100][100], int n, int m);
 // ---------------------------------------
 // Bài 345(*): Tính tổng các phần tử cực trị trong ma trận các số thực. Một phần tử được gọi là cực trị khi nó lớn hớn các phần tử xung quanh hoặc nhỏ hơn các phần tử xung quanh
 
+
 // ---------------------------------------
 // Bài 346(*): Đếm số lượng giá trị “Hoàng Hậu” trên ma trận. Một phần tử được gọi là Hoàng Hậu khi nó lớn nhất trên dòng, trên cột và 2 đường chéo đi qua nó
 
 // ---------------------------------------
 // Bài 347(*): Đếm số lượng giá trị “Yên Ngựa” trên ma trận. Một phần tử được gọi là Yên Ngựa khi nó lớn nhất trên dòng và nhỏ nhất trên cột
 // Kỹ thuật đặt cờ hiệu
+
 // Bài 348: Kiểm tra ma trận có tồn tại số dương hay không
+bool kiemTraSoDuongTrongMaTran(int a[100][100], int n, int m);
+
 // Bài 349: Kiểm tra ma trận có tồn tại số hoàn thiện hay không
 // Bài 350: Kiểm tra ma trận có tồn tại số lẻ hay không
 // Bài 351: Kiểm tra ma trận có toàn dương hay không
@@ -139,7 +143,11 @@ int demSLGiaTriPhanBiet(float a[100][100], int n, int m);
 // Bài 389: Liệt kê các dòng có nhiều số hoàn thiện nhất
 // Bài 390(*): Liệt kê các cột nhiều chữ số nhất trong ma trận các số nguyên
 // Bài 391(*): Tìm ma trận con có tổng lớn nhất
+
+
 // Kỹ thuật xử lý ma trận
+
+
 // Bài 392: Hoán vị 2 dòng trên ma trận
 // 1 2 3
 // 4 5 6
