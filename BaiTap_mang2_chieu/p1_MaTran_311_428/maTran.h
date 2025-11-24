@@ -91,7 +91,10 @@ int demSLGiaTriPhanBiet(float a[100][100], int n, int m);
 bool kiemTraSoDuongTrongMaTran(int a[100][100], int n, int m);
 
 // Bài 349: Kiểm tra ma trận có tồn tại số hoàn thiện hay không
+
 // Bài 350: Kiểm tra ma trận có tồn tại số lẻ hay không
+bool kiemTraSoLeTrongMaTran(int a[100][100], int n, int m);
+
 // Bài 351: Kiểm tra ma trận có toàn dương hay không
 // Bài 352: Kiểm tra một hàng ma trận có tăng dần hay không
 // Bài 353: Kiểm tra một cột ma trận có giảm dần hay không

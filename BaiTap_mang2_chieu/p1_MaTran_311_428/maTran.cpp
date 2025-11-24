@@ -295,3 +295,16 @@ bool kiemTraSoDuongTrongMaTran(int a[100][100], int n, int m){
     }
     return false;
 }
+
+
+// Bài 350: Kiểm tra ma trận có tồn tại số lẻ hay không
+bool kiemTraSoLeTrongMaTran(int a[100][100], int n, int m){
+    if(n < 1 || m < 1) return 0;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            if(a[i][j] % 2 != 0) return true;
+        }
+    }
+    return false;
+
+}
