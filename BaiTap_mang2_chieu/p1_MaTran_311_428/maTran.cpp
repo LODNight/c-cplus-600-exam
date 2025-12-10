@@ -151,6 +151,20 @@ void tichGiaTriDuongTren1HangMaTranSoThuc(float a[100][100], int n, int m){
     }
 }
 
+// Bài 325: Tính tích các số chẵn trên 1 cột trong ma trận các số nguyên
+void tichCacSoChanTren1CotSoNguyen(int a[100][100], int n, int m){
+    if(n < 1 || m < 1) return;
+    for(int j=0; j<m; j++){
+        int tich = 1;
+        for(int i=0; i<n; i++){
+            if(a[i][j] % 2 == 0){
+                tich *= a[i][j];
+            }    
+        }
+        printf("%d ",tich);
+    }
+}
+
 // ---------------------------------------
 // Bài 342(*): Đếm số lượng phần tử cực đại trong ma trận các số thực. Một phần tử được gọi là cực đại khi nó lớn hơn các phần tử xung quanh
 

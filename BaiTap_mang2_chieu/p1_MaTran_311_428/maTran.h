@@ -40,7 +40,7 @@ void tichGiaTriDuongTren1CotMaTranSoThuc(float a[100][100], int n, int m);
 void tichGiaTriDuongTren1HangMaTranSoThuc(float a[100][100], int n, int m);
 
 // Bài 325: Tính tích các số chẵn trên 1 cột trong ma trận các số nguyên
-
+void tichCacSoChanTren1CotSoNguyen(int a[100][100], int n, int m);
 
 
 // Bài 326: Tính trung bình cộng các số dương trong ma trận các số thực
@@ -83,6 +83,7 @@ float tongPhanTuCucTri(float a[100][100], int n, int m);
 
 // ---------------------------------------
 // Bài 346(*): Đếm số lượng giá trị “Hoàng Hậu” trên ma trận. Một phần tử được gọi là Hoàng Hậu khi nó lớn nhất trên dòng, trên cột và 2 đường chéo đi qua nó
+
 
 // ---------------------------------------
 // Bài 347(*): Đếm số lượng giá trị “Yên Ngựa” trên ma trận. Một phần tử được gọi là Yên Ngựa khi nó lớn nhất trên dòng và nhỏ nhất trên cột
