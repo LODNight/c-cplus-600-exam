@@ -42,8 +42,9 @@ void tichGiaTriDuongTren1HangMaTranSoThuc(float a[100][100], int n, int m);
 // Bài 325: Tính tích các số chẵn trên 1 cột trong ma trận các số nguyên
 void tichCacSoChanTren1CotSoNguyen(int a[100][100], int n, int m);
 
-
 // Bài 326: Tính trung bình cộng các số dương trong ma trận các số thực
+float tbcSoDuongTrongMaTranSoThuc(float a[100][100], int n, int m);
+
 // Bài 327: Tính tổng các giá trị nằm trên biên của ma trận
 // Bài 328: Tính trung bình nhân các số dương trong ma trận các số thực
 // Bài 329: Hãy biến đổi ma trận bằng cách thay các giá trị âm bằng trị tuyệt đối của nó
