@@ -181,6 +181,22 @@ float tbcSoDuongTrongMaTranSoThuc(float a[100][100], int n, int m){
     return sum/count;
 }
 
+// Bài 327: Tính tổng các giá trị nằm trên biên của ma trận
+int tongGiaTriTrenBien(int a[100][100], int n, int m){
+    if(n < 1 || m < 1) return 0;
+    int total = 0;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            if(i == 0 || j == 0 || i == n-1 || j == m-1){
+                total += a[i][j];
+            }
+        }
+    }
+    return total;
+}
+
+
+
 // ---------------------------------------
 // Bài 342(*): Đếm số lượng phần tử cực đại trong ma trận các số thực. Một phần tử được gọi là cực đại khi nó lớn hơn các phần tử xung quanh
 
