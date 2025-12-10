@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/HCMUS/HK1/Nhap_Mon_Lap_Trinh/BaiTap_ThuatToan/BaiTap_mang1_Chieu",
-      "program": "d:/HCMUS/HK1/Nhap_Mon_Lap_Trinh/BaiTap_ThuatToan/BaiTap_mang1_Chieu/build/Debug/outDebug",
+      "cwd": "d:/HCMUS/HK1/Nhap_Mon_Lap_Trinh/BaiTap_ThuatToan/BaiTap_mang2_chieu/p1_MaTran_311_428",
+      "program": "d:/HCMUS/HK1/Nhap_Mon_Lap_Trinh/BaiTap_ThuatToan/BaiTap_mang2_chieu/p1_MaTran_311_428/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

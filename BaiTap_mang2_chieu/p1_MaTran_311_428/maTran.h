@@ -78,6 +78,7 @@ int demSLGiaTriPhanBiet(float a[100][100], int n, int m);
 
 // ---------------------------------------
 // Bài 345(*): Tính tổng các phần tử cực trị trong ma trận các số thực. Một phần tử được gọi là cực trị khi nó lớn hớn các phần tử xung quanh hoặc nhỏ hơn các phần tử xung quanh
+float tongPhanTuCucTri(float a[100][100], int n, int m);
 
 
 // ---------------------------------------

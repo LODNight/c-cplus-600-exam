@@ -285,6 +285,24 @@ int demSLGiaTriPhanBiet(float a[100][100], int n, int m){
 //     }
 
 
+
+// ---------------------------------------
+// Bài 345(*): Tính tổng các phần tử cực trị trong ma trận các số thực. Một phần tử được gọi là cực trị khi nó lớn hớn các phần tử xung quanh hoặc nhỏ hơn các phần tử xung quanh
+float tongPhanTuCucTri(float a[100][100], int n, int m){
+    if(n < 1 || m < 1) return 0;
+    float tong = 0;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            if(laCucTieu(a,n,m,i,j) || laCucDai(a,n,m,i,j)){
+                tong += a[i][j];
+            }
+        }
+    }
+    return tong;
+}
+
+
+
 // Bài 348: Kiểm tra ma trận có tồn tại số dương hay không
 bool kiemTraSoDuongTrongMaTran(int a[100][100], int n, int m){
     if(n < 1 || m < 1) return 0;
