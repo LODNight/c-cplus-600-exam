@@ -49,6 +49,8 @@ float tbcSoDuongTrongMaTranSoThuc(float a[100][100], int n, int m);
 int tongGiaTriTrenBien(int a[100][100], int n, int m);
 
 // Bài 328: Tính trung bình nhân các số dương trong ma trận các số thực
+float trungBinhSoDuongMaTranSoThuc(float a[100][100], int n, int m);
+
 // Bài 329: Hãy biến đổi ma trận bằng cách thay các giá trị âm bằng trị tuyệt đối của nó
 // Bài 330: Hãy biên đổi ma trận số thực bằng cách thay các giá trị bằng giá trị nguyên gần nó nhất
 // Bài 331: Tính tổng các giá trị trên 1 dòng của ma trận các số thực

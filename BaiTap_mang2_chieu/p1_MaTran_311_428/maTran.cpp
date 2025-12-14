@@ -195,6 +195,22 @@ int tongGiaTriTrenBien(int a[100][100], int n, int m){
     return total;
 }
 
+// Bài 328: Tính trung bình nhân các số dương trong ma trận các số thực
+float trungBinhSoDuongMaTranSoThuc(float a[100][100], int n, int m){
+    if(n < 1 || m < 1) return 0;
+    float total = 1;
+    int count = 0;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<m; j++){
+            if(a[i][j] > 0){
+                total *= a[i][j];
+                count++;
+            }
+        }
+    }
+    return pow(total, 1/count);
+}
+
 
 
 // ---------------------------------------
